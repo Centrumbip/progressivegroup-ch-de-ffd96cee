@@ -123,7 +123,7 @@ serve(async (req) => {
     // Minimalist professional email template
     const createEmailTemplate = (content: string) => `
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -395,12 +395,12 @@ serve(async (req) => {
       </div>
       <div class="footer">
         <div class="footer-brand">ProgressiveGroup</div>
-        <p>ul. Rynek 5/6<br>59-220 Legnica, POLSKA</p>
+        <p>ul. Rynek 5/6<br>59-220 Legnica, POLEN</p>
         <div class="footer-divider"></div>
-        <p>Email: <a href="mailto:info@progressivegroup.ch">info@progressivegroup.ch</a></p>
+        <p>E-Mail: <a href="mailto:info@progressivegroup.ch">info@progressivegroup.ch</a></p>
         <p>Web: <a href="https://www.progressivegroup.ch">www.progressivegroup.ch</a></p>
         <div class="footer-legal">
-          © ${new Date().getFullYear()} ProgressiveGroup. Wszystkie prawa zastrzeżone.
+          © ${new Date().getFullYear()} ProgressiveGroup. Alle Rechte vorbehalten.
         </div>
       </div>
     </div>
@@ -419,134 +419,134 @@ serve(async (req) => {
     // Build email content based on type
     if (type === "contact") {
       const data = requestData as ContactEmailRequest;
-      companySubject = 'Wiadomość z formularza kontaktowego';
+      companySubject = 'Nachricht aus dem Kontaktformular';
       companyBodyText = `
-Otrzymałeś nową wiadomość z formularza kontaktowego:
+Sie haben eine neue Nachricht aus dem Kontaktformular erhalten:
 
-Imię i nazwisko: ${data.name}
-Email: ${data.email}
+Vor- und Nachname: ${data.name}
+E-Mail: ${data.email}
 
-Wiadomość:
+Nachricht:
 ${data.message}
 
 ---
-Wiadomość została wysłana z formularza kontaktowego na stronie ProgressiveGroup.
+Die Nachricht wurde über das Kontaktformular auf der ProgressiveGroup-Website gesendet.
       `;
       
       companyBodyHtml = createEmailTemplate(`
-        <h2>Nowa wiadomość z formularza kontaktowego</h2>
+        <h2>Neue Nachricht aus dem Kontaktformular</h2>
         <div class="info-box">
-          <p><strong>Imię i nazwisko:</strong> ${data.name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>Vor- und Nachname:</strong> ${data.name}</p>
+          <p><strong>E-Mail:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
         </div>
-        <p><strong>Wiadomość:</strong></p>
+        <p><strong>Nachricht:</strong></p>
         <div class="info-box">
           ${data.message.replace(/\n/g, '<br>')}
         </div>
       `);
       
-      userSubject = 'Potwierdzenie otrzymania wiadomości - ProgressiveGroup';
+      userSubject = 'Empfangsbestätigung - ProgressiveGroup';
       userBodyText = `
-Dzień dobry ${data.name},
+Guten Tag ${data.name},
 
-Dziękujemy za kontakt z ProgressiveGroup!
+Vielen Dank für Ihre Kontaktaufnahme mit ProgressiveGroup!
 
-Potwierdzamy otrzymanie Twojej wiadomości. Nasz zespół skontaktuje się z Tobą w najbliższym czasie.
+Wir bestätigen den Erhalt Ihrer Nachricht. Unser Team wird sich in Kürze bei Ihnen melden.
 
-Twoja wiadomość:
+Ihre Nachricht:
 ${data.message}
 
 ---
-Pozdrawiamy,
-Zespół ProgressiveGroup
+Mit freundlichen Grüßen,
+Das ProgressiveGroup-Team
 info@progressivegroup.ch
       `;
       
       userBodyHtml = createEmailTemplate(`
-        <h2>Dzień dobry ${data.name}! 👋</h2>
-        <p>Dziękujemy za kontakt z <strong>ProgressiveGroup</strong>!</p>
-        <p>Potwierdzamy otrzymanie Twojej wiadomości. Nasz zespół skontaktuje się z Tobą w najbliższym czasie.</p>
+        <h2>Guten Tag ${data.name}! 👋</h2>
+        <p>Vielen Dank für Ihre Kontaktaufnahme mit <strong>ProgressiveGroup</strong>!</p>
+        <p>Wir bestätigen den Erhalt Ihrer Nachricht. Unser Team wird sich in Kürze bei Ihnen melden.</p>
         <div class="info-box">
-          <p><strong>Twoja wiadomość:</strong></p>
+          <p><strong>Ihre Nachricht:</strong></p>
           <p>${data.message.replace(/\n/g, '<br>')}</p>
         </div>
-        <p>Odpowiemy w ciągu <strong>24 godzin</strong>.</p>
+        <p>Wir antworten innerhalb von <strong>24 Stunden</strong>.</p>
       `);
     } else if (type === "audit") {
       const data = requestData as AuditEmailRequest;
-      companySubject = 'Nowe zgłoszenie - Bezpłatny Audyt WordPress';
+      companySubject = 'Neue Anfrage - Kostenloser WordPress-Audit';
       companyBodyText = `
-Otrzymałeś nowe zgłoszenie na bezpłatny audyt WordPress:
+Sie haben eine neue Anfrage für einen kostenlosen WordPress-Audit erhalten:
 
-Dane kontaktowe:
-- Imię i nazwisko: ${data.fullName}
-- Email: ${data.email}
-- Telefon: ${data.phone || 'Nie podano'}
-- Firma: ${data.companyName || 'Nie podano'}
+Kontaktdaten:
+- Vor- und Nachname: ${data.fullName}
+- E-Mail: ${data.email}
+- Telefon: ${data.phone || 'Nicht angegeben'}
+- Firma: ${data.companyName || 'Nicht angegeben'}
 
-Dane strony:
-- URL strony: ${data.websiteUrl}
+Website-Daten:
+- Website-URL: ${data.websiteUrl}
 
-Newsletter: ${data.newsletter ? 'Tak' : 'Nie'}
+Newsletter: ${data.newsletter ? 'Ja' : 'Nein'}
 
 ---
-Formularz wysłany ze strony ProgressiveGroup - WordPress Care
+Formular gesendet von der ProgressiveGroup-Website - WordPress Care
       `;
       
       companyBodyHtml = createEmailTemplate(`
-        <h2>🔒 Nowe zgłoszenie - Bezpłatny Audyt WordPress</h2>
-        <h3>Dane kontaktowe:</h3>
+        <h2>🔒 Neue Anfrage - Kostenloser WordPress-Audit</h2>
+        <h3>Kontaktdaten:</h3>
         <div class="info-box">
-          <p><strong>Imię i nazwisko:</strong> ${data.fullName}</p>
-          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
-          <p><strong>Telefon:</strong> ${data.phone || 'Nie podano'}</p>
-          <p><strong>Firma:</strong> ${data.companyName || 'Nie podano'}</p>
+          <p><strong>Vor- und Nachname:</strong> ${data.fullName}</p>
+          <p><strong>E-Mail:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>Telefon:</strong> ${data.phone || 'Nicht angegeben'}</p>
+          <p><strong>Firma:</strong> ${data.companyName || 'Nicht angegeben'}</p>
         </div>
-        <h3>Dane strony:</h3>
+        <h3>Website-Daten:</h3>
         <div class="info-box">
-          <p><strong>URL strony:</strong> <a href="${data.websiteUrl}" target="_blank">${data.websiteUrl}</a></p>
+          <p><strong>Website-URL:</strong> <a href="${data.websiteUrl}" target="_blank">${data.websiteUrl}</a></p>
         </div>
-        <p><strong>Newsletter:</strong> ${data.newsletter ? '✓ Tak' : '✗ Nie'}</p>
+        <p><strong>Newsletter:</strong> ${data.newsletter ? '✓ Ja' : '✗ Nein'}</p>
       `);
       
-      userSubject = 'Potwierdzenie otrzymania - Bezpłatny Audyt WordPress';
+      userSubject = 'Empfangsbestätigung - Kostenloser WordPress-Audit';
       userBodyText = `
-Dzień dobry ${data.fullName},
+Guten Tag ${data.fullName},
 
-Dziękujemy za zainteresowanie naszym bezpłatnym audytem bezpieczeństwa WordPress!
+Vielen Dank für Ihr Interesse an unserem kostenlosen WordPress-Sicherheitsaudit!
 
-Twoje zgłoszenie zostało przyjęte i jest w trakcie realizacji.
+Ihre Anfrage wurde angenommen und wird bearbeitet.
 
-Strona do audytu: ${data.websiteUrl}
+Website für Audit: ${data.websiteUrl}
 
-Otrzymasz szczegółowy raport w ciągu 24-48 godzin zawierający:
-✓ Raport bezpieczeństwa Twojej strony
-✓ Lista znalezionych podatności
-✓ Rekomendacje naprawcze
-✓ Wycena naprawy (jeśli potrzebna)
+Sie erhalten innerhalb von 24-48 Stunden einen detaillierten Bericht mit:
+✓ Sicherheitsbericht Ihrer Website
+✓ Liste gefundener Schwachstellen
+✓ Empfehlungen zur Behebung
+✓ Kostenvoranschlag für Reparaturen (falls erforderlich)
 
 ---
-Pozdrawiamy,
-Zespół ProgressiveGroup
+Mit freundlichen Grüßen,
+Das ProgressiveGroup-Team
 info@progressivegroup.ch
       `;
       
       userBodyHtml = createEmailTemplate(`
-        <h2>Dzień dobry ${data.fullName}! 🔒</h2>
-        <p>Dziękujemy za zainteresowanie naszym <strong>bezpłatnym audytem bezpieczeństwa WordPress</strong>!</p>
-        <p>Twoje zgłoszenie zostało przyjęte i jest w trakcie realizacji.</p>
+        <h2>Guten Tag ${data.fullName}! 🔒</h2>
+        <p>Vielen Dank für Ihr Interesse an unserem <strong>kostenlosen WordPress-Sicherheitsaudit</strong>!</p>
+        <p>Ihre Anfrage wurde angenommen und wird bearbeitet.</p>
         <div class="info-box">
-          <p><strong>Strona do audytu:</strong></p>
+          <p><strong>Website für Audit:</strong></p>
           <p><a href="${data.websiteUrl}" target="_blank">${data.websiteUrl}</a></p>
         </div>
-        <p><strong>Otrzymasz szczegółowy raport w ciągu 24-48 godzin zawierający:</strong></p>
+        <p><strong>Sie erhalten innerhalb von 24-48 Stunden einen detaillierten Bericht mit:</strong></p>
         <ul class="checklist">
-          <li>Raport bezpieczeństwa Twojej strony</li>
-          <li>Lista znalezionych podatności</li>
-          <li>Rekomendacje naprawcze</li>
-          <li>Wycena naprawy (jeśli potrzebna)</li>
+          <li>Sicherheitsbericht Ihrer Website</li>
+          <li>Liste gefundener Schwachstellen</li>
+          <li>Empfehlungen zur Behebung</li>
+          <li>Kostenvoranschlag für Reparaturen (falls erforderlich)</li>
         </ul>
-        <p style="margin-top: 30px;">Nasz ekspert przeprowadzi szczegółową analizę i skontaktuje się z Tobą z wynikami.</p>
+        <p style="margin-top: 30px;">Unser Experte führt eine detaillierte Analyse durch und kontaktiert Sie mit den Ergebnissen.</p>
       `);
     } else if (type === "order") {
       const data = requestData as OrderEmailRequest;
@@ -554,139 +554,139 @@ info@progressivegroup.ch
       const vat = (price * 0.077).toFixed(2);
       const total = (price + parseFloat(vat)).toFixed(2);
       
-      companySubject = `Nowe zamówienie - Pakiet ${data.packageName}`;
+      companySubject = `Neue Bestellung - Paket ${data.packageName}`;
       companyBodyText = `
-Otrzymałeś nowe zamówienie pakietu WordPress Care:
+Sie haben eine neue Bestellung für das WordPress Care-Paket erhalten:
 
-=== PAKIET ===
-Pakiet: ${data.packageName}
-Cena: ${data.packagePrice}/miesiąc
+=== PAKET ===
+Paket: ${data.packageName}
+Preis: ${data.packagePrice}/Monat
 
-=== DANE FIRMY ===
-Nazwa firmy: ${data.companyName}
-NIP/VAT ID: ${data.vatId}
-Adres: ${data.street}, ${data.postalCode} ${data.city}, ${data.country}
+=== FIRMENDATEN ===
+Firmenname: ${data.companyName}
+UID/MwSt-Nr.: ${data.vatId}
+Adresse: ${data.street}, ${data.postalCode} ${data.city}, ${data.country}
 
-=== OSOBA KONTAKTOWA ===
-Imię i nazwisko: ${data.fullName}
-Email: ${data.email}
+=== KONTAKTPERSON ===
+Vor- und Nachname: ${data.fullName}
+E-Mail: ${data.email}
 Telefon: ${data.phone}
-Preferowany kontakt: ${data.contactPreference}
+Bevorzugter Kontakt: ${data.contactPreference}
 
-=== DANE STRONY ===
-URL strony: ${data.websiteUrl}
-Panel admin: ${data.adminUrl || 'Nie podano'}
-Hosting: ${data.hostingKnown === 'known' ? data.hostingProvider : 'Nieznany'}
-Posiada backupy: ${data.hasBackups}
-Dodatkowe info: ${data.additionalInfo || 'Brak'}
+=== WEBSITE-DATEN ===
+Website-URL: ${data.websiteUrl}
+Admin-Panel: ${data.adminUrl || 'Nicht angegeben'}
+Hosting: ${data.hostingKnown === 'known' ? data.hostingProvider : 'Unbekannt'}
+Backups vorhanden: ${data.hasBackups}
+Zusätzliche Info: ${data.additionalInfo || 'Keine'}
 
-=== PŁATNOŚĆ ===
-Metoda płatności: ${data.paymentMethod}
-VAT (7.7%): CHF ${vat}
-RAZEM: CHF ${total}/miesiąc
+=== ZAHLUNG ===
+Zahlungsmethode: ${data.paymentMethod}
+MwSt (7.7%): CHF ${vat}
+GESAMT: CHF ${total}/Monat
 
 ---
-Zamówienie wysłane ze strony ProgressiveGroup - WordPress Care
+Bestellung gesendet von der ProgressiveGroup-Website - WordPress Care
       `;
       
       companyBodyHtml = createEmailTemplate(`
-        <h2>🛒 Nowe zamówienie - Pakiet ${data.packageName}</h2>
+        <h2>🛒 Neue Bestellung - Paket ${data.packageName}</h2>
         
         <div class="info-box-gradient">
-          <h3>Pakiet ${data.packageName}</h3>
-          <p style="font-size: 28px; font-weight: bold; margin: 15px 0;">${data.packagePrice}/miesiąc</p>
+          <h3>Paket ${data.packageName}</h3>
+          <p style="font-size: 28px; font-weight: bold; margin: 15px 0;">${data.packagePrice}/Monat</p>
         </div>
         
-        <h3>Dane firmy:</h3>
+        <h3>Firmendaten:</h3>
         <div class="info-box">
-          <p><strong>Nazwa firmy:</strong> ${data.companyName}</p>
-          <p><strong>NIP/VAT ID:</strong> ${data.vatId}</p>
-          <p><strong>Adres:</strong> ${data.street}, ${data.postalCode} ${data.city}, ${data.country}</p>
+          <p><strong>Firmenname:</strong> ${data.companyName}</p>
+          <p><strong>UID/MwSt.-Nr.:</strong> ${data.vatId}</p>
+          <p><strong>Adresse:</strong> ${data.street}, ${data.postalCode} ${data.city}, ${data.country}</p>
         </div>
         
-        <h3>Osoba kontaktowa:</h3>
+        <h3>Kontaktperson:</h3>
         <div class="info-box">
-          <p><strong>Imię i nazwisko:</strong> ${data.fullName}</p>
-          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>Vor- und Nachname:</strong> ${data.fullName}</p>
+          <p><strong>E-Mail:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
           <p><strong>Telefon:</strong> ${data.phone}</p>
-          <p><strong>Preferowany kontakt:</strong> ${data.contactPreference}</p>
+          <p><strong>Bevorzugter Kontakt:</strong> ${data.contactPreference}</p>
         </div>
         
-        <h3>Dane strony WordPress:</h3>
+        <h3>WordPress-Website-Daten:</h3>
         <div class="info-box">
-          <p><strong>URL strony:</strong> <a href="${data.websiteUrl}" target="_blank">${data.websiteUrl}</a></p>
-          <p><strong>Panel admin:</strong> ${data.adminUrl || 'Nie podano'}</p>
-          <p><strong>Hosting:</strong> ${data.hostingKnown === 'known' ? data.hostingProvider : 'Nieznany'}</p>
-          <p><strong>Posiada backupy:</strong> ${data.hasBackups}</p>
-          ${data.additionalInfo ? `<p><strong>Dodatkowe info:</strong> ${data.additionalInfo}</p>` : ''}
+          <p><strong>Website-URL:</strong> <a href="${data.websiteUrl}" target="_blank">${data.websiteUrl}</a></p>
+          <p><strong>Admin-Panel:</strong> ${data.adminUrl || 'Nicht angegeben'}</p>
+          <p><strong>Hosting:</strong> ${data.hostingKnown === 'known' ? data.hostingProvider : 'Unbekannt'}</p>
+          <p><strong>Hat Backups:</strong> ${data.hasBackups}</p>
+          ${data.additionalInfo ? `<p><strong>Zusätzliche Info:</strong> ${data.additionalInfo}</p>` : ''}
         </div>
         
-        <h3>Płatność:</h3>
+        <h3>Zahlung:</h3>
         <div class="info-box">
-          <p><strong>Metoda płatności:</strong> ${data.paymentMethod === 'bank' ? 'Przelew bankowy' : data.paymentMethod === 'card' ? 'Karta kredytowa (Stripe)' : 'PayPal'}</p>
-          <p><strong>VAT (7.7%):</strong> CHF ${vat}</p>
-          <p style="font-size: 20px; margin-top: 15px;"><strong>RAZEM: CHF ${total}/miesiąc</strong></p>
+          <p><strong>Zahlungsmethode:</strong> ${data.paymentMethod === 'bank' ? 'Banküberweisung' : data.paymentMethod === 'card' ? 'Kreditkarte (Stripe)' : 'PayPal'}</p>
+          <p><strong>MwSt. (7.7%):</strong> CHF ${vat}</p>
+          <p style="font-size: 20px; margin-top: 15px;"><strong>GESAMT: CHF ${total}/Monat</strong></p>
         </div>
       `);
       
-      userSubject = `Potwierdzenie zamówienia - Pakiet ${data.packageName}`;
+      userSubject = `Bestellbestätigung - Paket ${data.packageName}`;
       userBodyText = `
-Dzień dobry ${data.fullName},
+Guten Tag ${data.fullName},
 
-Dziękujemy za złożenie zamówienia pakietu ${data.packageName}!
+Vielen Dank für Ihre Bestellung des Pakets ${data.packageName}!
 
-=== PODSUMOWANIE ZAMÓWIENIA ===
-Pakiet: ${data.packageName}
-Cena: ${data.packagePrice}/miesiąc
-VAT (7.7%): CHF ${vat}
-RAZEM: CHF ${total}/miesiąc
+=== BESTELLZUSAMMENFASSUNG ===
+Paket: ${data.packageName}
+Preis: ${data.packagePrice}/Monat
+MwSt. (7.7%): CHF ${vat}
+GESAMT: CHF ${total}/Monat
 
-=== CO DALEJ? ===
-1. Weryfikujemy Twoje dane (do 2h)
-2. Wysyłamy umowę do podpisu (elektronicznie)
-3. Po podpisaniu - faktura i dane do płatności
-4. Po płatności - formularz z dostępami do strony
-5. Start opieki w ciągu 48h!
+=== WIE GEHT ES WEITER? ===
+1. Wir prüfen Ihre Daten (bis zu 2 Std.)
+2. Wir senden Ihnen den Vertrag zur Unterzeichnung (elektronisch)
+3. Nach Unterzeichnung - Rechnung und Zahlungsdaten
+4. Nach Zahlung - Formular mit Website-Zugangsdaten
+5. Start der Betreuung innerhalb von 48 Std.!
 
-Strona objęta opieką: ${data.websiteUrl}
+Betreute Website: ${data.websiteUrl}
 
-Skontaktujemy się z Tobą wkrótce aby sfinalizować szczegóły.
+Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um die Details zu finalisieren.
 
 ---
-Pozdrawiamy,
-Zespół ProgressiveGroup
+Mit freundlichen Grüßen,
+Das ProgressiveGroup-Team
 info@progressivegroup.ch
       `;
       
       userBodyHtml = createEmailTemplate(`
-        <h2>Dziękujemy za zamówienie! 🎉</h2>
-        <p>Dzień dobry <strong>${data.fullName}</strong>,</p>
-        <p>Dziękujemy za złożenie zamówienia pakietu <strong>${data.packageName}</strong>!</p>
+        <h2>Vielen Dank für Ihre Bestellung! 🎉</h2>
+        <p>Guten Tag <strong>${data.fullName}</strong>,</p>
+        <p>Vielen Dank für Ihre Bestellung des Pakets <strong>${data.packageName}</strong>!</p>
         
         <div class="info-box-gradient">
-          <h3>📋 Podsumowanie zamówienia</h3>
-          <p><strong>Pakiet:</strong> ${data.packageName}</p>
-          <p><strong>Cena:</strong> ${data.packagePrice}/miesiąc</p>
-          <p><strong>VAT (7.7%):</strong> CHF ${vat}</p>
-          <p style="font-size: 24px; margin-top: 15px;"><strong>RAZEM: CHF ${total}/miesiąc</strong></p>
+          <h3>📋 Bestellzusammenfassung</h3>
+          <p><strong>Paket:</strong> ${data.packageName}</p>
+          <p><strong>Preis:</strong> ${data.packagePrice}/Monat</p>
+          <p><strong>MwSt. (7.7%):</strong> CHF ${vat}</p>
+          <p style="font-size: 24px; margin-top: 15px;"><strong>GESAMT: CHF ${total}/Monat</strong></p>
         </div>
         
-        <h3>Co dalej? 🚀</h3>
+        <h3>Wie geht es weiter? 🚀</h3>
         <ul class="checklist">
-          <li>Weryfikujemy Twoje dane (do 2h)</li>
-          <li>Wysyłamy umowę do podpisu (elektronicznie)</li>
-          <li>Po podpisaniu - faktura i dane do płatności</li>
-          <li>Po płatności - formularz z dostępami do strony</li>
-          <li>Start opieki w ciągu 48h!</li>
+          <li>Wir prüfen Ihre Daten (bis zu 2 Std.)</li>
+          <li>Wir senden Ihnen den Vertrag zur Unterzeichnung (elektronisch)</li>
+          <li>Nach Unterzeichnung - Rechnung und Zahlungsdaten</li>
+          <li>Nach Zahlung - Formular mit Website-Zugangsdaten</li>
+          <li>Start der Betreuung innerhalb von 48 Std.!</li>
         </ul>
         
-        <h3>Strona objęta opieką:</h3>
+        <h3>Betreute Website:</h3>
         <div class="info-box">
           <p><a href="${data.websiteUrl}" target="_blank" style="font-size: 16px;">${data.websiteUrl}</a></p>
         </div>
         
-        <p style="margin-top: 30px;">Skontaktujemy się z Tobą wkrótce aby sfinalizować szczegóły.</p>
-        <p>W razie pytań, jesteśmy do Twojej dyspozycji!</p>
+        <p style="margin-top: 30px;">Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um die Details zu finalisieren.</p>
+        <p>Bei Fragen stehen wir Ihnen gerne zur Verfügung!</p>
       `);
     } else if (type === "website-order") {
       const data = requestData as WebsiteOrderRequest;
@@ -694,20 +694,20 @@ info@progressivegroup.ch
       // Helper function to format option keys
       const formatKey = (key: string): string => {
         const keyMap: { [key: string]: string } = {
-          sections: "Sekcje",
-          languages: "Języki",
-          cms: "Panel CMS",
+          sections: "Abschnitte",
+          languages: "Sprachen",
+          cms: "CMS-Panel",
           blog: "Blog",
-          gallery: "Galeria",
-          numberOfPages: "Liczba podstron",
-          numberOfProducts: "Liczba produktów",
-          search: "Wyszukiwarka",
-          filters: "Filtry",
-          adsIntegration: "Integracja z reklamami",
-          leadForms: "Formularze lead generation",
-          abTesting: "A/B Testing",
-          expressDelivery: "Ekspresowa realizacja",
-          goal: "Cel strony",
+          gallery: "Galerie",
+          numberOfPages: "Anzahl der Unterseiten",
+          numberOfProducts: "Anzahl der Produkte",
+          search: "Suchfunktion",
+          filters: "Filter",
+          adsIntegration: "Werbeintegration",
+          leadForms: "Lead-Generation-Formulare",
+          abTesting: "A/B-Testing",
+          expressDelivery: "Express-Lieferung",
+          goal: "Ziel der Website",
         };
         return keyMap[key] || key;
       };
@@ -720,89 +720,89 @@ info@progressivegroup.ch
           if (Array.isArray(value)) {
             return `<li><strong>${formatKey(key)}:</strong> ${value.join(", ")}</li>`;
           }
-          return `<li><strong>${formatKey(key)}:</strong> ${value === true ? "Tak" : value}</li>`;
+          return `<li><strong>${formatKey(key)}:</strong> ${value === true ? "Ja" : value}</li>`;
         })
         .join("");
       
-      companySubject = `Nowe zapytanie ofertowe - ${data.packageName}`;
+      companySubject = `Neue Angebotsanfrage - ${data.packageName}`;
       companyBodyText = `
-Nowe zapytanie ofertowe na stronę internetową:
+Neue Angebotsanfrage für eine Website:
 
-PAKIET: ${data.packageName}
-Cena bazowa: ${data.basePrice} CHF
+PAKET: ${data.packageName}
+Grundpreis: ${data.basePrice} CHF
 
-DANE KLIENTA:
+KUNDENDATEN:
 Firma: ${data.companyName}
 Kontakt: ${data.firstName} ${data.lastName}
-Email: ${data.email}
+E-Mail: ${data.email}
 Telefon: ${data.phone}
-${data.website ? `Obecna strona: ${data.website}` : ''}
+${data.website ? `Aktuelle Website: ${data.website}` : ''}
 
-OPIS PROJEKTU:
+PROJEKTBESCHREIBUNG:
 ${data.projectDescription}
 
-SZCZEGÓŁY ZAMÓWIENIA:
+BESTELLDETAILS:
 ${JSON.stringify(data, null, 2)}
       `;
       
       companyBodyHtml = createEmailTemplate(`
-        <h2>🌐 Nowe zapytanie ofertowe - ${data.packageName}</h2>
+        <h2>🌐 Neue Angebotsanfrage - ${data.packageName}</h2>
         <div class="info-box-gradient">
           <h3>${data.packageName}</h3>
-          <p style="font-size: 16px;">Cena bazowa: ${data.basePrice} CHF</p>
+          <p style="font-size: 16px;">Grundpreis: ${data.basePrice} CHF</p>
         </div>
-        <h3>Dane klienta:</h3>
+        <h3>Kundendaten:</h3>
         <div class="info-box">
           <p><strong>Firma:</strong> ${data.companyName}</p>
           <p><strong>Kontakt:</strong> ${data.firstName} ${data.lastName}</p>
-          <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+          <p><strong>E-Mail:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
           <p><strong>Telefon:</strong> ${data.phone}</p>
-          ${data.website ? `<p><strong>Obecna strona:</strong> <a href="${data.website}">${data.website}</a></p>` : ''}
+          ${data.website ? `<p><strong>Aktuelle Website:</strong> <a href="${data.website}">${data.website}</a></p>` : ''}
         </div>
-        <h3>Opis projektu:</h3>
+        <h3>Projektbeschreibung:</h3>
         <div class="info-box">
           <p>${data.projectDescription.replace(/\n/g, '<br>')}</p>
         </div>
         ${optionsHtml ? `
-        <h3>Wybrane opcje:</h3>
+        <h3>Ausgewählte Optionen:</h3>
         <ul class="checklist">
           ${optionsHtml}
         </ul>
         ` : ''}
       `);
       
-      userSubject = 'Potwierdzenie zapytania - ProgressiveGroup';
+      userSubject = 'Anfragebestätigung - ProgressiveGroup';
       userBodyText = `
-Dzień dobry ${data.firstName},
+Guten Tag ${data.firstName},
 
-Otrzymaliśmy Twoje zapytanie ofertowe na ${data.packageName}.
+Wir haben Ihre Angebotsanfrage für ${data.packageName} erhalten.
 
-Nasz zespół przeanalizuje Twoje wymagania i skontaktuje się z Tobą w ciągu 24 godzin z indywidualną wyceną.
+Unser Team wird Ihre Anforderungen analysieren und sich innerhalb von 24 Stunden mit einem individuellen Angebot bei Ihnen melden.
 
-W międzyczasie, jeśli masz dodatkowe pytania, śmiało się z nami skontaktuj.
+In der Zwischenzeit können Sie sich bei weiteren Fragen gerne an uns wenden.
 
 ---
-Pozdrawiamy,
-Zespół ProgressiveGroup
+Mit freundlichen Grüßen,
+Das ProgressiveGroup-Team
 info@progressivegroup.ch
       `;
 
       userBodyHtml = createEmailTemplate(`
-        <h2>Dziękujemy za zapytanie! 🎉</h2>
-        <p>Dzień dobry <strong>${data.firstName}</strong>,</p>
-        <p>Otrzymaliśmy Twoje zapytanie ofertowe na <strong>${data.packageName}</strong>.</p>
+        <h2>Vielen Dank für Ihre Anfrage! 🎉</h2>
+        <p>Guten Tag <strong>${data.firstName}</strong>,</p>
+        <p>Wir haben Ihre Angebotsanfrage für <strong>${data.packageName}</strong> erhalten.</p>
         <div class="info-box">
-          <p><strong>Pakiet:</strong> ${data.packageName}</p>
-          <p><strong>Cena bazowa:</strong> ${data.basePrice} CHF</p>
+          <p><strong>Paket:</strong> ${data.packageName}</p>
+          <p><strong>Grundpreis:</strong> ${data.basePrice} CHF</p>
         </div>
-        <p>Nasz zespół przeanalizuje Twoje wymagania i skontaktuje się z Tobą w ciągu <strong>24 godzin</strong> z indywidualną wyceną dopasowaną do Twoich potrzeb.</p>
+        <p>Unser Team wird Ihre Anforderungen analysieren und sich innerhalb von <strong>24 Stunden</strong> mit einem individuellen Angebot bei Ihnen melden, das auf Ihre Bedürfnisse zugeschnitten ist.</p>
         ${optionsHtml ? `
-        <h3>Wybrane opcje:</h3>
+        <h3>Ausgewählte Optionen:</h3>
         <ul class="checklist">
           ${optionsHtml}
         </ul>
         ` : ''}
-        <p style="margin-top: 30px;">W międzyczasie, jeśli masz dodatkowe pytania, śmiało się z nami skontaktuj!</p>
+        <p style="margin-top: 30px;">In der Zwischenzeit können Sie sich bei weiteren Fragen gerne an uns wenden!</p>
       `);
     }
 

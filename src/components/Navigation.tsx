@@ -5,7 +5,7 @@ const Navigation = () => {
   const location = useLocation();
   
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-card-solid border-b">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
@@ -19,7 +19,7 @@ const Navigation = () => {
                 location.pathname === '/automatyzacje' ? 'bg-white/10 text-primary' : 'text-foreground/70'
               }`}
             >
-              Automatyzacje
+              Automatisierung
             </Link>
             <Link 
               to="/prezentacje"
@@ -27,7 +27,7 @@ const Navigation = () => {
                 location.pathname === '/prezentacje' ? 'bg-white/10 text-secondary' : 'text-foreground/70'
               }`}
             >
-              Prezentacje
+              Präsentationen
             </Link>
             <Link 
               to="/wordpress"
@@ -43,7 +43,7 @@ const Navigation = () => {
                 location.pathname === '/strony-internetowe' ? 'bg-white/10 text-primary' : 'text-foreground/70'
               }`}
             >
-              Strony Web
+              Webseiten
             </Link>
             <a
               href="#contact"

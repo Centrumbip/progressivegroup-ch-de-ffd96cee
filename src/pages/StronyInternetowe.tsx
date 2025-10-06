@@ -8,6 +8,7 @@ import Footer from "@/components/sections/Footer";
 import { Badge } from "@/components/ui/badge";
 import WebsiteOrderForm from "@/components/forms/WebsiteOrderForm";
 import PriceCalculator from "@/components/PriceCalculator";
+import PortfolioItem from "@/components/PortfolioItem";
 
 const StronyInternetowe = () => {
   const [orderFormOpen, setOrderFormOpen] = useState(false);
@@ -22,60 +23,109 @@ const StronyInternetowe = () => {
     setOrderFormOpen(true);
   };
 
+const portfolioItems = [
+  {
+    id: "tech-startup-2025",
+    title: "TechFlow Solutions",
+    description: "Moderne SaaS-Website für ein innovatives Tech-Startup mit interaktiven Dashboards und KI-Integration. Revolutionäre Benutzeroberfläche mit Echtzeit-Analytics und Machine Learning Features für moderne Unternehmen.",
+    type: "SaaS-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
+    technologies: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL", "TensorFlow.js"],
+    features: [
+      "KI-gestützte Analytics Dashboard",
+      "Real-time Datenvisualisierung", 
+      "Multi-Tenant Architektur",
+      "API-First Design",
+      "Advanced Security Features",
+      "Mobile-First Responsive Design",
+      "Progressive Web App",
+      "Machine Learning Integration"
+    ],
+    category: "business" as const,
+    screenshots: [
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=800&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop&crop=center"
+    ],
+    client: "TechFlow Solutions GmbH",
+    duration: "8 Wochen",
+    team: "5 Entwickler",
+    awards: ["Best SaaS Platform 2025", "Innovation Award", "UX Excellence"],
+    challenges: [
+      "Komplexe Datenvisualisierung benutzerfreundlich gestalten",
+      "Skalierbare Multi-Tenant Architektur implementieren", 
+      "KI-Features nahtlos integrieren"
+    ],
+    solutions: [
+      "Modulare Dashboard-Komponenten",
+      "Microservices-Architektur",
+      "TensorFlow.js Integration für Client-Side ML"
+    ],
+    results: [
+      "300% Steigerung der Benutzeraktivität",
+      "50% schnellere Datenverarbeitung", 
+      "99.9% Uptime erreicht"
+    ]
+  }
+];
+
   const examples = [
     {
-      title: "Kancelaria Prawna Schmidt & Partners",
-      language: "Niemiecki",
-      type: "Strona wizytówka",
+      title: "Rechtsanwaltskanzlei Schmidt & Partners",
+      language: "Deutsch",
+      type: "Visitenkarte-Website",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
       flag: "🇩🇪"
     },
     {
       title: "Restaurant Le Gourmet Français",
-      language: "Francuski",
-      type: "Katalog menu",
+      language: "Französisch",
+      type: "Menü-Katalog",
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
       flag: "🇫🇷"
     },
     {
       title: "Casa de Arquitectura Moderna",
-      language: "Hiszpański",
-      type: "Portfolio architektoniczne",
+      language: "Spanisch",
+      type: "Architektur-Portfolio",
       image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
       flag: "🇪🇸"
     },
     {
-      title: "Studio Fotograficzne Kraków",
-      language: "Polski",
-      type: "Galeria portfolio",
+      title: "Fotostudio Krakau",
+      language: "Polnisch",
+      type: "Portfolio-Galerie",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800",
       flag: "🇵🇱"
     },
     {
       title: "Beratungsfirma Zürich",
-      language: "Niemiecki",
-      type: "Strona firmowa multi-page",
+      language: "Deutsch",
+      type: "Multi-Page Unternehmenswebsite",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
       flag: "🇩🇪"
     },
     {
       title: "Cabinet Médical Genève",
-      language: "Francuski",
-      type: "One-page klinika",
+      language: "Französisch",
+      type: "One-Page Klinik",
       image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800",
       flag: "🇫🇷"
     },
     {
       title: "Agencia Inmobiliaria Barcelona",
-      language: "Hiszpański",
-      type: "Katalog nieruchomości",
+      language: "Spanisch",
+      type: "Immobilienkatalog",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
       flag: "🇪🇸"
     },
     {
-      title: "Warsztat Samochodowy Premium",
-      language: "Polski",
-      type: "Landing page",
+      title: "Premium Autowerkstatt",
+      language: "Polnisch",
+      type: "Landing Page",
       image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800",
       flag: "🇵🇱"
     }
@@ -85,82 +135,82 @@ const StronyInternetowe = () => {
     {
       name: "One-Page",
       price: "2'500 - 4'000",
-      description: "Idealna dla małych firm i freelancerów",
+      description: "Ideal für kleine Unternehmen und Freelancer",
       features: [
-        "1 strona z sekcjami",
-        "Responsywny design",
-        "Formularz kontaktowy",
-        "Optymalizacja SEO podstawowa",
-        "Roczny hosting gratis",
-        "Darmowy certyfikat SSL",
+        "1 Seite mit Sektionen",
+        "Responsives Design",
+        "Kontaktformular",
+        "Basis-SEO-Optimierung",
+        "Jahres-Hosting gratis",
+        "Kostenloses SSL-Zertifikat",
         "Google Analytics",
-        "Integracja z Google Maps",
-        "Panel do edycji treści",
-        "Baner Cookies i zgoda GDPR",
-        "Czas realizacji: 5-7 dni"
+        "Google Maps-Integration",
+        "Content-Management-Panel",
+        "Cookie-Banner und DSGVO-Konformität",
+        "Realisierungszeit: 5-7 Tage"
       ],
       popular: false
     },
     {
-      name: "Strona Wizytówka",
+      name: "Visitenkarte-Website",
       price: "4'000 - 8'000",
-      description: "Profesjonalna prezentacja firmy",
+      description: "Professionelle Unternehmenspräsentation",
       features: [
-        "Do 5 podstron",
-        "Nowoczesny indywidualny design",
-        "Zaawansowany CMS do zarządzania treścią",
-        "Zaawansowane SEO (meta tagi, schema.org)",
-        "Blog opcjonalnie",
-        "Integracja z Google Maps",
+        "Bis zu 5 Unterseiten",
+        "Modernes individuelles Design",
+        "Erweitertes CMS zur Inhaltsverwaltung",
+        "Erweiterte SEO (Meta-Tags, schema.org)",
+        "Blog optional",
+        "Google Maps-Integration",
         "Google Analytics + Search Console",
-        "Galeria zdjęć",
-        "Roczny hosting premium gratis",
-        "Darmowy certyfikat SSL",
-        "Wsparcie wielojęzyczności",
-        "Baner Cookies i pełna zgodność GDPR",
-        "Czas realizacji: 10-14 dni"
+        "Fotogalerie",
+        "Jahres-Premium-Hosting gratis",
+        "Kostenloses SSL-Zertifikat",
+        "Mehrsprachigkeitsunterstützung",
+        "Cookie-Banner und volle DSGVO-Konformität",
+        "Realisierungszeit: 10-14 Tage"
       ],
       popular: true
     },
     {
-      name: "Strona Katalogowa",
+      name: "Katalog-Website",
       price: "6'000 - 12'000",
-      description: "Rozbudowany katalog produktów/usług",
+      description: "Umfangreicher Produkt-/Dienstleistungskatalog",
       features: [
-        "Do 15 podstron",
-        "System kategorii i tagów",
-        "Zaawansowana galeria z lightbox",
-        "Wyszukiwarka produktów/usług",
-        "Filtry i zaawansowane sortowanie",
-        "Pełny panel administracyjny (CMS)",
-        "SEO dla każdej strony produktowej",
-        "Wielojęzyczność wbudowana",
-        "Integracje: Google Maps, Analytics, Tag Manager",
-        "Blog zintegrowany z systemem",
-        "Roczny hosting premium gratis",
-        "Darmowy certyfikat SSL",
-        "Backup automatyczny",
-        "Baner Cookies i pełna zgodność GDPR",
-        "Czas realizacji: 3-4 tygodnie"
+        "Bis zu 15 Unterseiten",
+        "Kategorie- und Tag-System",
+        "Erweiterte Galerie mit Lightbox",
+        "Produkt-/Dienstleistungssuche",
+        "Filter und erweiterte Sortierung",
+        "Vollständiges Admin-Panel (CMS)",
+        "SEO für jede Produktseite",
+        "Integrierte Mehrsprachigkeit",
+        "Integrationen: Google Maps, Analytics, Tag Manager",
+        "In System integrierter Blog",
+        "Jahres-Premium-Hosting gratis",
+        "Kostenloses SSL-Zertifikat",
+        "Automatisches Backup",
+        "Cookie-Banner und volle DSGVO-Konformität",
+        "Realisierungszeit: 3-4 Wochen"
       ],
       popular: false
     },
     {
       name: "Landing Page",
       price: "2'000 - 3'500",
-      description: "Skuteczna strona sprzedażowa",
+      description: "Effektive Verkaufsseite",
       features: [
-        "1 strona zoptymalizowana pod konwersję",
-        "A/B testing gotowość",
-        "Integracja z Google/Facebook Ads",
-        "Call-to-action buttons strategicznie umieszczone",
-        "Lead generation formularze",
-        "Google Analytics + konwersje",
-        "Pixel tracking (Facebook, LinkedIn)",
-        "Roczny hosting gratis",
-        "Darmowy certyfikat SSL",
-        "Baner Cookies i zgoda GDPR",
-        "Czas realizacji: 3-5 dni"
+        "1 Seite optimiert für Konversion",
+        "A/B-Testing-Bereitschaft",
+        "Integration mit Google/Facebook Ads",
+        "Strategisch platzierte Call-to-Action-Buttons",
+        "Lead-Generation-Formulare",
+        "Google Analytics + Konversionen",
+        "Pixel-Tracking (Facebook, LinkedIn)",
+        "Jahres-Hosting gratis",
+        "Kostenloses SSL-Zertifikat",
+        "Cookie-Banner und DSGVO-Konformität",
+        "Realisierungszeit: 3-5 Tage"
       ],
       popular: false
     }
@@ -169,56 +219,56 @@ const StronyInternetowe = () => {
   const benefits = [
     {
       icon: Globe,
-      title: "Wielojęzyczność",
-      description: "Tworzymy strony w wielu językach europejskich - niemiecki, francuski, hiszpański, włoski, polski i inne"
+      title: "Mehrsprachigkeit",
+      description: "Wir erstellen Websites in vielen europäischen Sprachen - Deutsch, Französisch, Spanisch, Italienisch, Polnisch und andere"
     },
     {
       icon: Smartphone,
       title: "Mobile-First",
-      description: "Wszystkie strony w pełni responsywne i zoptymalizowane pod urządzenia mobilne"
+      description: "Alle Websites voll responsiv und für mobile Geräte optimiert"
     },
     {
       icon: Zap,
-      title: "Szybkie Ładowanie",
-      description: "Optymalizacja wydajności - twoja strona ładuje się błyskawicznie"
+      title: "Schnelles Laden",
+      description: "Leistungsoptimierung - Ihre Website lädt blitzschnell"
     },
     {
       icon: Palette,
-      title: "Indywidualny Design",
-      description: "Unikalny projekt graficzny dopasowany do Twojej marki i branży"
+      title: "Individuelles Design",
+      description: "Einzigartiges grafisches Design, angepasst an Ihre Marke und Branche"
     },
     {
       icon: CheckCircle2,
       title: "SEO & Marketing",
-      description: "Podstawowa optymalizacja SEO w standardzie - wysoka pozycja w Google"
+      description: "Basis-SEO-Optimierung im Standard - hohe Position bei Google"
     },
     {
       icon: Layout,
-      title: "CMS w standardzie",
-      description: "Łatwy w obsłudze panel do samodzielnej aktualizacji treści"
+      title: "CMS im Standard",
+      description: "Benutzerfreundliches Panel zur selbstständigen Aktualisierung von Inhalten"
     }
   ];
 
   const process = [
     {
       step: "01",
-      title: "Analiza potrzeb",
-      description: "Bezpłatna konsultacja - poznajemy Twoje oczekiwania i cele biznesowe"
+      title: "Bedarfsanalyse",
+      description: "Kostenlose Beratung - wir lernen Ihre Erwartungen und Geschäftsziele kennen"
     },
     {
       step: "02",
-      title: "Projekt graficzny",
-      description: "Tworzymy indywidualny design dopasowany do Twojej marki"
+      title: "Grafisches Design",
+      description: "Wir erstellen ein individuelles Design, angepasst an Ihre Marke"
     },
     {
       step: "03",
-      title: "Realizacja",
-      description: "Kodowanie strony z zachowaniem najwyższych standardów"
+      title: "Umsetzung",
+      description: "Codierung der Website unter Einhaltung höchster Standards"
     },
     {
       step: "04",
-      title: "Testy i uruchomienie",
-      description: "Sprawdzamy wszystko i publikujemy Twoją stronę w sieci"
+      title: "Tests und Launch",
+      description: "Wir überprüfen alles und veröffentlichen Ihre Website im Netz"
     }
   ];
 
@@ -229,36 +279,36 @@ const StronyInternetowe = () => {
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6">
         <div className="container mx-auto text-center max-w-5xl">
-          <Badge className="mb-4 text-lg px-4 py-2">Profesjonalne Strony Internetowe</Badge>
+          <Badge className="mb-4 text-lg px-4 py-2">Professionelle Websites</Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-fade-in">
-            Twoja Wizytówka w Sieci
+            Ihre Visitenkarte im Netz
           </h1>
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto animate-fade-in">
-            Tworzymy nowoczesne strony internetowe w wielu językach europejskich. 
-            Niemiecki, francuski, hiszpański, włoski, polski i inne - dopasowujemy się do Twoich potrzeb.
+            Wir erstellen moderne Websites in mehreren europäischen Sprachen. 
+            Deutsch, Französisch, Spanisch, Italienisch, Polnisch und andere - wir passen uns Ihren Bedürfnissen an.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Button size="xl" variant="hero" onClick={() => document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })} className="gap-2">
-              Generator wyceny <ArrowRight className="w-5 h-5" />
+              Preisrechner <ArrowRight className="w-5 h-5" />
             </Button>
             <Button size="xl" variant="outline-hero" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}>
-              Zobacz realizacje
+              Referenzen ansehen
             </Button>
           </div>
 
           <div className="flex flex-wrap gap-8 justify-center text-sm">
             <div className="flex items-center gap-2">
               <Languages className="w-5 h-5 text-primary" />
-              <span>Wielojęzyczność</span>
+              <span>Mehrsprachigkeit</span>
             </div>
             <div className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-primary" />
-              <span>Szybka realizacja</span>
+              <span>Schnelle Umsetzung</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-primary" />
-              <span>Indywidualny design</span>
+              <span>Individuelles Design</span>
             </div>
           </div>
         </div>
@@ -268,7 +318,7 @@ const StronyInternetowe = () => {
       <section className="py-20 px-6">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
-            Dlaczego My?
+            Warum wir?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
@@ -291,39 +341,32 @@ const StronyInternetowe = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 gradient-text">
-              Nasze Realizacje
+              Unsere Referenzen
             </h2>
             <p className="text-xl text-foreground/70">
-              Portfolio stron internetowych w różnych językach
+              Portfolio von Websites in verschiedenen Sprachen
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {examples.map((example, index) => (
-              <Card key={index} className="glass-card overflow-hidden group hover:scale-105 transition-all duration-300">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={example.image} 
-                    alt={example.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4 text-4xl">{example.flag}</div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <div>
-                      <Badge className="mb-2">{example.type}</Badge>
-                    </div>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg">{example.title}</CardTitle>
-                  <CardDescription className="flex items-center gap-2">
-                    <Languages className="w-4 h-4" />
-                    {example.language}
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {portfolioItems.map((item) => (
+            <PortfolioItem
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              type={item.type}
+              language={item.language}
+              flag={item.flag}
+              image={item.image}
+              technologies={item.technologies}
+              features={item.features}
+              liveUrl={item.liveUrl}
+              category={item.category}
+              screenshots={item.screenshots}
+            />
+          ))}
+        </div>
         </div>
       </section>
 
@@ -339,10 +382,10 @@ const StronyInternetowe = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 gradient-text">
-              Pakiety
+              Pakete
             </h2>
             <p className="text-xl text-foreground/70">
-              Wybierz pakiet i wypełnij formularz kontaktowy
+              Wählen Sie ein Paket und füllen Sie das Kontaktformular aus
             </p>
           </div>
 
@@ -354,7 +397,7 @@ const StronyInternetowe = () => {
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="gradient-primary px-4 py-1">Najpopularniejsze</Badge>
+                    <Badge className="gradient-primary px-4 py-1">Am beliebtesten</Badge>
                   </div>
                 )}
                 <CardHeader>
@@ -378,7 +421,7 @@ const StronyInternetowe = () => {
                     variant={plan.popular ? "hero" : "outline"}
                     onClick={() => handleOrderClick(plan.name, plan.price)}
                   >
-                    Wypełnij formularz
+                    Formular ausfüllen
                   </Button>
                 </CardContent>
               </Card>
@@ -386,35 +429,35 @@ const StronyInternetowe = () => {
           </div>
 
           <div className="mt-12 text-center glass-card rounded-xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Dodatkowe Opcje</h3>
+            <h3 className="text-2xl font-bold mb-4">Zusätzliche Optionen</h3>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <Languages className="w-5 h-5 text-primary" />
-                  Wersja wielojęzyczna
+                  Mehrsprachige Version
                 </h4>
-                <p className="text-foreground/70 text-sm">+30-50% do ceny bazowej (w zależności od liczby języków)</p>
+                <p className="text-foreground/70 text-sm">+30-50% zum Basispreis (abhängig von der Anzahl der Sprachen)</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
-                  Opieka posprzedażowa
+                  After-Sales-Betreuung
                 </h4>
-                <p className="text-foreground/70 text-sm">Od 100 CHF/miesiąc - aktualizacje, wsparcie techniczne</p>
+                <p className="text-foreground/70 text-sm">Ab 100 CHF/Monat - Updates, technischer Support</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <Zap className="w-5 h-5 text-primary" />
-                  Express delivery
+                  Express-Lieferung
                 </h4>
-                <p className="text-foreground/70 text-sm">+40% do ceny - realizacja w 2-4 dni robocze</p>
+                <p className="text-foreground/70 text-sm">+40% zum Preis - Realisierung in 2-4 Arbeitstagen</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <Globe className="w-5 h-5 text-primary" />
-                  Migracja starej strony
+                  Migration alter Website
                 </h4>
-                <p className="text-foreground/70 text-sm">Od 500 CHF - transfer treści z obecnej strony</p>
+                <p className="text-foreground/70 text-sm">Ab 500 CHF - Übertragung von Inhalten der aktuellen Website</p>
               </div>
             </div>
           </div>
@@ -425,7 +468,7 @@ const StronyInternetowe = () => {
       <section className="py-20 px-6 bg-gradient-to-b from-background to-background/50">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
-            Jak Pracujemy?
+            Wie arbeiten wir?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {process.map((item, index) => (
@@ -451,10 +494,10 @@ const StronyInternetowe = () => {
         <div className="container mx-auto">
           <div className="glass-card rounded-2xl p-12 text-center max-w-4xl mx-auto gradient-primary">
             <h2 className="text-4xl font-bold mb-4 text-white">
-              Gotowy na profesjonalną stronę?
+              Bereit für eine professionelle Website?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Skontaktuj się z nami i otrzymaj bezpłatną wycenę w 24h
+              Kontaktieren Sie uns und erhalten Sie ein kostenloses Angebot innerhalb von 24h
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button 
@@ -463,7 +506,7 @@ const StronyInternetowe = () => {
                 onClick={scrollToContact}
                 className="bg-white hover:bg-white/90 text-primary border-0"
               >
-                Wyślij zapytanie
+                Anfrage senden
               </Button>
               <a href="mailto:info@progressivegroup.ch">
                 <Button 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
 const Footer = () => {
@@ -13,33 +14,33 @@ const Footer = () => {
             </div>
             
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-              Kompleksowe rozwiązania IT dla Twojego biznesu - od automatyzacji procesów, 
-              przez profesjonalne prezentacje, po obsługę WordPress.
+              Umfassende IT-Lösungen für Ihr Unternehmen - von Prozessautomatisierung 
+              über professionelle Präsentationen bis hin zu WordPress-Betreuung.
             </p>
           </div>
           
           {/* Quick links */}
           <div>
-            <h4 className="font-bold text-foreground mb-6">Szybkie linki</h4>
+            <h4 className="font-bold text-foreground mb-6">Schnellzugriff</h4>
             <ul className="space-y-3">
               <li>
                 <a href="/o-nas" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  O nas
+                  Über uns
                 </a>
               </li>
               <li>
                 <a href="/korzysci-automatyzacji" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Korzyści Automatyzacji
+                  Vorteile der Automatisierung
                 </a>
               </li>
               <li>
                 <a href="/korzysci-prezentacji" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Korzyści Prezentacji
+                  Vorteile von Präsentationen
                 </a>
               </li>
               <li>
                 <a href="/korzysci-wordpress" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Korzyści WordPress
+                  Vorteile von WordPress
                 </a>
               </li>
               <li>
@@ -74,19 +75,19 @@ const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © {currentYear} Progressivegroup Sp. z o.o. Wszelkie prawa zastrzeżone.
+              © {currentYear} Progressivegroup Sp. z o.o. Alle Rechte vorbehalten.
             </div>
             
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors duration-300">
-                Polityka prywatności
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-300">
-                Regulamin
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-300">
+              <Link to="/datenschutz" className="hover:text-primary transition-colors duration-300">
+                Datenschutz
+              </Link>
+              <Link to="/agb" className="hover:text-primary transition-colors duration-300">
+                AGB
+              </Link>
+              <Link to="/cookies" className="hover:text-primary transition-colors duration-300">
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
