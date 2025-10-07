@@ -14,18 +14,18 @@ const WordPressCare = () => {
   const benefits = [
     {
       icon: Clock,
-      title: "Regularne Aktualizacje",
-      description: "Systematyczne aktualizacje WordPress, wtyczek i motywów",
+      title: "Regelmäßige Updates",
+      description: "Systematische Updates von WordPress, Plugins und Themes",
     },
     {
       icon: Shield,
-      title: "Bezpieczne Kopie Zapasowe",
-      description: "Regularne backupy Twojej strony przechowywane bezpiecznie",
+      title: "Sichere Backups",
+      description: "Regelmäßige Backups Ihrer Website, sicher gespeichert",
     },
     {
       icon: Headphones,
-      title: "Wsparcie Techniczne",
-      description: "Pomoc w rozwiązywaniu problemów i wprowadzaniu zmian",
+      title: "Technischer Support",
+      description: "Hilfe bei der Problemlösung und Durchführung von Änderungen",
     },
   ];
 
@@ -33,162 +33,162 @@ const WordPressCare = () => {
     {
       name: "BASIC CARE",
       price: "CHF 215",
-      ideal: "Małych stron wizytówkowych i blogów, które nie wymagają częstych zmian",
+      ideal: "Kleine Visitenkarten-Websites und Blogs, die keine häufigen Änderungen erfordern",
       features: [
-        "Miesięczne aktualizacje WordPress, wtyczek i motywów",
-        "Cotygodniowe kopie zapasowe",
-        "Przechowywanie kopii zapasowych przez 30 dni (bezpieczna chmura)",
-        "Test funkcjonalności strony po każdej aktualizacji",
-        "Monitoring dostępności strony (alert email przy awarii)",
-        "Miesięczny raport z wykonanych działań",
-        "15 minut drobnych zmian treści miesięcznie (teksty, zdjęcia)",
-        "Wsparcie przez email (odpowiedź w ciągu 48h roboczych)",
+        "Monatliche Updates von WordPress, Plugins und Themes",
+        "Wöchentliche Backups",
+        "Backup-Speicherung für 30 Tage (sichere Cloud)",
+        "Funktionalitätstest der Website nach jedem Update",
+        "Website-Verfügbarkeitsüberwachung (E-Mail-Alarm bei Ausfall)",
+        "Monatlicher Bericht über durchgeführte Maßnahmen",
+        "15 Minuten kleinere Inhaltsänderungen pro Monat (Texte, Bilder)",
+        "E-Mail-Support (Antwort innerhalb von 48 Arbeitsstunden)",
       ],
       notIncluded: [
-        "Zmian layoutu i designu",
-        "Optymalizacji wydajności",
-        "Wsparcia w weekendy",
+        "Layout- und Designänderungen",
+        "Leistungsoptimierung",
+        "Wochenend-Support",
       ],
     },
     {
       name: "PROFESSIONAL",
       price: "CHF 430",
-      ideal: "Rozwijających się firm i małych sklepów internetowych",
+      ideal: "Wachsende Unternehmen und kleine Online-Shops",
       popular: true,
       features: [
-        "Wszystko z Pakietu Basic Care",
-        "Aktualizacje co 2 tygodnie (WordPress, wtyczki, motywy)",
-        "Codzienne automatyczne kopie zapasowe",
-        "Przechowywanie kopii zapasowych przez 60 dni",
-        "Zaawansowany skan bezpieczeństwa strony",
-        "Miesięczna optymalizacja bazy danych",
-        "Czyszczenie cache'u i optymalizacja pamięci",
-        "Monitoring błędów 404 i ich naprawa",
-        "1 godzina pracy nad stroną miesięcznie",
-        "Priorytetowe wsparcie przez email (odpowiedź w ciągu 24h)",
-        "Pomoc przy rozwiązywaniu problemów technicznych",
-        "Podstawowe doradztwo w zakresie zabezpieczeń",
+        "Alles aus dem Basic Care Paket",
+        "Updates alle 2 Wochen (WordPress, Plugins, Themes)",
+        "Tägliche automatische Backups",
+        "Backup-Speicherung für 60 Tage",
+        "Erweiterter Sicherheitsscan der Website",
+        "Monatliche Datenbankoptimierung",
+        "Cache-Bereinigung und Speicheroptimierung",
+        "Überwachung von 404-Fehlern und deren Behebung",
+        "1 Stunde Arbeit an der Website pro Monat",
+        "Priorisierter E-Mail-Support (Antwort innerhalb von 24h)",
+        "Hilfe bei der Lösung technischer Probleme",
+        "Grundlegende Sicherheitsberatung",
       ],
     },
     {
       name: "BUSINESS",
       price: "CHF 755",
-      ideal: "Firm wymagających regularnych aktualizacji treści i stałej opieki technicznej",
+      ideal: "Unternehmen, die regelmäßige Inhaltsaktualisierungen und ständige technische Betreuung benötigen",
       features: [
-        "Wszystko z Pakietu Professional",
-        "Aktualizacje cotygodniowe (WordPress, wtyczki, motywy)",
-        "Codzienne kopie zapasowe z testowym przywracaniem (raz w miesiącu)",
-        "Przechowywanie kopii zapasowych przez 90 dni",
-        "Pełny audyt bezpieczeństwa z raportem",
-        "3 godziny pracy nad stroną miesięcznie",
-        "Cotygodniowa optymalizacja wydajności",
-        "Monitoring i automatyczna naprawa zepsutych linków",
-        "Miesięczny backup offline (dodatkowa kopia)",
-        "Podstawowe doradztwo SEO",
-        "Priorytetowe wsparcie przez email i chat (odpowiedź w ciągu 12h)",
-        "Szczegółowy raport miesięczny z analizą i rekomendacjami rozwoju",
+        "Alles aus dem Professional Paket",
+        "Wöchentliche Updates (WordPress, Plugins, Themes)",
+        "Tägliche Backups mit Test-Wiederherstellung (einmal im Monat)",
+        "Backup-Speicherung für 90 Tage",
+        "Vollständiges Sicherheitsaudit mit Bericht",
+        "3 Stunden Arbeit an der Website pro Monat",
+        "Wöchentliche Leistungsoptimierung",
+        "Überwachung und automatische Reparatur defekter Links",
+        "Monatliches Offline-Backup (zusätzliche Kopie)",
+        "Grundlegende SEO-Beratung",
+        "Priorisierter E-Mail- und Chat-Support (Antwort innerhalb von 12h)",
+        "Detaillierter monatlicher Bericht mit Analyse und Entwicklungsempfehlungen",
       ],
     },
   ];
 
   const additionalServices = [
-    { name: "Dodatkowa godzina pracy", price: "CHF 85/h" },
-    { name: "Naprawa zhakowanej strony", price: "od CHF 350" },
-    { name: "Przywrócenie strony z kopii zapasowej", price: "CHF 85" },
-    { name: "Migracja strony na nowy hosting", price: "od CHF 200" },
-    { name: "Jednorazowa kompleksowa optymalizacja szybkości", price: "od CHF 350" },
-    { name: "Instalacja i konfiguracja certyfikatu SSL", price: "CHF 120" },
-    { name: "Aktualizacja motywu z zachowaniem customizacji", price: "od CHF 250" },
-    { name: "Konfiguracja CDN (Cloudflare, AWS)", price: "od CHF 200" },
-    { name: "Integracja z systemem CRM", price: "od CHF 400" },
-    { name: "Setup email marketingu (Mailchimp, etc.)", price: "od CHF 300" },
-    { name: "Audyt bezpieczeństwa (jednorazowy)", price: "CHF 500" },
-    { name: "Audyt SEO (jednorazowy)", price: "CHF 600" },
-    { name: "Pomoc w weekendy (poza pakietem Business)", price: "+50% do stawki" },
-    { name: "Wsparcie w trybie pilnym (natychmiastowe)", price: "+100% do stawki" },
+    { name: "Zusätzliche Arbeitsstunde", price: "CHF 85/h" },
+    { name: "Reparatur einer gehackten Website", price: "ab CHF 350" },
+    { name: "Website-Wiederherstellung aus Backup", price: "CHF 85" },
+    { name: "Website-Migration auf neues Hosting", price: "ab CHF 200" },
+    { name: "Einmalige umfassende Geschwindigkeitsoptimierung", price: "ab CHF 350" },
+    { name: "Installation und Konfiguration eines SSL-Zertifikats", price: "CHF 120" },
+    { name: "Theme-Update mit Beibehaltung der Anpassungen", price: "ab CHF 250" },
+    { name: "CDN-Konfiguration (Cloudflare, AWS)", price: "ab CHF 200" },
+    { name: "Integration mit CRM-System", price: "ab CHF 400" },
+    { name: "E-Mail-Marketing-Setup (Mailchimp, etc.)", price: "ab CHF 300" },
+    { name: "Sicherheitsaudit (einmalig)", price: "CHF 500" },
+    { name: "SEO-Audit (einmalig)", price: "CHF 600" },
+    { name: "Wochenend-Support (außerhalb Business-Paket)", price: "+50% zum Tarif" },
+    { name: "Dringender Support (sofortig)", price: "+100% zum Tarif" },
   ];
 
   const testimonials = [
     {
       name: "Thomas M.",
       role: "CEO, Zürich",
-      text: "Od czasu powierzenia opieki nad naszą stroną zespołowi ProgressiveGroup, możemy spać spokojnie. Wszystko działa jak w zegarku, a my skupiamy się na rozwoju biznesu.",
+      text: "Seit wir die Betreuung unserer Website dem ProgressiveGroup-Team anvertraut haben, können wir ruhig schlafen. Alles läuft wie am Schnürchen, und wir konzentrieren uns auf die Geschäftsentwicklung.",
       rating: 5,
     },
     {
       name: "Sarah K.",
-      role: "Właścicielka sklepu online, Genève",
-      text: "Profesjonalne podejście i szybka reakcja na każdy problem. Szczególnie cenię sobie miesięczne raporty - wiem dokładnie co się dzieje z moją stroną.",
+      role: "Online-Shop-Inhaberin, Genf",
+      text: "Professionelle Herangehensweise und schnelle Reaktion auf jedes Problem. Besonders schätze ich die monatlichen Berichte - ich weiß genau, was mit meiner Website passiert.",
       rating: 5,
     },
     {
       name: "Michael R.",
       role: "Marketing Director, Basel",
-      text: "Pakiet Business to najlepsza inwestycja. Cotygodniowa optymalizacja sprawia, że strona działa szybciej niż kiedykolwiek.",
+      text: "Das Business-Paket ist die beste Investition. Die wöchentliche Optimierung sorgt dafür, dass die Website schneller läuft als je zuvor.",
       rating: 5,
     },
   ];
 
   const faqs = [
     {
-      question: "Czy mogę zmienić pakiet w trakcie trwania usługi?",
-      answer: "Tak, możesz w każdej chwili przejść na wyższy lub niższy pakiet. Rozliczymy różnicę proporcjonalnie do pozostałych dni w miesiącu.",
+      question: "Kann ich das Paket während der Laufzeit wechseln?",
+      answer: "Ja, Sie können jederzeit auf ein höheres oder niedrigeres Paket wechseln. Wir rechnen die Differenz anteilig zu den verbleibenden Tagen im Monat ab.",
     },
     {
-      question: "Co się stanie, jeśli wykorzystam wszystkie godziny w danym miesiącu?",
-      answer: "Możesz dokupić dodatkowe godziny w stawce CHF 85/h lub przejść na wyższy pakiet w następnym miesiącu. Niewykorzystane godziny można przenieść na kolejny miesiąc (maksymalnie jeden miesiąc w przód).",
+      question: "Was passiert, wenn ich alle Stunden in einem Monat aufgebraucht habe?",
+      answer: "Sie können zusätzliche Stunden zum Preis von CHF 85/h nachkaufen oder im nächsten Monat auf ein höheres Paket wechseln. Nicht genutzte Stunden können auf den nächsten Monat übertragen werden (maximal einen Monat voraus).",
     },
     {
-      question: "Jak szybko reagujecie na awarie strony?",
-      answer: "W zależności od pakietu: Basic Care: 48h (dni robocze), Professional: 24h, Business: 12h. W przypadku krytycznej awarii (strona całkowicie niedostępna) reagujemy natychmiast niezależnie od pakietu.",
+      question: "Wie schnell reagieren Sie auf Website-Ausfälle?",
+      answer: "Je nach Paket: Basic Care: 48h (Arbeitstage), Professional: 24h, Business: 12h. Bei kritischen Ausfällen (Website komplett nicht erreichbar) reagieren wir sofort, unabhängig vom Paket.",
     },
     {
-      question: "Gdzie są przechowywane kopie zapasowe?",
-      answer: "Wszystkie backupy są szyfrowane i przechowywane w bezpiecznej chmurze (Google Drive lub Dropbox Business).",
+      question: "Wo werden die Backups gespeichert?",
+      answer: "Alle Backups werden verschlüsselt und sicher in der Cloud gespeichert (Google Drive oder Dropbox Business).",
     },
     {
-      question: "Czy kopie zapasowe zawierają całą stronę?",
-      answer: "Tak, każda kopia zapasowa zawiera: pełną bazę danych WordPress, wszystkie pliki WordPress (motywy, wtyczki, multimedia) oraz konfigurację serwera (jeśli mamy dostęp).",
+      question: "Enthalten die Backups die gesamte Website?",
+      answer: "Ja, jedes Backup enthält: vollständige WordPress-Datenbank, alle WordPress-Dateien (Themes, Plugins, Medien) sowie Server-Konfiguration (falls wir Zugriff haben).",
     },
     {
-      question: "Co w przypadku awarii mojej strony?",
-      answer: "Otrzymasz natychmiastowy alert z naszego systemu monitoringu. Zareagujemy zgodnie z czasem reakcji Twojego pakietu. W najgorszym przypadku przywrócimy stronę z ostatniej kopii zapasowej (maksymalna utrata danych: 24h w pakietach z codziennymi backupami).",
+      question: "Was passiert im Falle eines Ausfalls meiner Website?",
+      answer: "Sie erhalten sofort eine Warnung von unserem Überwachungssystem. Wir reagieren gemäß der Reaktionszeit Ihres Pakets. Im schlimmsten Fall stellen wir die Website aus dem letzten Backup wieder her (maximaler Datenverlust: 24h bei Paketen mit täglichen Backups).",
     },
     {
-      question: "Czy mogę anulować usługę w każdej chwili?",
-      answer: "Tak, nie ma okresu wypowiedzenia. Możesz zrezygnować na koniec każdego miesiąca rozliczeniowego. Poinformuj nas o tym co najmniej 7 dni przed końcem okresu.",
+      question: "Kann ich den Service jederzeit kündigen?",
+      answer: "Ja, es gibt keine Kündigungsfrist. Sie können am Ende jedes Abrechnungsmonats kündigen. Informieren Sie uns mindestens 7 Tage vor Ende des Zeitraums.",
     },
     {
-      question: "Jak wygląda proces rozpoczęcia współpracy?",
-      answer: "Po wybraniu pakietu: 1) Wypełniasz formularz z danymi dostępowymi (bezpieczny formularz), 2) Przeprowadzamy wstępny audyt Twojej strony (bezpłatnie), 3) Konfigurujemy wszystkie narzędzia do monitoringu i backupu, 4) Otrzymujesz raport startowy ze stanem strony, 5) Rozpoczynamy regularne działania zgodnie z pakietem. Cały proces trwa 2-3 dni robocze.",
+      question: "Wie läuft der Prozess des Starts der Zusammenarbeit ab?",
+      answer: "Nach Auswahl des Pakets: 1) Sie füllen ein Formular mit Zugangsdaten aus (sicheres Formular), 2) Wir führen ein erstes Audit Ihrer Website durch (kostenlos), 3) Wir konfigurieren alle Monitoring- und Backup-Tools, 4) Sie erhalten einen Startbericht über den Zustand der Website, 5) Wir beginnen mit den regelmäßigen Maßnahmen gemäß Paket. Der gesamte Prozess dauert 2-3 Arbeitstage.",
     },
     {
-      question: "Czy mogę przenieść niewykorzystane godziny na kolejny miesiąc?",
-      answer: "Tak, niewykorzystane godziny można przenieść na następny miesiąc (maksymalnie jeden miesiąc w przód). Na przykład, jeśli w pakiecie Professional nie wykorzystasz 1 godziny w styczniu, w lutym będziesz miał 2 godziny do wykorzystania.",
+      question: "Kann ich nicht genutzte Stunden auf den nächsten Monat übertragen?",
+      answer: "Ja, nicht genutzte Stunden können auf den nächsten Monat übertragen werden (maximal einen Monat voraus). Zum Beispiel, wenn Sie im Professional-Paket im Januar 1 Stunde nicht nutzen, haben Sie im Februar 2 Stunden zur Verfügung.",
     },
     {
-      question: "Jakie dane dostępowe od mnie potrzebujecie?",
-      answer: "Do standardowej opieki potrzebujemy: Login i hasło do panelu WordPress (poziom Administrator), Dostęp FTP lub File Manager w panelu hostingu, Dostęp do phpMyAdmin lub możliwość eksportu/importu bazy danych. Wszystkie dane są przechowywane w zaszyfrowanym menedżerze haseł.",
+      question: "Welche Zugangsdaten benötigen Sie von mir?",
+      answer: "Für die Standardbetreuung benötigen wir: Login und Passwort für das WordPress-Panel (Administrator-Level), FTP-Zugang oder File Manager im Hosting-Panel, Zugang zu phpMyAdmin oder Möglichkeit zum Export/Import der Datenbank. Alle Daten werden in einem verschlüsselten Passwort-Manager gespeichert.",
     },
     {
-      question: "Co jeśli moja strona zostanie zhakowana?",
-      answer: "W pakiecie Basic: Pomożemy w przywróceniu z kopii zapasowej + podstawowe czyszczenie (dodatkowa usługa: od CHF 350). W pakiecie Business: Pełna pomoc w usunięciu malware i zabezpieczeniu (priorytetowe traktowanie).",
+      question: "Was ist, wenn meine Website gehackt wird?",
+      answer: "Im Basic-Paket: Wir helfen bei der Wiederherstellung aus dem Backup + grundlegende Bereinigung (zusätzlicher Service: ab CHF 350). Im Business-Paket: Vollständige Hilfe bei der Malware-Entfernung und Absicherung (prioritäre Behandlung).",
     },
     {
-      question: "Czy obsługujecie również sklepy WooCommerce?",
-      answer: "Tak, wszystkie pakiety obsługują sklepy WooCommerce. Ze względu na większą złożoność sklepów, zalecamy minimum pakiet Business dla pełnej opieki nad sklepem.",
+      question: "Betreuen Sie auch WooCommerce-Shops?",
+      answer: "Ja, alle Pakete unterstützen WooCommerce-Shops. Aufgrund der höheren Komplexität von Shops empfehlen wir mindestens das Business-Paket für eine vollständige Shop-Betreuung.",
     },
     {
-      question: "Czy prowadzicie dokumentację wykonanych prac?",
-      answer: "Tak, w każdym pakiecie otrzymujesz: Miesięczny raport z wykonanych działań, Historia kopii zapasowych, Raporty z audytów bezpieczeństwa (w wyższych pakietach).",
+      question: "Führen Sie eine Dokumentation der durchgeführten Arbeiten?",
+      answer: "Ja, in jedem Paket erhalten Sie: Monatlicher Bericht über durchgeführte Maßnahmen, Historie der Backups, Berichte über Sicherheitsaudits (in höheren Paketen).",
     },
     {
-      question: "W jakich językach oferujecie wsparcie?",
-      answer: "Oferujemy wsparcie w językach: Polski, Angielski, Niemiecki (podstawowy).",
+      question: "In welchen Sprachen bieten Sie Support an?",
+      answer: "Wir bieten Support in den Sprachen: Polnisch, Englisch, Deutsch (grundlegend).",
     },
     {
-      question: "Czy mogę kupić tylko jednorazową usługę bez abonamentu?",
-      answer: "Tak, oferujemy wszystkie usługi z sekcji 'Dodatkowe usługi' jako jednorazowe zlecenia. Jednak regularna opieka w formie abonamentu zapewnia najlepszą ochronę i wydajność Twojej strony.",
+      question: "Kann ich nur einen einmaligen Service ohne Abonnement kaufen?",
+      answer: "Ja, wir bieten alle Services aus dem Bereich 'Zusätzliche Services' als einmalige Aufträge an. Allerdings gewährleistet die regelmäßige Betreuung in Form eines Abonnements den besten Schutz und die beste Leistung Ihrer Website.",
     },
   ];
 
@@ -203,18 +203,18 @@ const WordPressCare = () => {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Profesjonalna Opieka i Aktualizacje WordPress
+            Professionelle WordPress-Betreuung und Updates
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Zadbaj o bezpieczeństwo, szybkość i aktualność swojej strony dzięki naszym kompleksowym pakietom opieki
+            Sorgen Sie für Sicherheit, Geschwindigkeit und Aktualität Ihrer Website dank unserer umfassenden Betreuungspakete
           </p>
         </div>
 
         {/* Introduction */}
         <div className="glass-card p-8 rounded-2xl mb-16">
           <p className="text-foreground/90 leading-relaxed">
-            Twoja strona WordPress wymaga regularnej opieki, aby pozostać bezpieczna, działać optymalnie i zapewniać najlepsze doświadczenia odwiedzającym. 
-            Nasze pakiety opieki gwarantują, że Twoja witryna jest zawsze chroniona, zaktualizowana i działa bez zarzutu - abyś mógł skupić się na rozwoju swojego biznesu.
+            Ihre WordPress-Website benötigt regelmäßige Pflege, um sicher zu bleiben, optimal zu funktionieren und den Besuchern die beste Erfahrung zu bieten. 
+            Unsere Betreuungspakete garantieren, dass Ihre Website immer geschützt, aktualisiert und einwandfrei funktioniert - damit Sie sich auf die Entwicklung Ihres Geschäfts konzentrieren können.
           </p>
         </div>
 
@@ -237,7 +237,7 @@ const WordPressCare = () => {
 
         {/* Pricing Packages */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12">Pakiety Cenowe</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">Preispakete</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
               <Card 
@@ -249,7 +249,7 @@ const WordPressCare = () => {
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                     <Star className="w-4 h-4" />
-                    Najpopularniejszy
+                    Am beliebtesten
                   </div>
                 )}
                 <CardHeader>
@@ -260,15 +260,15 @@ const WordPressCare = () => {
                     <span className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                       {pkg.price}
                     </span>
-                    <span className="text-muted-foreground">/miesiąc</span>
+                    <span className="text-muted-foreground">/Monat</span>
                   </div>
                   <CardDescription className="mt-2 text-sm">
-                    Idealny dla: {pkg.ideal}
+                    Ideal für: {pkg.ideal}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="mb-4">
-                    <h4 className="font-semibold text-sm mb-3">Co zawiera:</h4>
+                    <h4 className="font-semibold text-sm mb-3">Was enthalten ist:</h4>
                     <ul className="space-y-2">
                       {pkg.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-start gap-2 text-sm">
@@ -280,7 +280,7 @@ const WordPressCare = () => {
                   </div>
                   {pkg.notIncluded && (
                     <div className="mt-4 pt-4 border-t border-primary/10">
-                      <h4 className="font-semibold text-sm mb-2 text-muted-foreground">Nie obejmuje:</h4>
+                      <h4 className="font-semibold text-sm mb-2 text-muted-foreground">Nicht enthalten:</h4>
                       <ul className="space-y-1">
                         {pkg.notIncluded.map((item, idx) => (
                           <li key={idx} className="text-xs text-muted-foreground">• {item}</li>
@@ -296,7 +296,7 @@ const WordPressCare = () => {
                     onClick={() => setAuditDialogOpen(true)}
                   >
                     <FileCheck className="w-4 h-4 mr-2" />
-                    Bezpłatny audyt
+                    Kostenloses Audit
                   </Button>
                   <Button 
                     className="w-full" 
@@ -306,7 +306,7 @@ const WordPressCare = () => {
                       setOrderDialogOpen(true);
                     }}
                   >
-                    Zamów teraz - start w 48h
+                    Jetzt bestellen - Start in 48h
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </CardFooter>
@@ -317,12 +317,12 @@ const WordPressCare = () => {
 
         {/* Comparison Table */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-8">Porównanie Pakietów</h3>
+          <h3 className="text-3xl font-bold text-center mb-8">Paketvergleich</h3>
           <div className="glass-card p-8 rounded-2xl overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow className="border-b-2 border-primary/20">
-                  <TableHead className="w-[220px] text-base font-bold text-foreground pb-4">Funkcja</TableHead>
+                  <TableHead className="w-[220px] text-base font-bold text-foreground pb-4">Funktion</TableHead>
                   <TableHead className="text-center text-base font-bold pb-4">
                     <div className="flex flex-col items-center gap-2">
                       <span className="text-primary">Basic Care</span>
@@ -348,37 +348,37 @@ const WordPressCare = () => {
               </TableHeader>
               <TableBody>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Częstotliwość aktualizacji</TableCell>
-                  <TableCell className="text-center py-4">Co miesiąc</TableCell>
-                  <TableCell className="text-center py-4 bg-primary/5">Co 2 tyg.</TableCell>
-                  <TableCell className="text-center py-4">Co tydzień</TableCell>
+                  <TableCell className="font-semibold py-4">Update-Häufigkeit</TableCell>
+                  <TableCell className="text-center py-4">Monatlich</TableCell>
+                  <TableCell className="text-center py-4 bg-primary/5">Alle 2 Wochen</TableCell>
+                  <TableCell className="text-center py-4">Wöchentlich</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Kopie zapasowe</TableCell>
-                  <TableCell className="text-center py-4">Co tydzień</TableCell>
-                  <TableCell className="text-center py-4 bg-primary/5">Codziennie</TableCell>
-                  <TableCell className="text-center py-4">Codziennie + test</TableCell>
+                  <TableCell className="font-semibold py-4">Backups</TableCell>
+                  <TableCell className="text-center py-4">Wöchentlich</TableCell>
+                  <TableCell className="text-center py-4 bg-primary/5">Täglich</TableCell>
+                  <TableCell className="text-center py-4">Täglich + Test</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Przechowywanie backupów</TableCell>
-                  <TableCell className="text-center py-4">30 dni</TableCell>
-                  <TableCell className="text-center py-4 bg-primary/5">60 dni</TableCell>
-                  <TableCell className="text-center py-4">90 dni</TableCell>
+                  <TableCell className="font-semibold py-4">Backup-Speicherung</TableCell>
+                  <TableCell className="text-center py-4">30 Tage</TableCell>
+                  <TableCell className="text-center py-4 bg-primary/5">60 Tage</TableCell>
+                  <TableCell className="text-center py-4">90 Tage</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Godziny pracy/miesiąc</TableCell>
+                  <TableCell className="font-semibold py-4">Arbeitsstunden/Monat</TableCell>
                   <TableCell className="text-center py-4">0.25h</TableCell>
                   <TableCell className="text-center py-4 bg-primary/5">1h</TableCell>
                   <TableCell className="text-center py-4">3h</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Czas reakcji wsparcia</TableCell>
+                  <TableCell className="font-semibold py-4">Support-Reaktionszeit</TableCell>
                   <TableCell className="text-center py-4">48h</TableCell>
                   <TableCell className="text-center py-4 bg-primary/5">24h</TableCell>
                   <TableCell className="text-center py-4">12h</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Optymalizacja wydajności</TableCell>
+                  <TableCell className="font-semibold py-4">Leistungsoptimierung</TableCell>
                   <TableCell className="text-center py-4">
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted">
                       <span className="text-xs text-muted-foreground">—</span>
@@ -387,24 +387,24 @@ const WordPressCare = () => {
                   <TableCell className="text-center py-4 bg-primary/5">
                     <div className="flex items-center justify-center gap-2">
                       <Check className="w-5 h-5 text-primary" />
-                      <span>Miesięczna</span>
+                      <span>Monatlich</span>
                     </div>
                   </TableCell>
                   <TableCell className="text-center py-4">
                     <div className="flex items-center justify-center gap-2">
                       <Check className="w-5 h-5 text-primary" />
-                      <span>Cotygodniowa</span>
+                      <span>Wöchentlich</span>
                     </div>
                   </TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors">
-                  <TableCell className="font-semibold py-4">Monitoring bezpieczeństwa</TableCell>
-                  <TableCell className="text-center py-4">Podstawowy</TableCell>
-                  <TableCell className="text-center py-4 bg-primary/5">Zaawansowany</TableCell>
-                  <TableCell className="text-center py-4">Pełny audyt</TableCell>
+                  <TableCell className="font-semibold py-4">Sicherheitsüberwachung</TableCell>
+                  <TableCell className="text-center py-4">Grundlegend</TableCell>
+                  <TableCell className="text-center py-4 bg-primary/5">Erweitert</TableCell>
+                  <TableCell className="text-center py-4">Vollständiges Audit</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-background/50 transition-colors border-b-2 border-primary/10">
-                  <TableCell className="font-semibold py-4">Doradztwo SEO</TableCell>
+                  <TableCell className="font-semibold py-4">SEO-Beratung</TableCell>
                   <TableCell className="text-center py-4">
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted">
                       <span className="text-xs text-muted-foreground">—</span>
@@ -413,13 +413,13 @@ const WordPressCare = () => {
                   <TableCell className="text-center py-4 bg-primary/5">
                     <div className="flex items-center justify-center gap-2">
                       <Check className="w-5 h-5 text-primary" />
-                      <span>Podstawowe</span>
+                      <span>Grundlegend</span>
                     </div>
                   </TableCell>
                   <TableCell className="text-center py-4">
                     <div className="flex items-center justify-center gap-2">
                       <Check className="w-5 h-5 text-primary" />
-                      <span>Zaawansowane</span>
+                      <span>Erweitert</span>
                     </div>
                   </TableCell>
                 </TableRow>
@@ -432,9 +432,9 @@ const WordPressCare = () => {
         <div className="glass-card p-8 rounded-2xl mb-20">
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
             <Plus className="w-6 h-6 text-primary" />
-            Dodatkowe Usługi
+            Zusätzliche Services
           </h3>
-          <p className="text-muted-foreground mb-6">Dostępne do wszystkich pakietów</p>
+          <p className="text-muted-foreground mb-6">Verfügbar für alle Pakete</p>
           <div className="grid md:grid-cols-2 gap-3">
             {additionalServices.map((service, index) => (
               <div key={index} className="flex justify-between items-center p-3 rounded-lg bg-background/50 border border-primary/10 text-sm">
@@ -447,7 +447,7 @@ const WordPressCare = () => {
 
         {/* Testimonials */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12">Co Mówią Nasi Klienci</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">Was unsere Kunden sagen</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="glass-card border-primary/20">
@@ -492,15 +492,15 @@ const WordPressCare = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-primary" />
-                Czego nie obejmuje opieka
+                Nicht im Service enthalten
               </CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Dostęp do konfiguracji serwera</li>
-                <li>• Zaawansowane modyfikacje wymagające SSH</li>
-                <li>• Tworzenie kompletnie nowych funkcjonalności</li>
-                <li>• Przepisywanie całej strony od podstaw</li>
+                <li>• Zugriff auf Server-Konfiguration</li>
+                <li>• Erweiterte Modifikationen mit SSH-Zugriff</li>
+                <li>• Entwicklung komplett neuer Funktionalitäten</li>
+                <li>• Komplette Website-Neuentwicklung</li>
               </ul>
             </CardContent>
           </Card>
@@ -508,7 +508,7 @@ const WordPressCare = () => {
 
         {/* FAQ */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12">Najczęściej Zadawane Pytania</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">Häufig gestellte Fragen</h3>
           <Accordion type="single" collapsible className="glass-card p-6 rounded-2xl">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
@@ -527,28 +527,28 @@ const WordPressCare = () => {
         <div className="glass-card p-8 rounded-2xl mb-20">
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
             <Award className="w-6 h-6 text-primary" />
-            Gwarancje
+            Garantien
           </h3>
           <div className="space-y-4">
             <div className="flex items-start gap-3">
               <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold">Gwarancja satysfakcji</p>
-                <p className="text-sm text-muted-foreground">Jeśli w pierwszym miesiącu nie będziesz zadowolony z naszych usług, zwrócimy 100% opłaty.</p>
+                <p className="font-semibold">Zufriedenheitsgarantie</p>
+                <p className="text-sm text-muted-foreground">Wenn Sie im ersten Monat nicht zufrieden sind, erstatten wir 100% der Gebühr.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold">Gwarancja bezpieczeństwa</p>
-                <p className="text-sm text-muted-foreground">W przypadku awarii wynikającej z naszych działań, naprawimy wszystko bezpłatnie i zrekompensujemy straty.</p>
+                <p className="font-semibold">Sicherheitsgarantie</p>
+                <p className="text-sm text-muted-foreground">Bei Ausfällen durch unsere Maßnahmen reparieren wir alles kostenlos und kompensieren Verluste.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold">Gwarancja dostępności</p>
-                <p className="text-sm text-muted-foreground">W pakiecie Business gwarantujemy 99.5% uptime strony (monitorowane przez nas).</p>
+                <p className="font-semibold">Verfügbarkeitsgarantie</p>
+                <p className="text-sm text-muted-foreground">Im Business-Paket garantieren wir 99,5% Uptime der Website (von uns überwacht).</p>
               </div>
             </div>
           </div>
