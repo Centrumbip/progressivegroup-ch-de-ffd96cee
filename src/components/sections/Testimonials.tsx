@@ -4,31 +4,31 @@ import { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    name: "Anna Kowalska",
-    position: "Dyrektor ds. Operacyjnych",
-    company: "TechEdu Sp. z o.o.",
-    content: "Dzięki Progressivegroup wreszcie przestaliśmy tracić czas na ręczne działania. Nasze procesy działają szybciej i sprawniej.",
+    name: "Anna Schmidt",
+    position: "Betriebsleiterin",
+    company: "TechEdu GmbH",
+    content: "Dank ProgressiveGroup verschwenden wir endlich keine Zeit mehr mit manuellen Tätigkeiten. Unsere Prozesse laufen schneller und reibungsloser ab.",
     rating: 5
   },
   {
-    name: "Marek Nowak", 
+    name: "Markus Weber", 
     position: "CEO",
     company: "InnovateLab",
-    content: "Świetna współpraca i konkretne efekty – automatyzacje pozwoliły nam obniżyć koszty licencji innych narzędzi o 60%.",
+    content: "Hervorragende Zusammenarbeit und konkrete Ergebnisse – die Automatisierungen ermöglichten es uns, die Kosten für andere Tool-Lizenzen um 60% zu senken.",
     rating: 5
   },
   {
-    name: "Katarzyna Zielińska",
-    position: "Kierownik HR", 
+    name: "Katharina Müller",
+    position: "HR-Leiterin", 
     company: "FlexWork Solutions",
-    content: "Automatyzacja obiegu dokumentów HR sprawiła, że proces urlopowy trwa teraz 2 dni zamiast 2 tygodni. Fantastyczne rozwiązanie!",
+    content: "Die Automatisierung des HR-Dokumentenworkflows hat dazu geführt, dass der Urlaubsprozess jetzt 2 Tage statt 2 Wochen dauert. Fantastische Lösung!",
     rating: 5
   },
   {
-    name: "Tomasz Wiśniewski",
-    position: "Dyrektor Sprzedaży",
+    name: "Thomas Schneider",
+    position: "Vertriebsleiter",
     company: "SalesBoost",
-    content: "Integracja Gmail z naszym CRM automatycznie tworzy leady. Nie gubimy już żadnego potencjalnego klienta.",
+    content: "Die Integration von Gmail mit unserem CRM erstellt automatisch Leads. Wir verlieren keinen potenziellen Kunden mehr.",
     rating: 5
   }
 ];
@@ -54,10 +54,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-            Opinie klientów
+            Kundenmeinungen
           </h2>
           <p className="text-xl text-muted-foreground animate-fade-in animate-delay-200">
-            Zobacz co mówią o nas nasi zadowoleni klienci
+            Sehen Sie, was unsere zufriedenen Kunden über uns sagen
           </p>
         </div>
         

@@ -23,19 +23,19 @@ const Automatyzacje = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Link to="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
-            <span>Powrót do strony głównej</span>
+            <span>Zurück zur Startseite</span>
           </Link>
           
           <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-fade-in">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Automatyzacje
+              Automatisierung
             </span>
             <br />
             <span className="text-foreground/90">Google Workspace</span>
           </h1>
           <p className="text-xl text-foreground/60 max-w-3xl mb-8 animate-fade-in animate-delay-100">
-            Eliminujemy powtarzalne zadania i usprawniamy codzienną pracę Twojej firmy
-            dzięki inteligentnym automatyzacjom.
+            Wir eliminieren wiederkehrende Aufgaben und optimieren die tägliche Arbeit Ihres Unternehmens
+            durch intelligente Automatisierung.
           </p>
         </div>
       </section>

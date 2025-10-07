@@ -2,26 +2,26 @@ import { Clock, DollarSign, TrendingUp, Puzzle } from "lucide-react";
 
 const benefits = [
   {
-    title: "Oszczędność czasu",
-    description: "Eliminujemy powtarzalne zadania, pozwalając zespołowi skupić się na strategicznych działaniach",
+    title: "Zeitersparnis",
+    description: "Wir eliminieren wiederkehrende Aufgaben und ermöglichen dem Team, sich auf strategische Maßnahmen zu konzentrieren",
     icon: Clock,
     color: "bg-primary"
   },
   {
-    title: "Redukcja kosztów systemów zewnętrznych", 
-    description: "Wykorzystujemy pełny potencjał Google Workspace, zmniejszając potrzebę dodatkowych narzędzi",
+    title: "Reduzierung der Kosten für externe Systeme", 
+    description: "Wir nutzen das volle Potenzial von Google Workspace und reduzieren den Bedarf an zusätzlichen Tools",
     icon: DollarSign,
     color: "bg-accent"
   },
   {
-    title: "Skalowalność i niezawodność",
-    description: "Rozwiązania Google cechuje wysoka dostępność i możliwość dostosowania do rosnących potrzeb",
+    title: "Skalierbarkeit und Zuverlässigkeit",
+    description: "Google-Lösungen zeichnen sich durch hohe Verfügbarkeit und die Möglichkeit aus, sich an wachsende Anforderungen anzupassen",
     icon: TrendingUp,
     color: "bg-primary"
   },
   {
-    title: "Integracja z narzędziami, które już znasz",
-    description: "Bazujemy na istniejącej infrastrukturze Google, minimalizując czas wdrożenia",
+    title: "Integration mit Tools, die Sie bereits kennen",
+    description: "Wir basieren auf der bestehenden Google-Infrastruktur und minimieren die Implementierungszeit",
     icon: Puzzle,
     color: "bg-secondary"
   }
@@ -33,10 +33,10 @@ const WhyUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-            Dlaczego warto?
+            Warum lohnt es sich?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in animate-delay-200">
-            Nasze automatyzacje przynoszą wymierne korzyści dla Twojego biznesu
+            Unsere Automatisierungen bringen messbare Vorteile für Ihr Unternehmen
           </p>
         </div>
         
@@ -68,15 +68,15 @@ const WhyUs = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-primary mb-2">30+</div>
-              <p className="text-muted-foreground">Godzin miesięcznie zaoszczędzonych</p>
+              <p className="text-muted-foreground">Monatlich eingesparte Stunden</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-primary mb-2">50%</div>
-              <p className="text-muted-foreground">Redukcja czasu na rutynowe zadania</p>
+              <p className="text-muted-foreground">Reduzierung der Zeit für Routineaufgaben</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-secondary mb-2">99.9%</div>
-              <p className="text-muted-foreground">Niezawodność automatyzacji</p>
+              <p className="text-muted-foreground">Automatisierungszuverlässigkeit</p>
             </div>
           </div>
         </div>

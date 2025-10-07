@@ -9,10 +9,10 @@ const CaseStudy = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-            Case Study
+            Fallstudie
           </h2>
           <p className="text-xl text-muted-foreground animate-fade-in animate-delay-200">
-            Zobacz jak pomagamy naszym klientom osiągać lepsze wyniki
+            Sehen Sie, wie wir unseren Kunden helfen, bessere Ergebnisse zu erzielen
           </p>
         </div>
         
@@ -24,15 +24,15 @@ const CaseStudy = () => {
                 <div className="p-8 lg:p-12">
                   <div className="mb-6 animate-slide-up">
                     <span className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-4">
-                      Firma szkoleniowa
+                      Schulungsunternehmen
                     </span>
                     <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
-                      Automatyzacja procesów edukacyjnych
+                      Automatisierung von Bildungsprozessen
                     </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Firma szkoleniowa obsługująca setki kursantów tygodniowo zaoszczędziła 
-                      <span className="text-primary font-bold"> 30 godzin miesięcznie</span> dzięki 
-                      automatycznemu tworzeniu kont w Google Classroom i raportów w Google Sheets.
+                      Ein Schulungsunternehmen, das hunderte Kursteilnehmer pro Woche betreut, sparte 
+                      <span className="text-primary font-bold"> 30 Stunden pro Monat</span> durch die 
+                      automatische Kontoerstellung in Google Classroom und Berichtserstellung in Google Sheets.
                     </p>
                   </div>
                   
@@ -40,15 +40,15 @@ const CaseStudy = () => {
                   <div className="space-y-4 mb-8 animate-slide-up animate-delay-200">
                     <div className="flex items-start space-x-3">
                       <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                      <p className="text-muted-foreground">Automatyczne tworzenie kont uczestników</p>
+                      <p className="text-muted-foreground">Automatische Erstellung von Teilnehmerkonten</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                      <p className="text-muted-foreground">Generowanie raportów frekwencji w czasie rzeczywistym</p>
+                      <p className="text-muted-foreground">Erstellung von Anwesenheitsberichten in Echtzeit</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                      <p className="text-muted-foreground">Automatyczne wystawianie certyfikatów ukończenia</p>
+                      <p className="text-muted-foreground">Automatische Ausstellung von Abschlusszertifikaten</p>
                     </div>
                   </div>
                   
@@ -56,7 +56,7 @@ const CaseStudy = () => {
                     className={buttonVariants({ variant: "google-cta", size: "lg" })}
                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   >
-                    Sprawdź jak możemy Ci pomóc
+                    Erfahren Sie, wie wir Ihnen helfen können
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </div>
@@ -69,7 +69,7 @@ const CaseStudy = () => {
                         <Clock className="w-8 h-8 text-primary mr-3" />
                         <span className="text-4xl lg:text-5xl font-bold text-primary">30h</span>
                       </div>
-                      <p className="text-muted-foreground">oszczędności miesięcznie</p>
+                      <p className="text-muted-foreground">Monatliche Einsparungen</p>
                     </div>
                     
                     <div className="text-center">
@@ -77,7 +77,7 @@ const CaseStudy = () => {
                         <Users className="w-8 h-8 text-primary mr-3" />
                         <span className="text-4xl lg:text-5xl font-bold text-primary">500+</span>
                       </div>
-                      <p className="text-muted-foreground">kursantów tygodniowo</p>
+                      <p className="text-muted-foreground">Kursteilnehmer pro Woche</p>
                     </div>
                     
                     <div className="text-center">
@@ -85,7 +85,7 @@ const CaseStudy = () => {
                         <BarChart3 className="w-8 h-8 text-secondary mr-3" />
                         <span className="text-4xl lg:text-5xl font-bold text-secondary">100%</span>
                       </div>
-                      <p className="text-muted-foreground">automatyzacji procesów</p>
+                      <p className="text-muted-foreground">Prozessautomatisierung</p>
                     </div>
                   </div>
                 </div>
