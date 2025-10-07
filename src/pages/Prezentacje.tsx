@@ -9,120 +9,120 @@ import { Slider } from "@/components/ui/slider";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const presentationTypes = [{
   icon: Presentation,
-  badge: "Startupy & Fundraising",
+  badge: "Startups & Fundraising",
   title: "Pitch Deck",
-  idealFor: ["Startupy szukające inwestorów (Seed, Series A/B/C)", "Prezentacje dla VC i Business Angels", "Demo Days i konkursy startupowe"],
-  includes: ["10-15 slajdów (struktura: Problem → Solution → Market → Traction → Team → Ask)", "Storytelling zgodny z metodologią Guy Kawasaki (10/20/30 rule)", "Financial projections z profesjonalną wizualizacją", "Competitive analysis i market positioning", "Edytowalne źródła (PPTX + PDF)"],
-  voiceOver: "Zalecane dla: Pitch videos, social media, pre-meeting materials",
-  voiceOverCost: "CHF 150-225 (10-15 slajdów)",
-  price: "od CHF 2,500",
-  timeline: "5-7 dni roboczych"
+  idealFor: ["Startups auf Investorensuche (Seed, Series A/B/C)", "Präsentationen für VCs und Business Angels", "Demo Days und Startup-Wettbewerbe"],
+  includes: ["10-15 Folien (Struktur: Problem → Solution → Market → Traction → Team → Ask)", "Storytelling nach Guy Kawasaki Methodik (10/20/30 Regel)", "Financial Projections mit professioneller Visualisierung", "Competitive Analysis und Market Positioning", "Bearbeitbare Quelldateien (PPTX + PDF)"],
+  voiceOver: "Empfohlen für: Pitch Videos, Social Media, Pre-Meeting Materials",
+  voiceOverCost: "CHF 150-225 (10-15 Folien)",
+  price: "ab CHF 2,500",
+  timeline: "5-7 Arbeitstage"
 }, {
   icon: TrendingUp,
-  badge: "Prezentacje Sprzedażowe",
+  badge: "Verkaufspräsentationen",
   title: "Sales Deck",
-  idealFor: ["Teams sprzedażowe B2B", "Prezentacje produktów i usług", "Meetings z klientami enterprise", "Propozycje handlowe"],
-  includes: ["15-25 slajdów (Value proposition → Features/Benefits → Case Studies → Pricing)", "Social proof (testimoniale, logos klientów, case studies)", "ROI calculators i porównania konkurencji", "Pricing slides z elastycznymi wariantami", "Branding zgodny z Twoim visual identity", "Wszystkie formaty + ikony (500+ library)"],
-  voiceOver: "Zalecane dla: Auto-play presentations, webinars, product demos",
-  voiceOverCost: "CHF 300-450 (15-20 slajdów)",
-  price: "od CHF 1,800",
-  timeline: "5-7 dni roboczych"
+  idealFor: ["B2B-Vertriebsteams", "Produkt- und Dienstleistungspräsentationen", "Meetings mit Enterprise-Kunden", "Geschäftsangebote"],
+  includes: ["15-25 Folien (Value Proposition → Features/Benefits → Case Studies → Pricing)", "Social Proof (Testimonials, Kundenlogos, Case Studies)", "ROI-Rechner und Wettbewerbsvergleiche", "Pricing-Folien mit flexiblen Varianten", "Branding gemäß Ihrer visuellen Identität", "Alle Formate + Symbole (500+ Bibliothek)"],
+  voiceOver: "Empfohlen für: Auto-Play-Präsentationen, Webinare, Produktdemos",
+  voiceOverCost: "CHF 300-450 (15-20 Folien)",
+  price: "ab CHF 1,800",
+  timeline: "5-7 Arbeitstage"
 }, {
   icon: BarChart3,
-  badge: "Raporty Roczne",
+  badge: "Jahresberichte",
   title: "Annual Report",
-  idealFor: ["Board meetings i raporty dla zarządu", "Shareholder presentations", "Quarterly Business Reviews (QBR)", "Investor updates"],
-  includes: ["20-40 slajdów (comprehensive overview roku)", "Data visualization (wykresy, dashboardy KPI, infografiki)", "Year-over-year comparisons z insights", "Financial highlights i operational metrics", "Strategy roadmap na kolejny rok", "Executive summary (1-pager)"],
-  voiceOver: "Zalecane dla: Board meetings, investor calls, video reports",
-  voiceOverCost: "CHF 450-700 (20-30 slajdów)",
-  price: "od CHF 3,500",
-  timeline: "7-10 dni roboczych"
+  idealFor: ["Board Meetings und Managementberichte", "Aktionärspräsentationen", "Quarterly Business Reviews (QBR)", "Investor Updates"],
+  includes: ["20-40 Folien (umfassender Jahresüberblick)", "Datenvisualisierung (Charts, KPI-Dashboards, Infografiken)", "Jahresvergleiche mit Insights", "Financial Highlights und operative Kennzahlen", "Strategy Roadmap für das kommende Jahr", "Executive Summary (1-Pager)"],
+  voiceOver: "Empfohlen für: Board Meetings, Investor Calls, Video-Berichte",
+  voiceOverCost: "CHF 450-700 (20-30 Folien)",
+  price: "ab CHF 3,500",
+  timeline: "7-10 Arbeitstage"
 }, {
   icon: Building2,
-  badge: "Prezentacje Korporacyjne",
+  badge: "Corporate Präsentationen",
   title: "Corporate Presentation",
-  idealFor: ["Company overview presentations", "Internal training materials", "Conference presentations", "Partnerships & colaborations"],
-  includes: ["10-30 slajdów (flexible, dopasowane do potrzeb)", "Custom branded templates (master slides do dalszego użytku)", "Icon library & graphics w stylu firmy", "Spójny visual language", "Edytowalne komponenty", "Guidelines użycia (jak edytować samemu)"],
-  voiceOver: "Zalecane dla: E-learning, onboarding, conference talks",
-  voiceOverCost: "CHF 150-450 (10-30 slajdów)",
-  price: "od CHF 1,500",
-  timeline: "4-6 dni roboczych"
+  idealFor: ["Unternehmensübersichtspräsentationen", "Interne Schulungsunterlagen", "Konferenzpräsentationen", "Partnerschaften & Kooperationen"],
+  includes: ["10-30 Folien (flexibel, an Bedürfnisse angepasst)", "Custom Branded Templates (Master-Folien zur weiteren Nutzung)", "Icon-Bibliothek & Grafiken im Firmenstil", "Einheitliche visuelle Sprache", "Bearbeitbare Komponenten", "Nutzungsrichtlinien (wie man selbst bearbeitet)"],
+  voiceOver: "Empfohlen für: E-Learning, Onboarding, Konferenzvorträge",
+  voiceOverCost: "CHF 150-450 (10-30 Folien)",
+  price: "ab CHF 1,500",
+  timeline: "4-6 Arbeitstage"
 }];
 const pricingPackages = [{
   name: "Start",
-  badge: "Dla małych projektów",
+  badge: "Für kleine Projekte",
   price: "CHF 1,200",
   slides: "10",
   concepts: "1",
-  revisions: "2 rundy",
-  timeline: "4-5 dni",
-  includes: ["10 custom slajdów", "1 concept do wyboru", "2 rundy poprawek", "Wszystkie formaty (PPTX, PDF, Keynote, Google Slides)", "Podstawowe ikony i grafiki"],
-  notIncluded: ["Animacje", "Brand guidelines", "Master templates"],
-  voiceOverEstimate: "od CHF 150",
+  revisions: "2 Runden",
+  timeline: "4-5 Tage",
+  includes: ["10 individuelle Folien", "1 Konzept zur Auswahl", "2 Überarbeitungsrunden", "Alle Formate (PPTX, PDF, Keynote, Google Slides)", "Grundlegende Symbole und Grafiken"],
+  notIncluded: ["Animationen", "Brand Guidelines", "Master Templates"],
+  voiceOverEstimate: "ab CHF 150",
   popular: false
 }, {
   name: "Business",
-  badge: "Najpopularniejszy",
+  badge: "Am beliebtesten",
   price: "CHF 2,500",
   slides: "15-20",
   concepts: "3",
-  revisions: "3 rundy",
-  timeline: "5-7 dni",
-  includes: ["15-20 custom slajdów", "3 koncepty do wyboru", "3 rundy poprawek", "Wszystkie formaty + źródła", "Podstawowe animacje i przejścia", "Icon library (500+ ikon)", "Brand guidelines document", "Priority support"],
+  revisions: "3 Runden",
+  timeline: "5-7 Tage",
+  includes: ["15-20 individuelle Folien", "3 Konzepte zur Auswahl", "3 Überarbeitungsrunden", "Alle Formate + Quelldateien", "Grundlegende Animationen und Übergänge", "Icon-Bibliothek (500+ Symbole)", "Brand Guidelines Dokument", "Priority Support"],
   notIncluded: [],
-  voiceOverEstimate: "od CHF 300",
+  voiceOverEstimate: "ab CHF 300",
   bundlePrice: "CHF 2,699",
   bundleSavings: "CHF 176",
   popular: true
 }, {
   name: "Premium",
-  badge: "Dla wymagających projektów",
+  badge: "Für anspruchsvolle Projekte",
   price: "CHF 5,000+",
   slides: "30+",
-  concepts: "Unlimited",
-  revisions: "Unlimited",
-  timeline: "7-10 dni",
-  includes: ["30+ custom slajdów", "Unlimited concepts", "Unlimited revisions", "Wszystkie formaty + źródła", "Zaawansowane animacje (motion graphics)", "Icon library premium", "Brand guidelines (rozszerzony)", "Master template do dalszego użytku", "Dedykowany designer", "Priority support 24/7", "1h training session"],
+  concepts: "Unbegrenzt",
+  revisions: "Unbegrenzt",
+  timeline: "7-10 Tage",
+  includes: ["30+ individuelle Folien", "Unbegrenzte Konzepte", "Unbegrenzte Überarbeitungen", "Alle Formate + Quelldateien", "Fortgeschrittene Animationen (Motion Graphics)", "Premium Icon-Bibliothek", "Brand Guidelines (erweitert)", "Master Template zur weiteren Nutzung", "Dedizierter Designer", "Priority Support 24/7", "1h Schulungssession"],
   notIncluded: [],
-  voiceOverEstimate: "od CHF 600",
+  voiceOverEstimate: "ab CHF 600",
   bundlePrice: "CHF 5,399",
   bundleSavings: "CHF 351",
   popular: false
 }];
 const testimonials = [{
   stars: 5,
-  quote: "Dzięki pitch deckowi stworzonym przez ProgressiveGroup pozyskaliśmy CHF 2M w rundzie seed. Inwestorzy byli zachwyceni profesjonalnym wyglądem i jasnym przekazem. To była najlepsza inwestycja w nasz startup!",
+  quote: "Dank des von ProgressiveGroup erstellten Pitch Decks haben wir CHF 2M in der Seed-Runde eingeworben. Die Investoren waren begeistert vom professionellen Aussehen und der klaren Botschaft. Das war die beste Investition in unser Startup!",
   author: "Thomas M., CEO",
   company: "FinTech Startup, Zürich"
 }, {
   stars: 5,
-  quote: "Nasza prezentacja sprzedażowa wyglądała amatorsko. Po redesignie od ProgressiveGroup, nasz win rate wzrósł z 20% do 45%! Klienci są pod wrażeniem i to widać w liczbach.",
+  quote: "Unsere Verkaufspräsentation sah amateurhaft aus. Nach dem Redesign durch ProgressiveGroup stieg unsere Win-Rate von 20% auf 45%! Die Kunden sind beeindruckt und das sieht man in den Zahlen.",
   author: "Sarah K., Sales Director",
   company: "B2B SaaS Company, Berlin"
 }, {
   stars: 5,
-  quote: "Lektor AI to game changer! Potrzebowaliśmy wersji w 5 językach. Z tradycyjnym lektorem to by kosztowało CHF 10,000+. Z AI voice-over zrobiliśmy to za CHF 1,200. Jakość jest niesamowita - nikt nie poznał że to AI!",
+  quote: "KI-Voice-Over ist ein Game Changer! Wir brauchten Versionen in 5 Sprachen. Mit einem traditionellen Sprecher hätte das über CHF 10,000 gekostet. Mit KI-Voice-Over haben wir es für CHF 1,200 geschafft. Die Qualität ist unglaublich - niemand hat erkannt, dass es KI ist!",
   author: "Michael R., Marketing Manager",
   company: "International Corporation, Geneva"
 }];
 const faqItems = [{
-  question: "Czy mogę zobaczyć przykłady Waszych prac?",
-  answer: "Tak! Mamy publiczne portfolio z przykładami różnych typów prezentacji. Możemy też pokazać case studies najbliższe Twojej branży podczas bezpłatnej konsultacji."
+  question: "Kann ich Beispiele Ihrer Arbeiten sehen?",
+  answer: "Ja! Wir haben ein öffentliches Portfolio mit Beispielen verschiedener Präsentationstypen. Wir können auch Case Studies aus Ihrer Branche während einer kostenlosen Beratung zeigen."
 }, {
-  question: "Co jeśli nie mam contentu/tekstów do prezentacji?",
-  answer: "Nie ma problemu! Oferujemy usługę copywritingu (CHF 50-120/slajd w zależności od długości). Nasz copywriter przeprowadzi z Tobą wywiad (30-45 min) i napisze profesjonalne skrypty dopasowane do Twojego przekazu i target audience."
+  question: "Was ist, wenn ich keine Inhalte/Texte für die Präsentation habe?",
+  answer: "Kein Problem! Wir bieten Copywriting-Services an (CHF 50-120/Folie je nach Länge). Unser Copywriter führt ein Interview mit Ihnen (30-45 Min.) und schreibt professionelle Skripte, die auf Ihre Botschaft und Zielgruppe zugeschnitten sind."
 }, {
-  question: "Jakie formaty plików otrzymam?",
-  answer: "Otrzymujesz kompletny package: PowerPoint (.pptx) - edytowalny, PDF - high resolution, Keynote (.key) dla Mac, Google Slides, pliki źródłowe - wszystkie grafiki (PNG, SVG), ikony, zdjęcia. Jeśli zamówisz voice-over: MP3 files + zsynchronizowana prezentacja + opcjonalnie video (MP4)."
+  question: "Welche Dateiformate erhalte ich?",
+  answer: "Sie erhalten ein Komplettpaket: PowerPoint (.pptx) - bearbeitbar, PDF - hochauflösend, Keynote (.key) für Mac, Google Slides, Quelldateien - alle Grafiken (PNG, SVG), Symbole, Fotos. Bei Voice-Over-Bestellung: MP3-Dateien + synchronisierte Präsentation + optional Video (MP4)."
 }, {
-  question: "Ile rund poprawek jest wliczonych w cenę?",
-  answer: "Zależy od pakietu: Start - 2 rundy rewizji, Business - 3 rundy rewizji, Premium - Unlimited revisions. Co to znaczy 'runda rewizji'? = Jedna lista zmian/poprawek, którą wysyłasz po obejrzeniu draftu. Dodatkowe rundy: CHF 300/runda (Start & Business)."
+  question: "Wie viele Überarbeitungsrunden sind im Preis enthalten?",
+  answer: "Je nach Paket: Start - 2 Revisionsrunden, Business - 3 Revisionsrunden, Premium - Unbegrenzte Revisionen. Was bedeutet 'Revisionsrunde'? = Eine Liste mit Änderungen/Korrekturen, die Sie nach Ansicht des Entwurfs senden. Zusätzliche Runden: CHF 300/Runde (Start & Business)."
 }, {
-  question: "Czy Voice-over AI naprawdę brzmi jak człowiek?",
-  answer: "TAK! Używamy najnowszej generacji AI (ElevenLabs / Azure Neural TTS) która generuje fotorealistyczne głosy. 95% naszych klientów jest zachwyconych jakością. Dla pozostałych 5% (lub ultra-premium brands) oferujemy ludzkich lektorów (wycena indywidualna)."
+  question: "Klingt KI-Voice-Over wirklich wie ein Mensch?",
+  answer: "JA! Wir verwenden die neueste KI-Generation (ElevenLabs / Azure Neural TTS), die fotorealistische Stimmen erzeugt. 95% unserer Kunden sind von der Qualität begeistert. Für die restlichen 5% (oder Ultra-Premium-Marken) bieten wir menschliche Sprecher an (individuelle Preisgestaltung)."
 }, {
-  question: "Jak długo trwa cały proces?",
-  answer: "Timeline per pakiet: Start 4-5 dni, Business 5-7 dni, Premium 7-10 dni roboczych. Voice-over (jeśli zamówiony): +2-3 dni do total timeline. To są dni robocze (poniedziałek-piątek)."
+  question: "Wie lange dauert der gesamte Prozess?",
+  answer: "Timeline pro Paket: Start 4-5 Tage, Business 5-7 Tage, Premium 7-10 Arbeitstage. Voice-Over (falls bestellt): +2-3 Tage zur Gesamtzeit. Dies sind Arbeitstage (Montag-Freitag)."
 }];
 const Prezentacje = () => {
   const [voiceOverShort, setVoiceOverShort] = useState([5]);
