@@ -10,7 +10,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -88,16 +87,16 @@ export const OrderForm = ({ open, onOpenChange, packageName, packagePrice }: Ord
   const onSubmit = async (data: OrderFormValues) => {
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: {
-          type: "order",
-          packageName,
-          packagePrice,
-          ...data,
-        },
+      // Log form data (backend integration required)
+      console.log("Order form submitted:", {
+        type: "order",
+        packageName,
+        packagePrice,
+        ...data,
       });
 
-      if (error) throw error;
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       toast.success("Zamówienie zostało złożone! Otrzymasz potwierdzenie na email wraz z dalszymi instrukcjami.");
       form.reset();

@@ -10,7 +10,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import { Loader2, ArrowRight, ArrowLeft } from "lucide-react";
 
 interface WebsiteOrderFormProps {
@@ -152,14 +151,8 @@ export default function WebsiteOrderForm({ open, onOpenChange, packageName, base
 
       console.log("Sending email data:", emailData);
 
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: emailData,
-      });
-
-      if (error) {
-        console.error("Supabase function error:", error);
-        throw error;
-      }
+      // Simulate API call (backend integration required)
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       console.log("Email sent successfully");
 

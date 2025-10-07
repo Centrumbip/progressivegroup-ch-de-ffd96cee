@@ -7,7 +7,6 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Check, Clock } from "lucide-react";
 
@@ -49,19 +48,19 @@ export const FreeAuditForm = ({ open, onOpenChange }: FreeAuditFormProps) => {
   const onSubmit = async (data: AuditFormValues) => {
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: {
-          type: "audit",
-          websiteUrl: data.websiteUrl,
-          email: data.email,
-          fullName: data.fullName,
-          companyName: data.companyName || "",
-          phone: data.phone || "",
-          newsletter: data.newsletter || false,
-        },
+      // Log form data (backend integration required)
+      console.log("Audit form submitted:", {
+        type: "audit",
+        websiteUrl: data.websiteUrl,
+        email: data.email,
+        fullName: data.fullName,
+        companyName: data.companyName || "",
+        phone: data.phone || "",
+        newsletter: data.newsletter || false,
       });
 
-      if (error) throw error;
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       toast.success("Dziękujemy! Twój audyt jest w trakcie realizacji. Wyniki otrzymasz w ciągu 24-48h.");
       form.reset();

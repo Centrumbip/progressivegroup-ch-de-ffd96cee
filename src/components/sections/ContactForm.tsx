@@ -7,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button-variants";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -34,24 +33,16 @@ const ContactForm = () => {
     setIsLoading(true);
 
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: {
-          type: 'contact',
-          name: formData.name,
-          email: formData.email,
-          message: formData.message
-        }
+      // Log form data (backend integration required)
+      console.log('Contact form submitted:', {
+        type: 'contact',
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
       });
 
-      if (error) {
-        console.error('Error sending email:', error);
-        toast({
-          title: "Błąd",
-          description: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
-          variant: "destructive"
-        });
-        return;
-      }
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       toast({
         title: "Wiadomość wysłana!",

@@ -361,7 +361,6 @@ const portfolioItems = [
               image={item.image}
               technologies={item.technologies}
               features={item.features}
-              liveUrl={item.liveUrl}
               category={item.category}
               screenshots={item.screenshots}
             />
