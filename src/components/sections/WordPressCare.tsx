@@ -476,14 +476,14 @@ const WordPressCare = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-primary" />
-                Wymogi techniczne
+                Technische Anforderungen
               </CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Dostęp do panelu administracyjnego WordPress</li>
-                <li>• Dostęp FTP lub do File Managera w hostingu</li>
-                <li>• Dostęp do phpMyAdmin lub możliwość eksportu bazy danych</li>
+                <li>• Zugriff auf WordPress-Administrationsbereich</li>
+                <li>• FTP-Zugriff oder File Manager im Hosting</li>
+                <li>• Zugriff auf phpMyAdmin oder Möglichkeit zum Datenbank-Export</li>
               </ul>
             </CardContent>
           </Card>
