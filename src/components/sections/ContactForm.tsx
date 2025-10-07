@@ -23,8 +23,8 @@ const ContactForm = () => {
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: "Błąd",
-        description: "Proszę wypełnić wszystkie pola",
+        title: "Fehler",
+        description: "Bitte füllen Sie alle Felder aus",
         variant: "destructive"
       });
       return;
@@ -45,8 +45,8 @@ const ContactForm = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       toast({
-        title: "Wiadomość wysłana!",
-        description: "Dziękujemy za kontakt. Odpowiemy w ciągu 24 godzin."
+        title: "Nachricht gesendet!",
+        description: "Vielen Dank für Ihre Kontaktaufnahme. Wir antworten innerhalb von 24 Stunden."
       });
 
       // Reset form
@@ -58,8 +58,8 @@ const ContactForm = () => {
     } catch (error) {
       console.error('Error:', error);
       toast({
-        title: "Błąd",
-        description: "Wystąpił problem. Spróbuj ponownie.",
+        title: "Fehler",
+        description: "Es ist ein Problem aufgetreten. Bitte versuchen Sie es erneut.",
         variant: "destructive"
       });
     } finally {
@@ -76,10 +76,10 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-            Skontaktuj się z nami
+            Kontaktieren Sie uns
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in animate-delay-200">
-            Gotowy na współpracę? Napisz do nas lub umów bezpłatną konsultację
+            Bereit für die Zusammenarbeit? Schreiben Sie uns oder vereinbaren Sie eine kostenlose Beratung
           </p>
         </div>
         
@@ -88,24 +88,24 @@ const ContactForm = () => {
           <Card className="card-gradient border-border shadow-elegant animate-slide-up">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground">
-                Wyślij zapytanie
+                Anfrage senden
               </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-foreground">Imię i nazwisko *</Label>
-                  <Input id="name" name="name" type="text" value={formData.name} onChange={handleChange} className="bg-background border-border focus:border-primary" placeholder="Wprowadź swoje imię i nazwisko" required />
+                  <Label htmlFor="name" className="text-foreground">Vor- und Nachname *</Label>
+                  <Input id="name" name="name" type="text" value={formData.name} onChange={handleChange} className="bg-background border-border focus:border-primary" placeholder="Geben Sie Ihren Namen ein" required />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-foreground">Adres e-mail *</Label>
-                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} className="bg-background border-border focus:border-primary" placeholder="Wprowadź swój adres e-mail" required />
+                  <Label htmlFor="email" className="text-foreground">E-Mail-Adresse *</Label>
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} className="bg-background border-border focus:border-primary" placeholder="Geben Sie Ihre E-Mail-Adresse ein" required />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground">Wiadomość *</Label>
-                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} className="bg-background border-border focus:border-primary min-h-32" placeholder="Opowiedz nam o swoich potrzebach..." required />
+                  <Label htmlFor="message" className="text-foreground">Nachricht *</Label>
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} className="bg-background border-border focus:border-primary min-h-32" placeholder="Erzählen Sie uns von Ihren Anforderungen..." required />
                 </div>
                 
                 <Button 
@@ -116,7 +116,7 @@ const ContactForm = () => {
                     size: "lg"
                   })}
                 >
-                  {isLoading ? 'Wysyłanie...' : 'Wyślij zapytanie'}
+                  {isLoading ? 'Wird gesendet...' : 'Anfrage senden'}
                   <Send className="w-5 h-5 ml-2" />
                 </Button>
               </form>
@@ -128,7 +128,7 @@ const ContactForm = () => {
             <Card className="card-gradient border-border shadow-elegant">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-6">
-                  Dane kontaktowe
+                  Kontaktdaten
                 </h3>
                 
                 <div className="space-y-6">
@@ -137,7 +137,7 @@ const ContactForm = () => {
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
+                      <h4 className="font-semibold text-foreground mb-1">E-Mail</h4>
                       <p className="text-muted-foreground">info@progressivegroup.ch</p>
                     </div>
                   </div>
@@ -149,7 +149,7 @@ const ContactForm = () => {
                       <MapPin className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Adres</h4>
+                      <h4 className="font-semibold text-foreground mb-1">Adresse</h4>
                       <p className="text-muted-foreground">
                         Progressivegroup Sp. z o.o.<br />
                         ul. Rynek 5/6<br />
@@ -165,24 +165,24 @@ const ContactForm = () => {
             <Card className="card-gradient border-border shadow-elegant">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-foreground mb-4">
-                  Bezpłatna konsultacja obejmuje:
+                  Kostenlose Beratung umfasst:
                 </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Analizę obecnych procesów</span>
+                    <span>Analyse der aktuellen Prozesse</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                    <span>Dobór odpowiednich rozwiązań</span>
+                    <span>Auswahl geeigneter Lösungen</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span>Wstępną wycenę projektu</span>
+                    <span>Vorläufige Projektbewertung</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Plan wdrożenia rozwiązań</span>
+                    <span>Implementierungsplan für Lösungen</span>
                   </li>
                 </ul>
               </CardContent>
