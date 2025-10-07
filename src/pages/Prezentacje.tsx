@@ -162,37 +162,37 @@ const Prezentacje = () => {
           
           <div className="text-center max-w-5xl mx-auto mb-12">
             <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium mb-6">
-              Profesjonalne Prezentacje Biznesowe
+              Professionelle Business-Präsentationen
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              Prezentacje,<br />
+              Präsentationen,<br />
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-                które sprzedają
+                die verkaufen
               </span>
             </h1>
             
             <p className="text-xl text-foreground/70 mb-8 animate-fade-in animate-delay-100">
-              Custom design + AI Voice-Over = Prezentacje gotowe do użycia.
+              Custom Design + KI Voice-Over = Präsentationen einsatzbereit.
             </p>
 
             {/* 4 key benefits */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10">
               <div className="flex items-center gap-2 text-foreground/80 text-sm">
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span>Pitch Decks dla startupów</span>
+                <span>Pitch Decks für Startups</span>
               </div>
               <div className="flex items-center gap-2 text-foreground/80 text-sm">
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span>Prezentacje sprzedażowe B2B</span>
+                <span>B2B Verkaufspräsentationen</span>
               </div>
               <div className="flex items-center gap-2 text-foreground/80 text-sm">
                 <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span>Raporty roczne dla inwestorów</span>
+                <span>Jahresberichte für Investoren</span>
               </div>
               <div className="flex items-center gap-2 text-foreground/80 text-sm">
                 <Mic className="w-5 h-5 text-accent flex-shrink-0" />
-                <span>+ Opcjonalny Lektor AI (20+ języków)</span>
+                <span>+ Optionaler KI-Sprecher (20+ Sprachen)</span>
               </div>
             </div>
 
@@ -201,12 +201,12 @@ const Prezentacje = () => {
               <Button size="xl" variant="hero" onClick={() => document.getElementById('portfolio')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Zobacz Portfolio
+                Portfolio ansehen
               </Button>
               <Button size="xl" variant="outline-hero" onClick={() => document.getElementById('contact')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Bezpłatna Wycena
+                Kostenlose Bewertung
               </Button>
             </div>
 
@@ -214,15 +214,15 @@ const Prezentacje = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div className="text-center">
                 <div className="text-4xl font-bold text-secondary mb-2">150+</div>
-                <div className="text-foreground/60">Projektów zrealizowanych</div>
+                <div className="text-foreground/60">Abgeschlossene Projekte</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-secondary mb-2">CHF 47M+</div>
-                <div className="text-foreground/60">Pozyskanego fundingu przez klientów</div>
+                <div className="text-foreground/60">Von Kunden eingeworbene Finanzierung</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">5-7 dni</div>
-                <div className="text-foreground/60">Średni czas realizacji</div>
+                <div className="text-4xl font-bold text-secondary mb-2">5-7 Tage</div>
+                <div className="text-foreground/60">Durchschnittliche Realisierungszeit</div>
               </div>
             </div>
           </div>
@@ -233,16 +233,16 @@ const Prezentacje = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-            Czy to brzmi znajomo?
+            Kommt Ihnen das bekannt vor?
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
             <Card className="glass-card border-white/10 hover:scale-105 transition-all duration-500">
               <CardContent className="p-8 text-center">
                 
-                <h3 className="text-2xl font-bold mb-4 text-amber-500">Spędzasz dni na PowerPoint</h3>
+                <h3 className="text-2xl font-bold mb-4 text-amber-500">Sie verbringen Tage mit PowerPoint</h3>
                 <p className="text-foreground/70">
-                  Walczysz z formatowaniem, szukasz grafik, próbujesz dopasować kolory. Czas mija, a deadline się zbliża. Twój biznes czeka.
+                  Sie kämpfen mit der Formatierung, suchen nach Grafiken, versuchen Farben anzupassen. Die Zeit vergeht, die Deadline nähert sich. Ihr Geschäft wartet.
                 </p>
               </CardContent>
             </Card>
@@ -250,9 +250,9 @@ const Prezentacje = () => {
             <Card className="glass-card border-white/10 hover:scale-105 transition-all duration-500">
               <CardContent className="p-8 text-center">
                 
-                <h3 className="text-2xl font-bold mb-4 text-amber-500">Twoja prezentacja wygląda jak wszyscy inni</h3>
+                <h3 className="text-2xl font-bold mb-4 text-amber-500">Ihre Präsentation sieht aus wie alle anderen</h3>
                 <p className="text-foreground/70">
-                  Domyślne szablony PowerPoint. Standardowe cliparty. Zero wyróżnienia. Inwestorzy widzieli to tysiące razy i są już znudzeni.
+                  Standard PowerPoint-Vorlagen. Gewöhnliche Cliparts. Null Differenzierung. Investoren haben das tausendmal gesehen und sind bereits gelangweilt.
                 </p>
               </CardContent>
             </Card>
@@ -260,18 +260,18 @@ const Prezentacje = () => {
             <Card className="glass-card border-white/10 hover:scale-105 transition-all duration-500">
               <CardContent className="p-8 text-center">
                 
-                <h3 className="text-2xl mb-4 font-bold text-amber-500">Tracisz klientów przez słabe slajdy</h3>
+                <h3 className="text-2xl mb-4 font-bold text-amber-500">Sie verlieren Kunden durch schwache Folien</h3>
                 <p className="text-foreground/70">
-                  Świetny produkt, ale prezentacja nie oddaje jego wartości. Konkurencja wygrywa tylko dlatego, że lepiej się prezentuje.
+                  Großartiges Produkt, aber die Präsentation zeigt seinen Wert nicht. Die Konkurrenz gewinnt nur, weil sie sich besser präsentiert.
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-12 max-w-3xl mx-auto">
-            <h3 className="text-3xl font-bold mb-4">To się kończy dzisiaj.</h3>
+            <h3 className="text-3xl font-bold mb-4">Das endet heute.</h3>
             <p className="text-lg text-foreground/70">
-              Zajmiemy się designem, animacjami i profesjonalną narracją. Ty skupisz się na tym, co najważniejsze - rozwoju swojego biznesu.
+              Wir kümmern uns um Design, Animationen und professionelle Sprachausgabe. Sie konzentrieren sich auf das Wichtigste - die Entwicklung Ihres Geschäfts.
             </p>
           </div>
         </div>
@@ -283,7 +283,7 @@ const Prezentacje = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-                Specjalizujemy się w 4 typach prezentacji
+                Wir spezialisieren uns auf 4 Präsentationstypen
               </span>
             </h2>
           </div>
@@ -314,7 +314,7 @@ const Prezentacje = () => {
 
                     <div className="md:w-2/3 space-y-6">
                       <div>
-                        <h4 className="font-semibold text-foreground mb-3">Idealny dla:</h4>
+                        <h4 className="font-semibold text-foreground mb-3">Ideal für:</h4>
                         <ul className="space-y-2">
                           {type.idealFor.map((item, i) => <li key={i} className="flex items-start gap-2 text-foreground/70">
                               <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0 mt-1" />
@@ -324,7 +324,7 @@ const Prezentacje = () => {
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-foreground mb-3">Co zawiera:</h4>
+                        <h4 className="font-semibold text-foreground mb-3">Enthalten:</h4>
                         <ul className="space-y-2">
                           {type.includes.map((item, i) => <li key={i} className="flex items-start gap-2 text-foreground/70">
                               <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0 mt-1" />
@@ -339,7 +339,7 @@ const Prezentacje = () => {
                           <div>
                             <p className="text-sm font-medium text-foreground mb-1">Voice-Over:</p>
                             <p className="text-sm text-foreground/70 mb-1">{type.voiceOver}</p>
-                            <p className="text-sm font-semibold text-accent">Szacowany koszt: {type.voiceOverCost}</p>
+                            <p className="text-sm font-semibold text-accent">Geschätzte Kosten: {type.voiceOverCost}</p>
                           </div>
                         </div>
                       </div>
@@ -348,12 +348,12 @@ const Prezentacje = () => {
                         <Button variant="hero" onClick={() => document.getElementById('contact')?.scrollIntoView({
                       behavior: 'smooth'
                     })}>
-                          Zamów {type.title}
+                          {type.title} bestellen
                         </Button>
                         <Button variant="outline" onClick={() => document.getElementById('portfolio')?.scrollIntoView({
                       behavior: 'smooth'
                     })}>
-                          Zobacz przykład
+                          Beispiel ansehen
                         </Button>
                       </div>
                     </div>
@@ -371,61 +371,61 @@ const Prezentacje = () => {
             <div className="inline-block text-6xl mb-4">🎙️</div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
-                Profesjonalny Lektor AI
+                Professioneller KI-Sprecher
               </span>
             </h2>
             <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-              Najnowsza technologia - fotorealistyczne głosy nieodróżnialne od człowieka
+              Neueste Technologie - fotorealistische Stimmen, nicht von Menschen zu unterscheiden
             </p>
             <p className="text-foreground/60 max-w-3xl mx-auto mt-4">
-              Dodaj profesjonalną narrację do swojej prezentacji. Wykorzystujemy najnowszą technologię AI, która generuje naturalne, fotorealistyczne głosy w 20+ językach. Idealne do video prezentacji, webinarów, pitch decków i materiałów sprzedażowych.
+              Fügen Sie Ihrer Präsentation professionelle Sprachausgabe hinzu. Wir nutzen die neueste KI-Technologie, die natürliche, fotorealistische Stimmen in über 20 Sprachen erzeugt. Ideal für Video-Präsentationen, Webinare, Pitch Decks und Verkaufsmaterialien.
             </p>
           </div>
 
           {/* Pricing Table */}
           <div className="max-w-4xl mx-auto mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-center">Wycena per slajd</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center">Preise pro Folie</h3>
             <div className="glass-card rounded-xl overflow-hidden">
               <table className="w-full">
                 <thead className="bg-secondary/10">
                   <tr>
-                    <th className="px-6 py-4 text-left font-semibold">Długość tekstu</th>
-                    <th className="px-6 py-4 text-left font-semibold">Cena</th>
-                    <th className="px-6 py-4 text-left font-semibold">Czas audio</th>
+                    <th className="px-6 py-4 text-left font-semibold">Textlänge</th>
+                    <th className="px-6 py-4 text-left font-semibold">Preis</th>
+                    <th className="px-6 py-4 text-left font-semibold">Audio-Dauer</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4">Do 500 znaków (bez spacji)</td>
-                    <td className="px-6 py-4 font-semibold text-accent">CHF 15/slajd</td>
-                    <td className="px-6 py-4 text-foreground/60">~30-40 sekund</td>
+                    <td className="px-6 py-4">Bis 500 Zeichen (ohne Leerzeichen)</td>
+                    <td className="px-6 py-4 font-semibold text-accent">CHF 15/Folie</td>
+                    <td className="px-6 py-4 text-foreground/60">~30-40 Sekunden</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4">501-1,000 znaków (bez spacji)</td>
-                    <td className="px-6 py-4 font-semibold text-accent">CHF 25/slajd</td>
-                    <td className="px-6 py-4 text-foreground/60">~60-75 sekund</td>
+                    <td className="px-6 py-4">501-1.000 Zeichen (ohne Leerzeichen)</td>
+                    <td className="px-6 py-4 font-semibold text-accent">CHF 25/Folie</td>
+                    <td className="px-6 py-4 text-foreground/60">~60-75 Sekunden</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4">1,001-1,500 znaków (bez spacji)</td>
-                    <td className="px-6 py-4 font-semibold text-accent">CHF 35/slajd</td>
-                    <td className="px-6 py-4 text-foreground/60">~90-110 sekund</td>
+                    <td className="px-6 py-4">1.001-1.500 Zeichen (ohne Leerzeichen)</td>
+                    <td className="px-6 py-4 font-semibold text-accent">CHF 35/Folie</td>
+                    <td className="px-6 py-4 text-foreground/60">~90-110 Sekunden</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4">Powyżej 1,500 znaków</td>
-                    <td className="px-6 py-4 font-semibold text-accent">Wycena indywidualna</td>
+                    <td className="px-6 py-4">Über 1.500 Zeichen</td>
+                    <td className="px-6 py-4 font-semibold text-accent">Individuelle Bewertung</td>
                     <td className="px-6 py-4 text-foreground/60">Kontakt</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-center text-foreground/60 mt-4 text-sm">
-              💡 Każdy slajd wyceniany indywidualnie według długości tekstu. Płacisz tylko za to, czego używasz!
+              💡 Jede Folie wird individuell nach Textlänge berechnet. Sie zahlen nur für das, was Sie nutzen!
             </p>
           </div>
 
           {/* Benefits Grid */}
           <div className="max-w-6xl mx-auto mb-16">
-            <h3 className="text-2xl font-bold mb-8 text-center">Co dostajesz</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">Was Sie erhalten</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {[{
               icon: Sparkles,
@@ -479,15 +479,15 @@ const Prezentacje = () => {
           <div className="max-w-4xl mx-auto mb-16">
             <div className="glass-card rounded-2xl p-8 border-2 border-accent/20">
               <h3 className="text-2xl font-bold mb-6 text-center">
-                🧮 Oblicz koszt dla swojej prezentacji
+                🧮 Berechnen Sie die Kosten für Ihre Präsentation
               </h3>
 
               <div className="space-y-8">
                 <div>
                   <div className="flex justify-between mb-3">
-                    <label className="font-medium">Slajdy krótkie (do 500 znaków):</label>
+                    <label className="font-medium">Kurze Folien (bis 500 Zeichen):</label>
                     <span className="font-semibold text-accent">
-                      {voiceOverShort[0]} slajdów × CHF 15 = CHF {costs.shortCost}
+                      {voiceOverShort[0]} Folien × CHF 15 = CHF {costs.shortCost}
                     </span>
                   </div>
                   <Slider value={voiceOverShort} onValueChange={setVoiceOverShort} max={50} step={1} className="w-full" />
@@ -495,9 +495,9 @@ const Prezentacje = () => {
 
                 <div>
                   <div className="flex justify-between mb-3">
-                    <label className="font-medium">Slajdy średnie (501-1,000 znaków):</label>
+                    <label className="font-medium">Mittlere Folien (501-1.000 Zeichen):</label>
                     <span className="font-semibold text-accent">
-                      {voiceOverMedium[0]} slajdów × CHF 25 = CHF {costs.mediumCost}
+                      {voiceOverMedium[0]} Folien × CHF 25 = CHF {costs.mediumCost}
                     </span>
                   </div>
                   <Slider value={voiceOverMedium} onValueChange={setVoiceOverMedium} max={50} step={1} className="w-full" />
@@ -505,9 +505,9 @@ const Prezentacje = () => {
 
                 <div>
                   <div className="flex justify-between mb-3">
-                    <label className="font-medium">Slajdy długie (1,001-1,500 znaków):</label>
+                    <label className="font-medium">Lange Folien (1.001-1.500 Zeichen):</label>
                     <span className="font-semibold text-accent">
-                      {voiceOverLong[0]} slajdów × CHF 35 = CHF {costs.longCost}
+                      {voiceOverLong[0]} Folien × CHF 35 = CHF {costs.longCost}
                     </span>
                   </div>
                   <Slider value={voiceOverLong} onValueChange={setVoiceOverLong} max={50} step={1} className="w-full" />
@@ -515,21 +515,21 @@ const Prezentacje = () => {
 
                 <div className="border-t border-white/20 pt-6">
                   <div className="text-center">
-                    <div className="text-sm text-foreground/60 mb-2">SZACOWANY KOSZT:</div>
+                    <div className="text-sm text-foreground/60 mb-2">GESCHÄTZTE KOSTEN:</div>
                     <div className="text-5xl font-bold text-accent mb-4">CHF {costs.total}</div>
                     <div className="text-foreground/60 space-y-1">
-                      <div>Łącznie: {costs.totalSlides} slajdów z narracją</div>
-                      <div>Średnio: CHF {costs.avgPerSlide}/slajd</div>
+                      <div>Gesamt: {costs.totalSlides} Folien mit Sprachausgabe</div>
+                      <div>Durchschnittlich: CHF {costs.avgPerSlide}/Folie</div>
                     </div>
                   </div>
                   <p className="text-sm text-foreground/60 text-center mt-6">
-                    💡 Nie jesteś pewien długości tekstów? Typowa prezentacja biznesowa: 30% krótkie, 50% średnie, 20% długie
+                    💡 Nicht sicher über Textlängen? Typische Business-Präsentation: 30% kurz, 50% mittel, 20% lang
                   </p>
                   <div className="flex justify-center mt-6">
                     <Button variant="hero" size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({
                     behavior: 'smooth'
                   })}>
-                      Dodaj voice-over do zamówienia
+                      Voice-Over zur Bestellung hinzufügen
                     </Button>
                   </div>
                 </div>
