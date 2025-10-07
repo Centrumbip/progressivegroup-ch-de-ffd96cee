@@ -539,47 +539,47 @@ const Prezentacje = () => {
 
           {/* AI vs Human Comparison */}
           <div className="max-w-5xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8 text-center">🆚 Porównanie: AI vs Ludzki Lektor</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">🆚 Vergleich: KI vs Menschlicher Sprecher</h3>
             <div className="glass-card rounded-xl overflow-hidden">
               <table className="w-full">
                 <thead className="bg-secondary/10">
                   <tr>
-                    <th className="px-6 py-4 text-left font-semibold">Kryterium</th>
-                    <th className="px-6 py-4 text-left font-semibold">Lektor AI</th>
-                    <th className="px-6 py-4 text-left font-semibold">Lektor Ludzki</th>
+                    <th className="px-6 py-4 text-left font-semibold">Kriterium</th>
+                    <th className="px-6 py-4 text-left font-semibold">KI-Sprecher</th>
+                    <th className="px-6 py-4 text-left font-semibold">Menschlicher Sprecher</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4 font-medium">Jakość głosu</td>
-                    <td className="px-6 py-4">⭐⭐⭐⭐ Fotorealistyczna</td>
-                    <td className="px-6 py-4">⭐⭐⭐⭐⭐ Najwyższa</td>
+                    <td className="px-6 py-4 font-medium">Stimmqualität</td>
+                    <td className="px-6 py-4">⭐⭐⭐⭐ Fotorealistisch</td>
+                    <td className="px-6 py-4">⭐⭐⭐⭐⭐ Höchste</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4 font-medium">Koszt</td>
-                    <td className="px-6 py-4 text-accent font-semibold">CHF 15-35/slajd</td>
-                    <td className="px-6 py-4">CHF 80-150/slajd</td>
+                    <td className="px-6 py-4 font-medium">Kosten</td>
+                    <td className="px-6 py-4 text-accent font-semibold">CHF 15-35/Folie</td>
+                    <td className="px-6 py-4">CHF 80-150/Folie</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4 font-medium">Czas realizacji</td>
+                    <td className="px-6 py-4 font-medium">Realisierungszeit</td>
                     <td className="px-6 py-4 text-accent font-semibold">24-48h</td>
-                    <td className="px-6 py-4">5-7 dni</td>
+                    <td className="px-6 py-4">5-7 Tage</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4 font-medium">Rewizje</td>
-                    <td className="px-6 py-4 text-accent font-semibold">2 rundy GRATIS</td>
-                    <td className="px-6 py-4">Kosztowne (+CHF 300/runda)</td>
+                    <td className="px-6 py-4 font-medium">Überarbeitungen</td>
+                    <td className="px-6 py-4 text-accent font-semibold">2 Runden GRATIS</td>
+                    <td className="px-6 py-4">Kostspielig (+CHF 300/Runde)</td>
                   </tr>
                   <tr className="border-t border-white/10">
-                    <td className="px-6 py-4 font-medium">Języki</td>
-                    <td className="px-6 py-4 text-accent font-semibold">20+ języków</td>
-                    <td className="px-6 py-4">2-3 języki</td>
+                    <td className="px-6 py-4 font-medium">Sprachen</td>
+                    <td className="px-6 py-4 text-accent font-semibold">20+ Sprachen</td>
+                    <td className="px-6 py-4">2-3 Sprachen</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-center text-foreground/60 mt-6 max-w-3xl mx-auto">
-              💡 Dla 95% zastosowań biznesowych: AI voice-over jest wystarczający i cost-effective. Dla premium brandów i szczególnych wymagań oferujemy ludzkich lektorów (wycena indywidualna).
+              💡 Für 95% der Business-Anwendungen: KI Voice-Over ist ausreichend und kosteneffektiv. Für Premium-Marken und besondere Anforderungen bieten wir menschliche Sprecher an (individuelle Bewertung).
             </p>
           </div>
         </div>
@@ -590,10 +590,10 @@ const Prezentacje = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Wybierz pakiet dopasowany do Twoich potrzeb
+              Wählen Sie das Paket, das zu Ihren Bedürfnissen passt
             </h2>
             <p className="text-foreground/60">
-              Wszystkie pakiety zawierają edytowalne źródła i wszystkie formaty
+              Alle Pakete enthalten bearbeitbare Quellen und alle Formate
             </p>
           </div>
 
@@ -610,19 +610,19 @@ const Prezentacje = () => {
                   
                   <div className="space-y-3 mb-8">
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/60">Slajdów:</span>
+                      <span className="text-foreground/60">Folien:</span>
                       <span className="font-semibold">{pkg.slides}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/60">Koncepty:</span>
+                      <span className="text-foreground/60">Konzepte:</span>
                       <span className="font-semibold">{pkg.concepts}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/60">Rewizje:</span>
+                      <span className="text-foreground/60">Überarbeitungen:</span>
                       <span className="font-semibold">{pkg.revisions}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/60">Timeline:</span>
+                      <span className="text-foreground/60">Zeitrahmen:</span>
                       <span className="font-semibold">{pkg.timeline}</span>
                     </div>
                   </div>
@@ -643,26 +643,26 @@ const Prezentacje = () => {
                   <div className="border-t border-white/10 pt-6 mb-6">
                     <div className="text-sm mb-2">
                       <Mic className="w-4 h-4 inline mr-2 text-accent" />
-                      Voice-over (opcjonalnie):
+                      Voice-Over (optional):
                     </div>
                     <div className="font-semibold text-accent">{pkg.voiceOverEstimate}</div>
                     {pkg.bundlePrice && <div className="mt-3 bg-accent/10 rounded-lg p-3 border border-accent/20">
-                        <div className="text-sm font-medium">💰 BUNDLE DEAL:</div>
-                        <div className="font-bold text-accent">Prezentacja + Voice-over = {pkg.bundlePrice}</div>
-                        <div className="text-xs text-foreground/60">oszczędzasz {pkg.bundleSavings}!</div>
+                        <div className="text-sm font-medium">💰 BUNDLE-ANGEBOT:</div>
+                        <div className="font-bold text-accent">Präsentation + Voice-Over = {pkg.bundlePrice}</div>
+                        <div className="text-xs text-foreground/60">Sie sparen {pkg.bundleSavings}!</div>
                       </div>}
                   </div>
 
                   <Button variant={pkg.popular ? "hero" : "outline"} className="w-full" onClick={() => document.getElementById('contact')?.scrollIntoView({
                 behavior: 'smooth'
               })}>
-                    {pkg.popular ? 'Zamów Business' : `Zamów ${pkg.name}`}
+                    {pkg.popular ? 'Business bestellen' : `${pkg.name} bestellen`}
                   </Button>
                   
                   {pkg.bundlePrice && <Button variant="outline" className="w-full mt-3" onClick={() => document.getElementById('contact')?.scrollIntoView({
                 behavior: 'smooth'
               })}>
-                      Zamów z Voice-Over (Bundle)
+                      Mit Voice-Over bestellen (Bundle)
                     </Button>}
                 </CardContent>
               </Card>)}
@@ -674,7 +674,7 @@ const Prezentacje = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Co mówią nasi klienci?
+            Was sagen unsere Kunden?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -693,7 +693,7 @@ const Prezentacje = () => {
           </div>
 
           <div className="text-center mt-16">
-            <h3 className="text-2xl font-bold mb-8">Zaufali nam</h3>
+            <h3 className="text-2xl font-bold mb-8">Sie haben uns vertraut</h3>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-50">
               <div className="text-2xl font-bold">LOGO</div>
               <div className="text-2xl font-bold">LOGO</div>
@@ -703,7 +703,7 @@ const Prezentacje = () => {
               <div className="text-2xl font-bold">LOGO</div>
             </div>
             <p className="text-foreground/60 mt-6">
-              Współpracowaliśmy z 150+ firmami z Szwajcarii, Niemiec, Norwegii, Polski i całej Europy
+              Wir haben mit über 150 Unternehmen aus der Schweiz, Deutschland, Norwegen, Polen und ganz Europa zusammengearbeitet
             </p>
           </div>
         </div>
@@ -713,7 +713,7 @@ const Prezentacje = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Najczęściej zadawane pytania
+            Häufig gestellte Fragen
           </h2>
 
           <div className="max-w-4xl mx-auto">
@@ -736,64 +736,64 @@ const Prezentacje = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Gotowy na prezentację,<br />
+              Bereit für eine Präsentation,<br />
               <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-                która robi wrażenie?
+                die beeindruckt?
               </span>
             </h2>
             <p className="text-xl text-foreground/70 mb-12">
-              Dołącz do 150+ firm które zaufały ProgressiveGroup
+              Schließen Sie sich über 150 Unternehmen an, die ProgressiveGroup vertraut haben
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               
 
               <Card className="glass-card border-white/10 p-8">
-                <h3 className="text-2xl font-bold mb-4">📝 Wyślij brief - wycena w 24h</h3>
+                <h3 className="text-2xl font-bold mb-4">📝 Brief senden - Bewertung in 24h</h3>
                 <p className="text-foreground/60 mb-6">
-                  Wypełnij krótki formularz (5 min), otrzymasz dokładną wycenę następnego dnia roboczego.
+                  Füllen Sie ein kurzes Formular aus (5 Min), Sie erhalten am nächsten Werktag eine genaue Bewertung.
                 </p>
                 
                 <Button variant="outline-hero" className="w-full" size="lg">
-                  Wypełnij brief
+                  Brief ausfüllen
                 </Button>
               </Card>
             </div>
 
             <div className="glass-card rounded-xl p-8 max-w-2xl mx-auto">
-              <h4 className="font-semibold mb-4">Wolisz po staremu?</h4>
+              <h4 className="font-semibold mb-4">Bevorzugen Sie die alte Schule?</h4>
               <div className="flex flex-col items-center gap-4 text-sm text-center">
-                <div>📧 Email: info@progressivegroup.ch</div>
+                <div>📧 E-Mail: info@progressivegroup.ch</div>
                 <div>📍 Progressivegroup Sp. z o.o., ul. Rynek 5/6, 59-220 Legnica</div>
               </div>
               <div className="mt-6 text-sm text-foreground/60">
-                <div className="font-medium mb-2">Godziny pracy:</div>
-                <div>Pon-Pt: 9:00 - 18:00 CET</div>
-                <div>Weekend: Tylko pilne projekty (express)</div>
+                <div className="font-medium mb-2">Arbeitszeiten:</div>
+                <div>Mo-Fr: 9:00 - 18:00 CET</div>
+                <div>Wochenende: Nur dringende Projekte (Express)</div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mt-12">
               <div className="text-center">
                 <CheckCircle className="w-8 h-8 text-secondary mx-auto mb-2" />
-                <div className="text-sm font-medium">150+ projektów</div>
+                <div className="text-sm font-medium">150+ Projekte</div>
               </div>
               <div className="text-center">
                 <Award className="w-8 h-8 text-secondary mx-auto mb-2" />
-                <div className="text-sm font-medium">CHF 47M+ fundingu</div>
+                <div className="text-sm font-medium">CHF 47M+ Finanzierung</div>
               </div>
               <div className="text-center">
                 <Target className="w-8 h-8 text-secondary mx-auto mb-2" />
-                <div className="text-sm font-medium">4.9/5 ocena</div>
+                <div className="text-sm font-medium">4,9/5 Bewertung</div>
               </div>
               <div className="text-center">
                 <Zap className="w-8 h-8 text-secondary mx-auto mb-2" />
-                <div className="text-sm font-medium">30-dni gwarancja</div>
+                <div className="text-sm font-medium">30-Tage Garantie</div>
               </div>
             </div>
 
             <p className="text-sm text-foreground/60 mt-8">
-              💡 Pilny projekt? Express delivery dostępny (2-4 dni). Zadzwoń lub napisz - sprawdzimy dostępność!
+              💡 Dringendes Projekt? Express-Lieferung verfügbar (2-4 Tage). Rufen Sie an oder schreiben Sie - wir prüfen die Verfügbarkeit!
             </p>
           </div>
         </div>
