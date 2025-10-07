@@ -429,40 +429,40 @@ const Prezentacje = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {[{
               icon: Sparkles,
-              title: "Fotorealistyczny głos AI",
-              desc: "Nieodróżnialny od ludzkiego lektora"
+              title: "Fotorealistische KI-Stimme",
+              desc: "Nicht von einem menschlichen Sprecher zu unterscheiden"
             }, {
               icon: Languages,
-              title: "20+ języków",
-              desc: "PL, EN, DE, FR, IT, ES, NO, SE, DK i więcej"
+              title: "20+ Sprachen",
+              desc: "DE, EN, PL, FR, IT, ES, NO, SE, DK und mehr"
             }, {
               icon: Users,
-              title: "Męskie i żeńskie głosy",
-              desc: "Wybierz styl: formalny, energiczny, przyjazny"
+              title: "Männliche und weibliche Stimmen",
+              desc: "Wählen Sie den Stil: formal, energisch, freundlich"
             }, {
               icon: Target,
-              title: "Synchronizacja z slajdami",
-              desc: "Audio idealnie dopasowane do animacji"
+              title: "Synchronisierung mit Folien",
+              desc: "Audio perfekt auf Animationen abgestimmt"
             }, {
               icon: CheckCircle,
-              title: "2 rundy rewizji GRATIS",
-              desc: "Zmiany tekstu, głosu lub tempa"
+              title: "2 Revisionsrunden GRATIS",
+              desc: "Änderungen an Text, Stimme oder Tempo"
             }, {
               icon: FileText,
-              title: "Wszystkie formaty",
-              desc: "MP3, prezentacja z audio, video export"
+              title: "Alle Formate",
+              desc: "MP3, Präsentation mit Audio, Video-Export"
             }, {
               icon: Award,
-              title: "Komercyjna licencja",
-              desc: "Użyj wszędzie: YouTube, social media, webinary"
+              title: "Kommerzielle Lizenz",
+              desc: "Überall nutzbar: YouTube, Social Media, Webinare"
             }, {
               icon: Clock,
-              title: "Delivery 24-48h",
-              desc: "Od akceptacji skryptu do gotowego audio"
+              title: "Lieferung 24-48h",
+              desc: "Von der Skript-Freigabe bis zum fertigen Audio"
             }, {
               icon: Zap,
-              title: "Nielimitowane języki",
-              desc: "Multi-language presentations bez problemu"
+              title: "Unbegrenzte Sprachen",
+              desc: "Mehrsprachige Präsentationen ohne Probleme"
             }].map((item, i) => <div key={i} className="flex items-start gap-3">
                   <div className="p-2 bg-accent/10 rounded-lg">
                     <item.icon className="w-5 h-5 text-accent" />
