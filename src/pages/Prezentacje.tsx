@@ -157,7 +157,7 @@ const Prezentacje = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Link to="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-secondary transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
-            <span>Powrót do strony głównej</span>
+            <span>Zurück zur Startseite</span>
           </Link>
           
           <div className="text-center max-w-5xl mx-auto mb-12">
