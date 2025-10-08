@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { ArrowRight, ExternalLink, Globe, Palette, Zap, CheckCircle2, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Globe, Zap, CheckCircle2, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -119,16 +117,6 @@ const PortfolioItem = ({
           </div>
         )}
         
-        {/* View Details Button */}
-        <Button 
-          asChild 
-          className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-semibold"
-        >
-          <Link to={`/portfolio/${id}`}>
-            Details anzeigen
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Link>
-        </Button>
       </CardContent>
     </Card>
   );

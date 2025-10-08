@@ -16,7 +16,6 @@ import ONas from "./pages/ONas";
 import Datenschutz from "./pages/Datenschutz";
 import AGB from "./pages/AGB";
 import Cookies from "./pages/Cookies";
-import PortfolioDetail from "./pages/PortfolioDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,7 +40,6 @@ const App = () => (
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/agb" element={<AGB />} />
           <Route path="/cookies" element={<Cookies />} />
-          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
