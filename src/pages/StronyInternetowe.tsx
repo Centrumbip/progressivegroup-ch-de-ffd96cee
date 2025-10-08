@@ -9,6 +9,11 @@ import { Badge } from "@/components/ui/badge";
 import WebsiteOrderForm from "@/components/forms/WebsiteOrderForm";
 import PriceCalculator from "@/components/PriceCalculator";
 import PortfolioItem from "@/components/PortfolioItem";
+import portfolioTransport from "@/assets/portfolio-transport.jpg";
+import portfolioRestaurant from "@/assets/portfolio-restaurant.jpg";
+import portfolioEcommerce from "@/assets/portfolio-ecommerce.jpg";
+import portfolioPhotographer from "@/assets/portfolio-photographer.jpg";
+import portfolioCorporate from "@/assets/portfolio-corporate.jpg";
 
 const StronyInternetowe = () => {
   const [orderFormOpen, setOrderFormOpen] = useState(false);
@@ -25,50 +30,109 @@ const StronyInternetowe = () => {
 
 const portfolioItems = [
   {
-    id: "tech-startup-2025",
-    title: "TechFlow Solutions",
-    description: "Moderne SaaS-Website für ein innovatives Tech-Startup mit interaktiven Dashboards und KI-Integration. Revolutionäre Benutzeroberfläche mit Echtzeit-Analytics und Machine Learning Features für moderne Unternehmen.",
-    type: "SaaS-Website",
+    id: "transexpress-logistik",
+    title: "TransExpress Logistik",
+    description: "Professionelle Transportwebsite mit modernem, responsivem Design. Umfassende Darstellung der Logistikdienstleistungen, Fuhrpark-Präsentation und integriertem Kontaktsystem für Anfragen.",
+    type: "Transport-Website",
     language: "Deutsch",
     flag: "🇩🇪",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
-    technologies: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL", "TensorFlow.js"],
+    image: portfolioTransport,
+    technologies: ["WordPress", "WooCommerce", "PHP", "JavaScript", "CSS3", "Responsive Design"],
     features: [
-      "KI-gestützte Analytics Dashboard",
-      "Real-time Datenvisualisierung", 
-      "Multi-Tenant Architektur",
-      "API-First Design",
-      "Advanced Security Features",
-      "Mobile-First Responsive Design",
-      "Progressive Web App",
-      "Machine Learning Integration"
+      "Moderne Fuhrpark-Präsentation",
+      "Dienstleistungskatalog mit Details",
+      "Kontaktformular für Transportanfragen",
+      "Mobile-First responsives Design",
+      "SEO-Optimierung für Transport-Keywords",
+      "Integrierte Google Maps",
+      "Schnelle Ladezeiten"
     ],
     category: "business" as const,
-    screenshots: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop&crop=center"
+    screenshots: []
+  },
+  {
+    id: "bella-cucina-restaurant",
+    title: "La Bella Cucina",
+    description: "Elegante Restaurant-Website mit ansprechendem Design und appetitlicher Fotografie. Perfekt präsentiert das Speiseangebot mit Online-Reservierungssystem und Öffnungszeiten.",
+    type: "Restaurant-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioRestaurant,
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "Reservation System"],
+    features: [
+      "Elegantes Menü mit Fotogalerie",
+      "Online-Reservierungssystem",
+      "Öffnungszeiten und Standort",
+      "Mehrsprachige Unterstützung",
+      "Mobile-optimiert für Restaurantbesucher",
+      "Integration mit Google Business",
+      "Social Media Verknüpfung"
     ],
-    client: "TechFlow Solutions GmbH",
-    duration: "8 Wochen",
-    team: "5 Entwickler",
-    awards: ["Best SaaS Platform 2025", "Innovation Award", "UX Excellence"],
-    challenges: [
-      "Komplexe Datenvisualisierung benutzerfreundlich gestalten",
-      "Skalierbare Multi-Tenant Architektur implementieren", 
-      "KI-Features nahtlos integrieren"
+    category: "restaurant" as const,
+    screenshots: []
+  },
+  {
+    id: "stylehub-fashion",
+    title: "StyleHub Fashion",
+    description: "Moderner E-Commerce-Shop für Mode mit benutzerfreundlichem Design. Umfassende Produktkategorien, Filter, Warenkorb und sichere Zahlungsintegration für optimales Shopping-Erlebnis.",
+    type: "E-Commerce",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioEcommerce,
+    technologies: ["Shopify", "React", "TypeScript", "Stripe", "Payment Gateway", "Inventory System"],
+    features: [
+      "Produktkatalog mit Filtern",
+      "Warenkorb und Checkout-System",
+      "Sichere Zahlungsintegration",
+      "Bestandsverwaltung in Echtzeit",
+      "Kundenkonto-System",
+      "Responsive für alle Geräte",
+      "SEO-optimierte Produktseiten"
     ],
-    solutions: [
-      "Modulare Dashboard-Komponenten",
-      "Microservices-Architektur",
-      "TensorFlow.js Integration für Client-Side ML"
+    category: "ecommerce" as const,
+    screenshots: []
+  },
+  {
+    id: "lens-light-studio",
+    title: "Lens & Light Studio",
+    description: "Kreatives Fotografen-Portfolio mit minimalistischem Design und beeindruckender Bildgalerie im Masonry-Layout. Perfekte Präsentation der fotografischen Arbeiten mit Service-Paketen.",
+    type: "Portfolio-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioPhotographer,
+    technologies: ["Next.js", "React", "Tailwind CSS", "Lightbox Gallery", "CMS Integration"],
+    features: [
+      "Masonry-Galerie für Fotos",
+      "Lightbox für Vollbildansicht",
+      "Service-Paket-Darstellung",
+      "Kontaktformular für Buchungen",
+      "Portfolio-Kategorien",
+      "Schnelle Bildoptimierung",
+      "SEO für Fotografen"
     ],
-    results: [
-      "300% Steigerung der Benutzeraktivität",
-      "50% schnellere Datenverarbeitung", 
-      "99.9% Uptime erreicht"
-    ]
+    category: "portfolio" as const,
+    screenshots: []
+  },
+  {
+    id: "proconsult-partners",
+    title: "ProConsult Partners",
+    description: "Professionelle Unternehmenswebsite für Beratungsfirma mit klarem, geschäftlichem Design. Umfassende Darstellung der Dienstleistungen, Team-Präsentation und Karrierebereich.",
+    type: "Unternehmens-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioCorporate,
+    technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "Corporate CMS", "Multi-Page"],
+    features: [
+      "Multi-Page-Struktur",
+      "Dienstleistungs-Übersicht",
+      "Team-Präsentation mit Profilen",
+      "Karrierebereich mit Stellenangeboten",
+      "Blog-Integration",
+      "Kontaktformulare",
+      "SEO und Analytics-Integration"
+    ],
+    category: "corporate" as const,
+    screenshots: []
   }
 ];
 
