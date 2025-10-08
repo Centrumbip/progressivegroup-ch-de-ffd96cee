@@ -14,6 +14,7 @@ import portfolioRestaurant from "@/assets/portfolio-restaurant.jpg";
 import portfolioEcommerce from "@/assets/portfolio-ecommerce.jpg";
 import portfolioPhotographer from "@/assets/portfolio-photographer.jpg";
 import portfolioCorporate from "@/assets/portfolio-corporate.jpg";
+import portfolioMedical from "@/assets/portfolio-medical.jpg";
 
 const StronyInternetowe = () => {
   const [orderFormOpen, setOrderFormOpen] = useState(false);
@@ -132,6 +133,28 @@ const portfolioItems = [
       "SEO und Analytics-Integration"
     ],
     category: "corporate" as const,
+    screenshots: []
+  },
+  {
+    id: "medicare-wellness",
+    title: "MediCare Wellness Zentrum",
+    description: "Professionelle medizinische Website für Gesundheitszentrum mit vertrauenswürdigem Design. Online-Terminbuchung, Leistungsübersicht, Team-Vorstellung und umfassende Patienteninformationen.",
+    type: "Medizin-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioMedical,
+    technologies: ["WordPress", "Appointment System", "PHP", "MySQL", "HIPAA Compliant", "Patient Portal"],
+    features: [
+      "Online-Terminbuchungssystem",
+      "Leistungskatalog mit Details",
+      "Team-Präsentation mit Qualifikationen",
+      "Patientenportal-Integration",
+      "DSGVO-konforme Datenverwaltung",
+      "Mehrsprachige Unterstützung",
+      "Mobile-optimiert für Patienten",
+      "Zertifizierungen und Auszeichnungen"
+    ],
+    category: "business" as const,
     screenshots: []
   }
 ];
