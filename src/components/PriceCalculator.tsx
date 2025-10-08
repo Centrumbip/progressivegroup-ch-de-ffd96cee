@@ -8,7 +8,7 @@ import { Calculator } from "lucide-react";
 
 export default function PriceCalculator() {
   const [packageType, setPackageType] = useState<"onepage" | "business" | "catalog" | "landing">("business");
-  const [languages, setLanguages] = useState<string[]>(["polski"]);
+  const [languages, setLanguages] = useState<string[]>(["deutsch"]);
   const [expressDelivery, setExpressDelivery] = useState(false);
   const [blog, setBlog] = useState(false);
   const [cms, setCms] = useState(false);
@@ -130,12 +130,12 @@ export default function PriceCalculator() {
   };
 
   const languageOptions = [
-    { value: "polski", label: "🇵🇱 Polski" },
-    { value: "niemiecki", label: "🇩🇪 Niemiecki" },
-    { value: "francuski", label: "🇫🇷 Francuski" },
-    { value: "hiszpanski", label: "🇪🇸 Hiszpański" },
-    { value: "wloski", label: "🇮🇹 Włoski" },
-    { value: "angielski", label: "🇬🇧 Angielski" },
+    { value: "deutsch", label: "🇩🇪 Deutsch" },
+    { value: "franzoesisch", label: "🇫🇷 Französisch" },
+    { value: "spanisch", label: "🇪🇸 Spanisch" },
+    { value: "italienisch", label: "🇮🇹 Italienisch" },
+    { value: "polnisch", label: "🇵🇱 Polnisch" },
+    { value: "englisch", label: "🇬🇧 Englisch" },
   ];
 
   return (
@@ -143,10 +143,10 @@ export default function PriceCalculator() {
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-2 mb-4">
           <Calculator className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl font-bold gradient-text">Generator Wyceny</h2>
+          <h2 className="text-4xl font-bold gradient-text">Preisrechner</h2>
         </div>
         <p className="text-lg text-foreground/70">
-          Stwórz szacunkową wycenę dla swojego projektu
+          Erstellen Sie eine Kostenschätzung für Ihr Projekt
         </p>
       </div>
 
@@ -156,7 +156,7 @@ export default function PriceCalculator() {
           {/* Package Type */}
           <Card className="glass-card">
             <CardHeader>
-              <CardTitle>Typ pakietu</CardTitle>
+              <CardTitle>Pakettyp</CardTitle>
             </CardHeader>
             <CardContent>
               <RadioGroup value={packageType} onValueChange={(value: any) => setPackageType(value)}>
@@ -167,11 +167,11 @@ export default function PriceCalculator() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="business" id="pkg-business" />
-                    <Label htmlFor="pkg-business" className="cursor-pointer">Strona Wizytówka</Label>
+                    <Label htmlFor="pkg-business" className="cursor-pointer">Visitenkarte-Website</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="catalog" id="pkg-catalog" />
-                    <Label htmlFor="pkg-catalog" className="cursor-pointer">Strona Katalogowa</Label>
+                    <Label htmlFor="pkg-catalog" className="cursor-pointer">Katalog-Website</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="landing" id="pkg-landing" />
@@ -185,7 +185,7 @@ export default function PriceCalculator() {
           {/* Languages */}
           <Card className="glass-card">
             <CardHeader>
-              <CardTitle>Wersje językowe</CardTitle>
+              <CardTitle>Sprachversionen</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-3">
@@ -204,7 +204,7 @@ export default function PriceCalculator() {
               </div>
               {languages.length > 1 && (
                 <p className="text-sm text-foreground/60 mt-3">
-                  +40% za każdy dodatkowy język
+                  +40% für jede zusätzliche Sprache
                 </p>
               )}
             </CardContent>
@@ -214,20 +214,20 @@ export default function PriceCalculator() {
           {packageType === "business" && (
             <Card className="glass-card">
               <CardHeader>
-                <CardTitle>Opcje strony wizytówki</CardTitle>
+                <CardTitle>Optionen für Visitenkarte-Website</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <Label className="mb-2 block">Liczba podstron</Label>
+                  <Label className="mb-2 block">Anzahl Unterseiten</Label>
                   <RadioGroup value={numberOfPages} onValueChange={(value: any) => setNumberOfPages(value)}>
                     <div className="flex gap-4">
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="3" id="biz-pages-3" />
-                        <Label htmlFor="biz-pages-3" className="cursor-pointer">3 podstrony</Label>
+                        <Label htmlFor="biz-pages-3" className="cursor-pointer">3 Unterseiten</Label>
                       </div>
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="5" id="biz-pages-5" />
-                        <Label htmlFor="biz-pages-5" className="cursor-pointer">5 podstron</Label>
+                        <Label htmlFor="biz-pages-5" className="cursor-pointer">5 Unterseiten</Label>
                       </div>
                     </div>
                   </RadioGroup>
@@ -238,11 +238,11 @@ export default function PriceCalculator() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="biz-gallery" checked={gallery} onCheckedChange={(checked) => setGallery(!!checked)} />
-                  <Label htmlFor="biz-gallery" className="cursor-pointer">Galeria zdjęć</Label>
+                  <Label htmlFor="biz-gallery" className="cursor-pointer">Fotogalerie</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="biz-cms" checked={cms} onCheckedChange={(checked) => setCms(!!checked)} />
-                  <Label htmlFor="biz-cms" className="cursor-pointer">CMS do zarządzania treścią</Label>
+                  <Label htmlFor="biz-cms" className="cursor-pointer">CMS zur Inhaltsverwaltung</Label>
                 </div>
               </CardContent>
             </Card>
@@ -251,26 +251,26 @@ export default function PriceCalculator() {
           {packageType === "catalog" && (
             <Card className="glass-card">
               <CardHeader>
-                <CardTitle>Opcje strony katalogowej</CardTitle>
+                <CardTitle>Optionen für Katalog-Website</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <Label className="mb-2 block">Liczba podstron</Label>
+                  <Label className="mb-2 block">Anzahl Unterseiten</Label>
                   <RadioGroup value={numberOfPages} onValueChange={(value: any) => setNumberOfPages(value)}>
                     <div className="flex gap-4">
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="10" id="cat-pages-10" />
-                        <Label htmlFor="cat-pages-10" className="cursor-pointer">10 podstron</Label>
+                        <Label htmlFor="cat-pages-10" className="cursor-pointer">10 Unterseiten</Label>
                       </div>
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="15" id="cat-pages-15" />
-                        <Label htmlFor="cat-pages-15" className="cursor-pointer">15 podstron</Label>
+                        <Label htmlFor="cat-pages-15" className="cursor-pointer">15 Unterseiten</Label>
                       </div>
                     </div>
                   </RadioGroup>
                 </div>
                 <div>
-                  <Label className="mb-2 block">Liczba produktów</Label>
+                  <Label className="mb-2 block">Anzahl Produkte</Label>
                   <RadioGroup value={numberOfProducts} onValueChange={(value: any) => setNumberOfProducts(value)}>
                     <div className="grid grid-cols-2 gap-2">
                       {["50", "100", "200", "500+"].map((num) => (
@@ -284,19 +284,19 @@ export default function PriceCalculator() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="cat-search" checked={search} onCheckedChange={(checked) => setSearch(!!checked)} />
-                  <Label htmlFor="cat-search" className="cursor-pointer">Wyszukiwarka produktów</Label>
+                  <Label htmlFor="cat-search" className="cursor-pointer">Produktsuche</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="cat-filters" checked={filters} onCheckedChange={(checked) => setFilters(!!checked)} />
-                  <Label htmlFor="cat-filters" className="cursor-pointer">Filtry i sortowanie</Label>
+                  <Label htmlFor="cat-filters" className="cursor-pointer">Filter und Sortierung</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="cat-blog" checked={blog} onCheckedChange={(checked) => setBlog(!!checked)} />
-                  <Label htmlFor="cat-blog" className="cursor-pointer">Blog zintegrowany</Label>
+                  <Label htmlFor="cat-blog" className="cursor-pointer">Integrierter Blog</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="cat-cms" checked={cms} onCheckedChange={(checked) => setCms(!!checked)} />
-                  <Label htmlFor="cat-cms" className="cursor-pointer">Panel administracyjny</Label>
+                  <Label htmlFor="cat-cms" className="cursor-pointer">Admin-Panel</Label>
                 </div>
               </CardContent>
             </Card>
@@ -305,16 +305,16 @@ export default function PriceCalculator() {
           {packageType === "onepage" && (
             <Card className="glass-card">
               <CardHeader>
-                <CardTitle>Opcje One-Page</CardTitle>
+                <CardTitle>One-Page Optionen</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <Checkbox id="one-cms" checked={cms} onCheckedChange={(checked) => setCms(!!checked)} />
-                  <Label htmlFor="one-cms" className="cursor-pointer">Panel do edycji treści (CMS)</Label>
+                  <Label htmlFor="one-cms" className="cursor-pointer">Panel zur Inhaltsbearbeitung (CMS)</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="one-blog" checked={blog} onCheckedChange={(checked) => setBlog(!!checked)} />
-                  <Label htmlFor="one-blog" className="cursor-pointer">Sekcja blog</Label>
+                  <Label htmlFor="one-blog" className="cursor-pointer">Blog-Bereich</Label>
                 </div>
               </CardContent>
             </Card>
@@ -323,20 +323,20 @@ export default function PriceCalculator() {
           {packageType === "landing" && (
             <Card className="glass-card">
               <CardHeader>
-                <CardTitle>Opcje Landing Page</CardTitle>
+                <CardTitle>Landing Page Optionen</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <Checkbox id="land-ads" checked={adsIntegration} onCheckedChange={(checked) => setAdsIntegration(!!checked)} />
-                  <Label htmlFor="land-ads" className="cursor-pointer">Integracja z Google/Facebook Ads</Label>
+                  <Label htmlFor="land-ads" className="cursor-pointer">Google/Facebook Ads Integration</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="land-lead" checked={leadForms} onCheckedChange={(checked) => setLeadForms(!!checked)} />
-                  <Label htmlFor="land-lead" className="cursor-pointer">Formularze lead generation</Label>
+                  <Label htmlFor="land-lead" className="cursor-pointer">Lead-Generation-Formulare</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="land-ab" checked={abTesting} onCheckedChange={(checked) => setAbTesting(!!checked)} />
-                  <Label htmlFor="land-ab" className="cursor-pointer">Gotowość do A/B testingu</Label>
+                  <Label htmlFor="land-ab" className="cursor-pointer">A/B-Testing-Bereitschaft</Label>
                 </div>
               </CardContent>
             </Card>
@@ -345,12 +345,12 @@ export default function PriceCalculator() {
           {/* Common Options */}
           <Card className="glass-card">
             <CardHeader>
-              <CardTitle>Dodatkowe opcje</CardTitle>
+              <CardTitle>Zusätzliche Optionen</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-center space-x-2">
                 <Checkbox id="express" checked={expressDelivery} onCheckedChange={(checked) => setExpressDelivery(!!checked)} />
-                <Label htmlFor="express" className="cursor-pointer">Ekspresowa realizacja (+40%)</Label>
+                <Label htmlFor="express" className="cursor-pointer">Express-Lieferung (+40%)</Label>
               </div>
             </CardContent>
           </Card>
@@ -361,7 +361,7 @@ export default function PriceCalculator() {
           <div className="sticky top-24">
             <Card className="glass-card border-primary border-2 shadow-elevated">
               <CardHeader>
-                <CardTitle className="text-center">Szacunkowa wycena</CardTitle>
+                <CardTitle className="text-center">Geschätzte Kosten</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="text-center">
@@ -369,13 +369,13 @@ export default function PriceCalculator() {
                     {price.min.toLocaleString('de-CH')} - {price.max.toLocaleString('de-CH')} CHF
                   </div>
                   <p className="text-sm text-foreground/60">
-                    Ostateczna cena po konsultacji
+                    Endpreis nach Beratung
                   </p>
                 </div>
 
                 <div className="space-y-3 pt-4 border-t border-border">
                   <div className="flex justify-between text-sm">
-                    <span className="text-foreground/70">Pakiet bazowy:</span>
+                    <span className="text-foreground/70">Basispaket:</span>
                     <span className="font-semibold">
                       {basePrices[packageType].min.toLocaleString('de-CH')} - {basePrices[packageType].max.toLocaleString('de-CH')} CHF
                     </span>
@@ -383,7 +383,7 @@ export default function PriceCalculator() {
                   
                   {languages.length > 1 && (
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/70">Języki ({languages.length}):</span>
+                      <span className="text-foreground/70">Sprachen ({languages.length}):</span>
                       <Badge variant="secondary">+{(languages.length - 1) * 40}%</Badge>
                     </div>
                   )}
@@ -411,14 +411,14 @@ export default function PriceCalculator() {
                   
                   {gallery && (
                     <div className="flex justify-between text-sm">
-                      <span className="text-foreground/70">Galeria:</span>
+                      <span className="text-foreground/70">Galerie:</span>
                       <Badge variant="secondary">+400-800 CHF</Badge>
                     </div>
                   )}
                 </div>
 
                 <p className="text-xs text-center text-foreground/50 pt-4">
-                  * Wycena ma charakter szacunkowy. Ostateczna cena zostanie ustalona po szczegółowej konsultacji.
+                  * Die Schätzung ist unverbindlich. Der Endpreis wird nach einer detaillierten Beratung festgelegt.
                 </p>
               </CardContent>
             </Card>
