@@ -11,12 +11,6 @@ import portfolioEcommerce from "@/assets/portfolio-ecommerce.jpg";
 import portfolioPhotographer from "@/assets/portfolio-photographer.jpg";
 import portfolioCorporate from "@/assets/portfolio-corporate.jpg";
 import portfolioMedical from "@/assets/portfolio-medical.jpg";
-import TransportMockup from "@/components/mockups/TransportMockup";
-import RestaurantMockup from "@/components/mockups/RestaurantMockup";
-import EcommerceMockup from "@/components/mockups/EcommerceMockup";
-import PhotographerMockup from "@/components/mockups/PhotographerMockup";
-import CorporateMockup from "@/components/mockups/CorporateMockup";
-import MedicalMockup from "@/components/mockups/MedicalMockup";
 
 // Portfolio data - in a real app this would come from an API
 const portfolioData = {
@@ -28,7 +22,6 @@ const portfolioData = {
     language: "Deutsch",
     flag: "🇩🇪",
     image: portfolioTransport,
-    mockup: TransportMockup,
     technologies: ["WordPress", "WooCommerce", "PHP", "JavaScript", "CSS3", "Responsive Design"],
     features: [
       "Moderne Fuhrpark-Präsentation",
@@ -71,7 +64,6 @@ const portfolioData = {
     language: "Schweizerdeutsch / Français / Italiano",
     flag: "🇨🇭",
     image: portfolioRestaurant,
-    mockup: RestaurantMockup,
     technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "WPML", "Reservation System"],
     features: [
       "Elegantes Menü mit Fotogalerie",
@@ -114,7 +106,6 @@ const portfolioData = {
     language: "Deutsch (Schweiz)",
     flag: "🇨🇭",
     image: portfolioEcommerce,
-    mockup: EcommerceMockup,
     technologies: ["Shopify", "React", "TypeScript", "Stripe", "Twint", "PostFinance", "Swiss Post API"],
     features: [
       "Produktkatalog mit Filtern",
@@ -157,7 +148,6 @@ const portfolioData = {
     language: "English",
     flag: "🇬🇧",
     image: portfolioPhotographer,
-    mockup: PhotographerMockup,
     technologies: ["Next.js", "React", "Tailwind CSS", "Lightbox Gallery", "Vercel", "CMS Integration"],
     features: [
       "Masonry Gallery for Photos",
@@ -200,7 +190,6 @@ const portfolioData = {
     language: "Español",
     flag: "🇪🇸",
     image: portfolioCorporate,
-    mockup: CorporateMockup,
     technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "Corporate CMS", "Multi-Page", "WPML"],
     features: [
       "Estructura Multi-Página",
@@ -243,7 +232,6 @@ const portfolioData = {
     language: "Français",
     flag: "🇫🇷",
     image: portfolioMedical,
-    mockup: MedicalMockup,
     technologies: ["WordPress", "Appointment System", "PHP", "MySQL", "HIPAA Compliant", "Patient Portal", "Calendly"],
     features: [
       "Système de réservation en ligne",
@@ -346,12 +334,17 @@ const PortfolioDetail = () => {
         </div>
       </section>
 
-      {/* Interactive Website Mockup */}
+      {/* Project Image */}
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-background border-2 border-border">
-              {project.mockup && <project.mockup />}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
         </div>
