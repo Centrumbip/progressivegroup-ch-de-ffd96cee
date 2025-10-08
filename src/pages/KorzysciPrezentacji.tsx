@@ -7,26 +7,26 @@ import { useEffect } from "react";
 
 const benefits = [
   {
-    title: "Profesjonalny wizerunek",
-    description: "Prezentacje dopasowane do identyfikacji wizualnej firmy budują spójny, profesjonalny wizerunek",
+    title: "Professionelles Image",
+    description: "Präsentationen, die auf die visuelle Identität des Unternehmens abgestimmt sind, schaffen ein kohärentes, professionelles Image",
     icon: Award,
     color: "bg-primary"
   },
   {
-    title: "Wyższa skuteczność przekazu",
-    description: "Przejrzyste slajdy i logiczna struktura sprawiają, że przekaz trafia do odbiorców",
+    title: "Höhere Wirksamkeit der Botschaft",
+    description: "Klare Folien und logische Struktur sorgen dafür, dass die Botschaft beim Publikum ankommt",
     icon: TrendingUp,
     color: "bg-accent"
   },
   {
-    title: "Oszczędność czasu",
-    description: "Gotowe szablony i automatyzacja tworzenia prezentacji redukują czas przygotowania",
+    title: "Zeitersparnis",
+    description: "Fertige Vorlagen und Automatisierung der Präsentationserstellung reduzieren die Vorbereitungszeit",
     icon: Presentation,
     color: "bg-primary"
   },
   {
-    title: "Zaangażowanie odbiorców",
-    description: "Atrakcyjna grafika i przemyślana kompozycja utrzymują uwagę i zwiększają zapamiętywanie",
+    title: "Engagement des Publikums",
+    description: "Attraktive Grafiken und durchdachte Komposition halten die Aufmerksamkeit und erhöhen die Merkfähigkeit",
     icon: Users,
     color: "bg-secondary"
   }
@@ -34,7 +34,7 @@ const benefits = [
 
 const KorzysciPrezentacji = () => {
   useEffect(() => {
-    document.title = "Korzyści Prezentacji — ProgressiveGroup";
+    document.title = "Vorteile von Präsentationen — ProgressiveGroup";
   }, []);
 
   return (
@@ -50,16 +50,16 @@ const KorzysciPrezentacji = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Link to="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-6">
             <ArrowLeft className="w-4 h-4" />
-            <span>Powrót do strony głównej</span>
+            <span>Zurück zur Startseite</span>
           </Link>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Korzyści Prezentacji
+              Vorteile von Präsentationen
             </span>
           </h1>
           <p className="text-xl text-foreground/60 max-w-3xl">
-            Dlaczego warto zainwestować w profesjonalne prezentacje dla swojej firmy?
+            Warum lohnt es sich, in professionelle Präsentationen für Ihr Unternehmen zu investieren?
           </p>
         </div>
       </section>
@@ -69,10 +69,10 @@ const KorzysciPrezentacji = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-              Dlaczego warto?
+              Warum lohnt es sich?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in animate-delay-200">
-              Profesjonalne prezentacje to inwestycja, która zwraca się wielokrotnie
+              Professionelle Präsentationen sind eine Investition, die sich vielfach auszahlt
             </p>
           </div>
           
@@ -104,15 +104,15 @@ const KorzysciPrezentacji = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">75%</div>
-                <p className="text-muted-foreground">Wyższa zapamiętywanie treści</p>
+                <p className="text-muted-foreground">Höhere Merkfähigkeit der Inhalte</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">3x</div>
-                <p className="text-muted-foreground">Szybsze przygotowanie prezentacji</p>
+                <p className="text-muted-foreground">Schnellere Präsentationserstellung</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-secondary mb-2">100%</div>
-                <p className="text-muted-foreground">Spójność wizualna marki</p>
+                <p className="text-muted-foreground">Visuelle Konsistenz der Marke</p>
               </div>
             </div>
           </div>
