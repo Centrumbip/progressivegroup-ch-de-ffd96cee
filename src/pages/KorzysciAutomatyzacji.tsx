@@ -16,7 +16,7 @@ const KorzysciAutomatyzacji = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden pt-32 pb-12">
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-40 pb-12">
         <div className="absolute inset-0 transform-3d">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 gradient-primary rounded-full blur-3xl opacity-20 animate-float" />
         </div>
