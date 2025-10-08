@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const KorzysciAutomatyzacji = () => {
   useEffect(() => {
-    document.title = "Korzyści Automatyzacji — ProgressiveGroup";
+    document.title = "Vorteile der Automatisierung — ProgressiveGroup";
   }, []);
 
   return (
@@ -24,16 +24,16 @@ const KorzysciAutomatyzacji = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Link to="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-6">
             <ArrowLeft className="w-4 h-4" />
-            <span>Powrót do strony głównej</span>
+            <span>Zurück zur Startseite</span>
           </Link>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Korzyści Automatyzacji
+              Vorteile der Automatisierung
             </span>
           </h1>
           <p className="text-xl text-foreground/60 max-w-3xl">
-            Najważniejsze zalety automatyzacji procesów w Google Workspace dla Twojego biznesu.
+            Die wichtigsten Vorteile der Prozessautomatisierung in Google Workspace für Ihr Unternehmen.
           </p>
         </div>
       </section>
