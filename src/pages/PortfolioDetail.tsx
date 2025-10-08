@@ -5,60 +5,267 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import portfolioTransport from "@/assets/portfolio-transport.jpg";
+import portfolioRestaurant from "@/assets/portfolio-restaurant.jpg";
+import portfolioEcommerce from "@/assets/portfolio-ecommerce.jpg";
+import portfolioPhotographer from "@/assets/portfolio-photographer.jpg";
+import portfolioCorporate from "@/assets/portfolio-corporate.jpg";
+import portfolioMedical from "@/assets/portfolio-medical.jpg";
 
 // Portfolio data - in a real app this would come from an API
 const portfolioData = {
-  "tech-startup-2025": {
-    id: "tech-startup-2025",
-    title: "TechFlow Solutions",
-    description: "Moderne SaaS-Website für ein innovatives Tech-Startup mit interaktiven Dashboards und KI-Integration. Revolutionäre Benutzeroberfläche mit Echtzeit-Analytics und Machine Learning Features.",
-    type: "SaaS-Website",
+  "transexpress-logistik": {
+    id: "transexpress-logistik",
+    title: "TransExpress Logistik",
+    description: "Professionelle Transportwebsite mit modernem, responsivem Design. Umfassende Darstellung der Logistikdienstleistungen, Fuhrpark-Präsentation und integriertem Kontaktsystem für Anfragen.",
+    type: "Transport-Website",
     language: "Deutsch",
     flag: "🇩🇪",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200",
-    technologies: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "Prisma", "PostgreSQL"],
+    image: portfolioTransport,
+    technologies: ["WordPress", "WooCommerce", "PHP", "JavaScript", "CSS3", "Responsive Design"],
     features: [
-      "KI-gestützte Analytics Dashboard",
-      "Real-time Datenvisualisierung",
-      "Multi-Tenant Architektur",
-      "API-First Design",
-      "Advanced Security Features",
-      "Mobile-First Responsive Design",
-      "Progressive Web App",
-      "Machine Learning Integration"
+      "Moderne Fuhrpark-Präsentation",
+      "Dienstleistungskatalog mit Details",
+      "Kontaktformular für Transportanfragen",
+      "Mobile-First responsives Design",
+      "SEO-Optimierung für Transport-Keywords",
+      "Integrierte Google Maps",
+      "Schnelle Ladezeiten",
+      "24/7 Verfügbarkeit"
     ],
     category: "business",
-    client: "TechFlow Solutions GmbH",
-    duration: "8 Wochen",
-    team: "5 Entwickler",
-    awards: ["Best SaaS Platform 2025", "Innovation Award", "UX Excellence"],
+    client: "TransExpress Logistik GmbH",
+    duration: "3 Wochen",
+    team: "3 Entwickler",
+    awards: ["Beste Transport-Website 2024"],
     challenges: [
-      "Komplexe Datenvisualisierung benutzerfreundlich gestalten",
-      "Skalierbare Multi-Tenant Architektur implementieren",
-      "KI-Features nahtlos integrieren"
+      "Übersichtliche Darstellung komplexer Logistikdienstleistungen",
+      "Integration von Fuhrpark-Management-System",
+      "Mobile Optimierung für LKW-Fahrer"
     ],
     solutions: [
-      "Modulare Dashboard-Komponenten",
-      "Microservices-Architektur",
-      "TensorFlow.js Integration für Client-Side ML"
+      "Klare Servicekategorien mit visuellen Icons",
+      "Responsive Fuhrpark-Galerie",
+      "One-Click Kontaktaufnahme"
     ],
     results: [
-      "300% Steigerung der Benutzeraktivität",
-      "50% schnellere Datenverarbeitung",
-      "99.9% Uptime erreicht"
+      "150% mehr Anfragen über die Website",
+      "Reduzierung der Telefonanfragen um 40%",
+      "95% mobile Nutzer"
     ],
-    screenshots: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&crop=center",
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop&crop=center"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
-    ]
+    screenshots: [],
+    gallery: []
   },
+  "bella-cucina-restaurant": {
+    id: "bella-cucina-restaurant",
+    title: "La Bella Cucina",
+    description: "Elegante Restaurant-Website mit ansprechendem Design und appetitlicher Fotografie. Perfekt präsentiert das Speiseangebot mit Online-Reservierungssystem und Öffnungszeiten.",
+    type: "Restaurant-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioRestaurant,
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "Reservation System"],
+    features: [
+      "Elegantes Menü mit Fotogalerie",
+      "Online-Reservierungssystem",
+      "Öffnungszeiten und Standort",
+      "Mehrsprachige Unterstützung",
+      "Mobile-optimiert für Restaurantbesucher",
+      "Integration mit Google Business",
+      "Social Media Verknüpfung",
+      "Saisonale Menü-Updates"
+    ],
+    category: "restaurant",
+    client: "La Bella Cucina Restaurant",
+    duration: "4 Wochen",
+    team: "2 Entwickler",
+    awards: ["Design Excellence Award 2024"],
+    challenges: [
+      "Appetitliche Präsentation der Speisekarte",
+      "Einfaches Reservierungssystem",
+      "Mehrsprachigkeit für Touristen"
+    ],
+    solutions: [
+      "Professionelle Food-Fotografie Integration",
+      "Intuitives Buchungssystem mit Kalender",
+      "DE/EN/IT Sprachversionen"
+    ],
+    results: [
+      "200% mehr Online-Reservierungen",
+      "Durchschnittlich 50 Buchungen pro Tag",
+      "4.9/5 Sterne bei Google Reviews"
+    ],
+    screenshots: [],
+    gallery: []
+  },
+  "stylehub-fashion": {
+    id: "stylehub-fashion",
+    title: "StyleHub Fashion",
+    description: "Moderner E-Commerce-Shop für Mode mit benutzerfreundlichem Design. Umfassende Produktkategorien, Filter, Warenkorb und sichere Zahlungsintegration für optimales Shopping-Erlebnis.",
+    type: "E-Commerce",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioEcommerce,
+    technologies: ["Shopify", "React", "TypeScript", "Stripe", "Payment Gateway", "Inventory System"],
+    features: [
+      "Produktkatalog mit Filtern",
+      "Warenkorb und Checkout-System",
+      "Sichere Zahlungsintegration",
+      "Bestandsverwaltung in Echtzeit",
+      "Kundenkonto-System",
+      "Responsive für alle Geräte",
+      "SEO-optimierte Produktseiten",
+      "Newsletter-Integration"
+    ],
+    category: "ecommerce",
+    client: "StyleHub Fashion GmbH",
+    duration: "6 Wochen",
+    team: "4 Entwickler",
+    awards: ["Best E-Commerce Platform 2024"],
+    challenges: [
+      "Große Produktdatenbank effizient verwalten",
+      "Schnelle Ladezeiten trotz vieler Bilder",
+      "Sichere Payment-Integration"
+    ],
+    solutions: [
+      "Image Lazy Loading und Optimization",
+      "CDN für schnelle Auslieferung",
+      "Stripe Payment Gateway"
+    ],
+    results: [
+      "500+ Bestellungen in der ersten Woche",
+      "Conversion Rate von 3.5%",
+      "Durchschnittlicher Warenkorb: 150 CHF"
+    ],
+    screenshots: [],
+    gallery: []
+  },
+  "lens-light-studio": {
+    id: "lens-light-studio",
+    title: "Lens & Light Studio",
+    description: "Kreatives Fotografen-Portfolio mit minimalistischem Design und beeindruckender Bildgalerie im Masonry-Layout. Perfekte Präsentation der fotografischen Arbeiten mit Service-Paketen.",
+    type: "Portfolio-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioPhotographer,
+    technologies: ["Next.js", "React", "Tailwind CSS", "Lightbox Gallery", "CMS Integration"],
+    features: [
+      "Masonry-Galerie für Fotos",
+      "Lightbox für Vollbildansicht",
+      "Service-Paket-Darstellung",
+      "Kontaktformular für Buchungen",
+      "Portfolio-Kategorien",
+      "Schnelle Bildoptimierung",
+      "SEO für Fotografen",
+      "Instagram Feed Integration"
+    ],
+    category: "portfolio",
+    client: "Lens & Light Photography Studio",
+    duration: "2 Wochen",
+    team: "2 Entwickler",
+    awards: ["Portfolio Excellence 2024"],
+    challenges: [
+      "Hochauflösende Bilder ohne Performance-Verlust",
+      "Elegante Galerie-Navigation",
+      "Mobile Bilddarstellung"
+    ],
+    solutions: [
+      "Next.js Image Optimization",
+      "Masonry Grid Layout",
+      "Touch-optimierte Mobile Gallery"
+    ],
+    results: [
+      "300% mehr Buchungsanfragen",
+      "Portfolio erreicht 100k Aufrufe pro Monat",
+      "Featured in Top Photography Blogs"
+    ],
+    screenshots: [],
+    gallery: []
+  },
+  "proconsult-partners": {
+    id: "proconsult-partners",
+    title: "ProConsult Partners",
+    description: "Professionelle Unternehmenswebsite für Beratungsfirma mit klarem, geschäftlichem Design. Umfassende Darstellung der Dienstleistungen, Team-Präsentation und Karrierebereich.",
+    type: "Unternehmens-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioCorporate,
+    technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "Corporate CMS", "Multi-Page"],
+    features: [
+      "Multi-Page-Struktur",
+      "Dienstleistungs-Übersicht",
+      "Team-Präsentation mit Profilen",
+      "Karrierebereich mit Stellenangeboten",
+      "Blog-Integration",
+      "Kontaktformulare",
+      "SEO und Analytics-Integration",
+      "Newsletter-System"
+    ],
+    category: "corporate",
+    client: "ProConsult Partners AG",
+    duration: "5 Wochen",
+    team: "3 Entwickler",
+    awards: ["Corporate Website Award 2024"],
+    challenges: [
+      "Professionelle Darstellung komplexer Beratungsdienstleistungen",
+      "Integration von HR-System für Karrierebereich",
+      "Multi-Language Support"
+    ],
+    solutions: [
+      "Klare Service-Kategorisierung",
+      "API-Integration mit HR-Software",
+      "WPML für Mehrsprachigkeit"
+    ],
+    results: [
+      "250% mehr qualifizierte Leads",
+      "40 Bewerbungen über Karriereseite pro Monat",
+      "Top 3 Google Ranking für Haupt-Keywords"
+    ],
+    screenshots: [],
+    gallery: []
+  },
+  "medicare-wellness": {
+    id: "medicare-wellness",
+    title: "MediCare Wellness Zentrum",
+    description: "Professionelle medizinische Website für Gesundheitszentrum mit vertrauenswürdigem Design. Online-Terminbuchung, Leistungsübersicht, Team-Vorstellung und umfassende Patienteninformationen.",
+    type: "Medizin-Website",
+    language: "Deutsch",
+    flag: "🇩🇪",
+    image: portfolioMedical,
+    technologies: ["WordPress", "Appointment System", "PHP", "MySQL", "HIPAA Compliant", "Patient Portal"],
+    features: [
+      "Online-Terminbuchungssystem",
+      "Leistungskatalog mit Details",
+      "Team-Präsentation mit Qualifikationen",
+      "Patientenportal-Integration",
+      "DSGVO-konforme Datenverwaltung",
+      "Mehrsprachige Unterstützung",
+      "Mobile-optimiert für Patienten",
+      "Zertifizierungen und Auszeichnungen"
+    ],
+    category: "business",
+    client: "MediCare Wellness Zentrum",
+    duration: "4 Wochen",
+    team: "3 Entwickler",
+    awards: ["Healthcare Website Excellence 2024"],
+    challenges: [
+      "DSGVO-konforme Patientendaten-Verwaltung",
+      "Einfaches Online-Terminbuchungssystem",
+      "Vertrauenswürdige Darstellung"
+    ],
+    solutions: [
+      "Verschlüsselte Datenübertragung",
+      "Kalender-Integration mit Arztverfügbarkeit",
+      "Professionelle Zertifikats-Darstellung"
+    ],
+    results: [
+      "180% mehr Online-Terminbuchungen",
+      "Reduzierung Telefonanfragen um 60%",
+      "4.8/5 Sterne Patientenbewertungen"
+    ],
+    screenshots: [],
+    gallery: []
+  }
 };
 
 const PortfolioDetail = () => {
