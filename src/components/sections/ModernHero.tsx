@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Presentation, Shield, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import automationWorkspace from "@/assets/automation-workspace.jpg";
-import presentationDark from "@/assets/presentation-dark.jpg";
-import wordpressDark from "@/assets/wordpress-dark.jpg";
+import presentationProfessional from "@/assets/presentation-professional.jpg";
+import wordpressProfessional from "@/assets/wordpress-professional.jpg";
 import webdesignWorkspace from "@/assets/webdesign-workspace.jpg";
 
 const ModernHero = () => {
@@ -91,8 +91,8 @@ const ModernHero = () => {
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-30">
                   <img 
-                    src={presentationDark} 
-                    alt="Profesjonalne prezentacje biznesowe" 
+                    src={presentationProfessional} 
+                    alt="Profesjonelle Präsentationen für Unternehmen" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
@@ -142,8 +142,8 @@ const ModernHero = () => {
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-20">
                   <img 
-                    src={wordpressDark} 
-                    alt="Opieka WordPress" 
+                    src={wordpressProfessional} 
+                    alt="WordPress Betreuung und Wartung" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
