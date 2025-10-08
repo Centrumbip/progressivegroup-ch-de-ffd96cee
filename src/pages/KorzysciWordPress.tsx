@@ -7,26 +7,26 @@ import { useEffect } from "react";
 
 const benefits = [
   {
-    title: "Bezpieczeństwo",
-    description: "Regularne aktualizacje, monitoring zagrożeń i backup zapewniają spokój o Twoją stronę",
+    title: "Sicherheit",
+    description: "Regelmäßige Updates, Bedrohungsüberwachung und Backups sorgen für Ruhe um Ihre Website",
     icon: Shield,
     color: "bg-primary"
   },
   {
-    title: "Szybkość działania",
-    description: "Optymalizacja wydajności sprawia, że strona ładuje się błyskawicznie, co poprawia SEO",
+    title: "Geschwindigkeit",
+    description: "Leistungsoptimierung sorgt dafür, dass die Seite blitzschnell lädt und verbessert SEO",
     icon: Zap,
     color: "bg-accent"
   },
   {
-    title: "Oszczędność czasu",
-    description: "Zajmujemy się wszystkimi aspektami technicznymi, abyś mógł skupić się na biznesie",
+    title: "Zeitersparnis",
+    description: "Wir kümmern uns um alle technischen Aspekte, damit Sie sich auf Ihr Geschäft konzentrieren können",
     icon: Clock,
     color: "bg-primary"
   },
   {
-    title: "Wsparcie eksperckie",
-    description: "Zawsze możesz liczyć na pomoc doświadczonych specjalistów WordPress",
+    title: "Experten-Support",
+    description: "Sie können immer auf die Hilfe erfahrener WordPress-Spezialisten zählen",
     icon: HeartHandshake,
     color: "bg-secondary"
   }
@@ -34,7 +34,7 @@ const benefits = [
 
 const KorzysciWordPress = () => {
   useEffect(() => {
-    document.title = "Korzyści WordPress — ProgressiveGroup";
+    document.title = "WordPress Care Vorteile — ProgressiveGroup";
   }, []);
 
   return (
@@ -50,16 +50,16 @@ const KorzysciWordPress = () => {
         <div className="container mx-auto px-6 relative z-10">
           <Link to="/" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-6">
             <ArrowLeft className="w-4 h-4" />
-            <span>Powrót do strony głównej</span>
+            <span>Zurück zur Startseite</span>
           </Link>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Korzyści WordPress Care
+              WordPress Care Vorteile
             </span>
           </h1>
           <p className="text-xl text-foreground/60 max-w-3xl">
-            Kompleksowa opieka nad Twoją stroną WordPress – spokój i pewność każdego dnia
+            Umfassende Betreuung Ihrer WordPress-Website – Ruhe und Sicherheit jeden Tag
           </p>
         </div>
       </section>
@@ -69,10 +69,10 @@ const KorzysciWordPress = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-              Dlaczego warto?
+              Warum lohnt es sich?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in animate-delay-200">
-              Profesjonalna opieka nad WordPress to pewność działania i rozwoju strony
+              Professionelle WordPress-Betreuung bedeutet Sicherheit für Betrieb und Entwicklung der Website
             </p>
           </div>
           
@@ -104,15 +104,15 @@ const KorzysciWordPress = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-muted-foreground">Monitoring i ochrona strony</p>
+                <p className="text-muted-foreground">Überwachung und Schutz der Website</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
-                <p className="text-muted-foreground">Dostępność strony (uptime)</p>
+                <p className="text-muted-foreground">Website-Verfügbarkeit (Uptime)</p>
               </div>
               <div>
                 <div className="text-4xl font-bold text-secondary mb-2">50%</div>
-                <p className="text-muted-foreground">Szybsze ładowanie po optymalizacji</p>
+                <p className="text-muted-foreground">Schnellere Ladezeit nach Optimierung</p>
               </div>
             </div>
           </div>
