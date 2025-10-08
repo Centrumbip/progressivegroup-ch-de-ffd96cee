@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles, Presentation, Shield } from "lucide-react";
+import { ArrowRight, Sparkles, Presentation, Shield, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import automationWorkspace from "@/assets/automation-workspace.jpg";
 import presentationDark from "@/assets/presentation-dark.jpg";
@@ -31,7 +31,7 @@ const ModernHero = () => {
         </div>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto relative z-10">
           {/* Automatyzacje Card */}
           <Link to="/automatyzacje" className="group">
             <div className="relative h-full">
@@ -177,6 +177,57 @@ const ModernHero = () => {
                   </ul>
 
                   <div className="flex items-center gap-2 text-primary group-hover:gap-4 transition-all">
+                    <span className="font-medium">Mehr erfahren</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Webseiten Card */}
+          <Link to="/strony-internetowe" className="group">
+            <div className="relative h-full">
+              <div className="absolute inset-0 gradient-accent rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
+              <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
+                <div className="absolute inset-0 opacity-20">
+                  <img 
+                    src={automationWorkspace} 
+                    alt="Professionelle Webseiten-Erstellung" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+                </div>
+                
+                <div className="relative p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-4 gradient-accent rounded-xl shadow-elevated">
+                      <Globe className="w-8 h-8 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-bold text-secondary">Webseiten</h2>
+                  </div>
+                  
+                  <p className="text-foreground/70 mb-6 text-lg">
+                    Wir erstellen moderne, responsive Webseiten, die Ihre Marke perfekt präsentieren
+                    und Ihre Kunden begeistern.
+                  </p>
+
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-center gap-3 text-foreground/60">
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                      <span>Maßgeschneiderte Webdesign-Lösungen</span>
+                    </li>
+                    <li className="flex items-center gap-3 text-foreground/60">
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                      <span>Responsive und SEO-optimiert</span>
+                    </li>
+                    <li className="flex items-center gap-3 text-foreground/60">
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                      <span>Schnelle Ladezeiten und Performance</span>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-2 text-secondary group-hover:gap-4 transition-all">
                     <span className="font-medium">Mehr erfahren</span>
                     <ArrowRight className="w-5 h-5" />
                   </div>
