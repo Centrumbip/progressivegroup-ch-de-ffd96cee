@@ -17,7 +17,7 @@ const portfolioData = {
   "transexpress-logistik": {
     id: "transexpress-logistik",
     title: "TransExpress Logistik",
-    description: "Professionelle Transportwebsite mit modernem, responsivem Design. Umfassende Darstellung der Logistikdienstleistungen, Fuhrpark-Präsentation und integriertem Kontaktsystem für Anfragen.",
+    description: "Deutsche Transportwebsite mit modernem Design. Professionelle Präsentation der Logistikdienstleistungen mit Fuhrpark-Galerie und Kontaktsystem für den deutschen Markt.",
     type: "Transport-Website",
     language: "Deutsch",
     flag: "🇩🇪",
@@ -28,10 +28,10 @@ const portfolioData = {
       "Dienstleistungskatalog mit Details",
       "Kontaktformular für Transportanfragen",
       "Mobile-First responsives Design",
-      "SEO-Optimierung für Transport-Keywords",
+      "SEO-Optimierung für deutsche Keywords",
       "Integrierte Google Maps",
       "Schnelle Ladezeiten",
-      "24/7 Verfügbarkeit"
+      "Deutsche Sprache und Lokalisierung"
     ],
     category: "business",
     client: "TransExpress Logistik GmbH",
@@ -59,36 +59,36 @@ const portfolioData = {
   "bella-cucina-restaurant": {
     id: "bella-cucina-restaurant",
     title: "La Bella Cucina",
-    description: "Elegante Restaurant-Website mit ansprechendem Design und appetitlicher Fotografie. Perfekt präsentiert das Speiseangebot mit Online-Reservierungssystem und Öffnungszeiten.",
+    description: "Schweizer Restaurant-Website mit elegantem Design. Speisekarte, Online-Reservierung und mehrsprachige Unterstützung für die mehrsprachige Schweiz (DE/FR/IT).",
     type: "Restaurant-Website",
-    language: "Deutsch",
-    flag: "🇩🇪",
+    language: "Schweizerdeutsch / Français / Italiano",
+    flag: "🇨🇭",
     image: portfolioRestaurant,
-    technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "Reservation System"],
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "WPML", "Reservation System"],
     features: [
       "Elegantes Menü mit Fotogalerie",
       "Online-Reservierungssystem",
-      "Öffnungszeiten und Standort",
-      "Mehrsprachige Unterstützung",
+      "Dreisprachig: DE/FR/IT",
+      "Schweizer Währung (CHF)",
       "Mobile-optimiert für Restaurantbesucher",
       "Integration mit Google Business",
       "Social Media Verknüpfung",
       "Saisonale Menü-Updates"
     ],
     category: "restaurant",
-    client: "La Bella Cucina Restaurant",
+    client: "La Bella Cucina, Zürich",
     duration: "4 Wochen",
-    team: "2 Entwickler",
-    awards: ["Design Excellence Award 2024"],
+    team: "3 Entwickler",
+    awards: ["Swiss Restaurant Website Award 2024"],
     challenges: [
-      "Appetitliche Präsentation der Speisekarte",
-      "Einfaches Reservierungssystem",
-      "Mehrsprachigkeit für Touristen"
+      "Mehrsprachigkeit für DE/FR/IT umsetzen",
+      "Einfaches Reservierungssystem für alle Sprachen",
+      "Schweizer Zahlungsmethoden integrieren"
     ],
     solutions: [
-      "Professionelle Food-Fotografie Integration",
-      "Intuitives Buchungssystem mit Kalender",
-      "DE/EN/IT Sprachversionen"
+      "WPML Plugin für nahtlose Übersetzungen",
+      "Sprachspezifische Reservierungsformulare",
+      "Integration mit Schweizer Payment-Providern"
     ],
     results: [
       "200% mehr Online-Reservierungen",
@@ -100,37 +100,37 @@ const portfolioData = {
   },
   "stylehub-fashion": {
     id: "stylehub-fashion",
-    title: "StyleHub Fashion",
-    description: "Moderner E-Commerce-Shop für Mode mit benutzerfreundlichem Design. Umfassende Produktkategorien, Filter, Warenkorb und sichere Zahlungsintegration für optimales Shopping-Erlebnis.",
+    title: "StyleHub Fashion Boutique",
+    description: "Schweizer E-Commerce-Shop mit CHF-Währung und lokaler Zahlungsintegration. Modernes Design für den Schweizer Fashion-Markt mit Twint und PostFinance.",
     type: "E-Commerce",
-    language: "Deutsch",
-    flag: "🇩🇪",
+    language: "Deutsch (Schweiz)",
+    flag: "🇨🇭",
     image: portfolioEcommerce,
-    technologies: ["Shopify", "React", "TypeScript", "Stripe", "Payment Gateway", "Inventory System"],
+    technologies: ["Shopify", "React", "TypeScript", "Stripe", "Twint", "PostFinance", "Swiss Post API"],
     features: [
       "Produktkatalog mit Filtern",
-      "Warenkorb und Checkout-System",
-      "Sichere Zahlungsintegration",
-      "Bestandsverwaltung in Echtzeit",
+      "CHF-Währung und Schweizer Preise",
+      "Twint & PostFinance Integration",
+      "Schweizer Versandoptionen (Post, DPD)",
       "Kundenkonto-System",
       "Responsive für alle Geräte",
-      "SEO-optimierte Produktseiten",
-      "Newsletter-Integration"
+      "SEO-optimiert für .ch Domain",
+      "Newsletter mit SwissPost Integration"
     ],
     category: "ecommerce",
-    client: "StyleHub Fashion GmbH",
+    client: "StyleHub Fashion Boutique, Basel",
     duration: "6 Wochen",
     team: "4 Entwickler",
-    awards: ["Best E-Commerce Platform 2024"],
+    awards: ["Best Swiss E-Commerce 2024"],
     challenges: [
-      "Große Produktdatenbank effizient verwalten",
-      "Schnelle Ladezeiten trotz vieler Bilder",
-      "Sichere Payment-Integration"
+      "Schweizer Zahlungsmethoden integrieren (Twint, PostFinance)",
+      "CHF-Preisgestaltung und Schweizer MwSt.",
+      "Lokale Versandoptionen mit Swiss Post"
     ],
     solutions: [
-      "Image Lazy Loading und Optimization",
-      "CDN für schnelle Auslieferung",
-      "Stripe Payment Gateway"
+      "Twint & PostFinance API Integration",
+      "Schweizer Steuersystem-Automatisierung",
+      "Swiss Post Tracking Integration"
     ],
     results: [
       "500+ Bestellungen in der ersten Woche",
@@ -142,126 +142,126 @@ const portfolioData = {
   },
   "lens-light-studio": {
     id: "lens-light-studio",
-    title: "Lens & Light Studio",
-    description: "Kreatives Fotografen-Portfolio mit minimalistischem Design und beeindruckender Bildgalerie im Masonry-Layout. Perfekte Präsentation der fotografischen Arbeiten mit Service-Paketen.",
-    type: "Portfolio-Website",
-    language: "Deutsch",
-    flag: "🇩🇪",
+    title: "Lens & Light Studio London",
+    description: "Englisches Fotografen-Portfolio mit minimalistischem Design. Professionelle Galerie für den britischen und internationalen Markt mit mehrsprachiger Unterstützung.",
+    type: "Portfolio Website",
+    language: "English",
+    flag: "🇬🇧",
     image: portfolioPhotographer,
-    technologies: ["Next.js", "React", "Tailwind CSS", "Lightbox Gallery", "CMS Integration"],
+    technologies: ["Next.js", "React", "Tailwind CSS", "Lightbox Gallery", "Vercel", "CMS Integration"],
     features: [
-      "Masonry-Galerie für Fotos",
-      "Lightbox für Vollbildansicht",
-      "Service-Paket-Darstellung",
-      "Kontaktformular für Buchungen",
-      "Portfolio-Kategorien",
-      "Schnelle Bildoptimierung",
-      "SEO für Fotografen",
+      "Masonry Gallery for Photos",
+      "Lightbox for Full View",
+      "Service Package Display",
+      "Contact Form for Bookings",
+      "Portfolio Categories (Wedding, Corporate, Events)",
+      "Fast Image Optimization",
+      "SEO for UK Market",
       "Instagram Feed Integration"
     ],
     category: "portfolio",
-    client: "Lens & Light Photography Studio",
-    duration: "2 Wochen",
-    team: "2 Entwickler",
-    awards: ["Portfolio Excellence 2024"],
+    client: "Lens & Light Photography Studio, London",
+    duration: "3 Weeks",
+    team: "2 Developers",
+    awards: ["UK Portfolio Excellence 2024"],
     challenges: [
-      "Hochauflösende Bilder ohne Performance-Verlust",
-      "Elegante Galerie-Navigation",
-      "Mobile Bilddarstellung"
+      "High-resolution images without performance loss",
+      "Elegant gallery navigation for mobile",
+      "SEO optimization for UK photography market"
     ],
     solutions: [
-      "Next.js Image Optimization",
-      "Masonry Grid Layout",
-      "Touch-optimierte Mobile Gallery"
+      "Next.js Image Optimization with Vercel CDN",
+      "Responsive Masonry Grid Layout",
+      "Touch-optimized Mobile Gallery with Swipe"
     ],
     results: [
-      "300% mehr Buchungsanfragen",
-      "Portfolio erreicht 100k Aufrufe pro Monat",
-      "Featured in Top Photography Blogs"
+      "300% increase in booking inquiries",
+      "Portfolio reaches 100k views per month",
+      "Featured in Top UK Photography Blogs"
     ],
     screenshots: [],
     gallery: []
   },
   "proconsult-partners": {
     id: "proconsult-partners",
-    title: "ProConsult Partners",
-    description: "Professionelle Unternehmenswebsite für Beratungsfirma mit klarem, geschäftlichem Design. Umfassende Darstellung der Dienstleistungen, Team-Präsentation und Karrierebereich.",
-    type: "Unternehmens-Website",
-    language: "Deutsch",
-    flag: "🇩🇪",
+    title: "Asesoría Empresarial Madrid",
+    description: "Página web corporativa española para consultoría empresarial. Diseño profesional con presentación de servicios, equipo y área de carrera para el mercado hispanohablante.",
+    type: "Sitio Web Corporativo",
+    language: "Español",
+    flag: "🇪🇸",
     image: portfolioCorporate,
-    technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "Corporate CMS", "Multi-Page"],
+    technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "Corporate CMS", "Multi-Page", "WPML"],
     features: [
-      "Multi-Page-Struktur",
-      "Dienstleistungs-Übersicht",
-      "Team-Präsentation mit Profilen",
-      "Karrierebereich mit Stellenangeboten",
-      "Blog-Integration",
-      "Kontaktformulare",
-      "SEO und Analytics-Integration",
-      "Newsletter-System"
+      "Estructura Multi-Página",
+      "Descripción detallada de Servicios",
+      "Presentación del Equipo con perfiles",
+      "Sección de Carreras y ofertas laborales",
+      "Blog Integrado en español",
+      "Formularios de Contacto",
+      "SEO optimizado para España",
+      "Newsletter y Analytics"
     ],
     category: "corporate",
-    client: "ProConsult Partners AG",
-    duration: "5 Wochen",
-    team: "3 Entwickler",
-    awards: ["Corporate Website Award 2024"],
+    client: "Asesoría Empresarial Madrid S.L.",
+    duration: "5 Semanas",
+    team: "3 Desarrolladores",
+    awards: ["Premio Web Corporativa España 2024"],
     challenges: [
-      "Professionelle Darstellung komplexer Beratungsdienstleistungen",
-      "Integration von HR-System für Karrierebereich",
-      "Multi-Language Support"
+      "Presentación profesional de servicios complejos de consultoría",
+      "Integración con sistema de RR.HH. para área de carreras",
+      "SEO competitivo en mercado español"
     ],
     solutions: [
-      "Klare Service-Kategorisierung",
-      "API-Integration mit HR-Software",
-      "WPML für Mehrsprachigkeit"
+      "Categorización clara de servicios con iconos visuales",
+      "Integración API con software de RR.HH.",
+      "SEO técnico y marketing de contenidos"
     ],
     results: [
-      "250% mehr qualifizierte Leads",
-      "40 Bewerbungen über Karriereseite pro Monat",
-      "Top 3 Google Ranking für Haupt-Keywords"
+      "250% más leads cualificados",
+      "40 solicitudes de empleo mensuales",
+      "Top 3 en Google para palabras clave principales"
     ],
     screenshots: [],
     gallery: []
   },
   "medicare-wellness": {
     id: "medicare-wellness",
-    title: "MediCare Wellness Zentrum",
-    description: "Professionelle medizinische Website für Gesundheitszentrum mit vertrauenswürdigem Design. Online-Terminbuchung, Leistungsübersicht, Team-Vorstellung und umfassende Patienteninformationen.",
-    type: "Medizin-Website",
-    language: "Deutsch",
-    flag: "🇩🇪",
+    title: "Cabinet Médical Genève",
+    description: "Site web médical français pour cabinet de santé à Genève. Système de prise de rendez-vous en ligne, présentation des services et informations patients en français.",
+    type: "Site Médical",
+    language: "Français",
+    flag: "🇫🇷",
     image: portfolioMedical,
-    technologies: ["WordPress", "Appointment System", "PHP", "MySQL", "HIPAA Compliant", "Patient Portal"],
+    technologies: ["WordPress", "Appointment System", "PHP", "MySQL", "HIPAA Compliant", "Patient Portal", "Calendly"],
     features: [
-      "Online-Terminbuchungssystem",
-      "Leistungskatalog mit Details",
-      "Team-Präsentation mit Qualifikationen",
-      "Patientenportal-Integration",
-      "DSGVO-konforme Datenverwaltung",
-      "Mehrsprachige Unterstützung",
-      "Mobile-optimiert für Patienten",
-      "Zertifizierungen und Auszeichnungen"
+      "Système de réservation en ligne",
+      "Catalogue des services médicaux",
+      "Présentation de l'équipe médicale",
+      "Portail patient intégré",
+      "Conforme RGPD et réglementations suisses",
+      "Support multilingue (FR/DE)",
+      "Optimisé mobile pour patients",
+      "Certifications et accréditations"
     ],
     category: "business",
-    client: "MediCare Wellness Zentrum",
-    duration: "4 Wochen",
-    team: "3 Entwickler",
-    awards: ["Healthcare Website Excellence 2024"],
+    client: "Cabinet Médical Genève",
+    duration: "4 Semaines",
+    team: "3 Développeurs",
+    awards: ["Excellence Site Médical Suisse 2024"],
     challenges: [
-      "DSGVO-konforme Patientendaten-Verwaltung",
-      "Einfaches Online-Terminbuchungssystem",
-      "Vertrauenswürdige Darstellung"
+      "Conformité RGPD pour données patients sensibles",
+      "Système de réservation en ligne simple et sécurisé",
+      "Présentation professionnelle et rassurante"
     ],
     solutions: [
-      "Verschlüsselte Datenübertragung",
-      "Kalender-Integration mit Arztverfügbarkeit",
-      "Professionelle Zertifikats-Darstellung"
+      "Chiffrement SSL et transfert sécurisé des données",
+      "Intégration Calendly avec disponibilité médicale",
+      "Design professionnel avec certifications visibles"
     ],
     results: [
-      "180% mehr Online-Terminbuchungen",
-      "Reduzierung Telefonanfragen um 60%",
-      "4.8/5 Sterne Patientenbewertungen"
+      "180% d'augmentation des réservations en ligne",
+      "Réduction de 60% des appels téléphoniques",
+      "Note moyenne de 4.8/5 étoiles par les patients"
     ],
     screenshots: [],
     gallery: []
