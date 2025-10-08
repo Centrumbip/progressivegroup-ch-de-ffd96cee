@@ -37,7 +37,8 @@ const PortfolioItem = ({
         <img 
           src={image} 
           alt={title}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: 'center 30%' }}
         />
         <div className="absolute top-4 right-4 flex gap-2">
           <Badge variant="secondary" className="bg-white/90 text-black">
