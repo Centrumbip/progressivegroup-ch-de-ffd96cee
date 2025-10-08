@@ -34,11 +34,13 @@ const PortfolioItem = ({
   return (
     <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-2 border-border hover:border-primary/20">
       <div className="relative overflow-hidden">
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-72 object-cover object-top group-hover:scale-105 transition-transform duration-500"
-        />
+        <div className="p-4">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-72 object-cover object-top group-hover:scale-105 transition-transform duration-500 rounded-lg shadow-lg"
+          />
+        </div>
         <div className="absolute top-4 right-4 flex gap-2">
           <Badge variant="secondary" className="bg-white/90 text-black">
             {flag} {language}
