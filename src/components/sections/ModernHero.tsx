@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import automationWorkspace from "@/assets/automation-workspace.jpg";
 import presentationDark from "@/assets/presentation-dark.jpg";
 import wordpressDark from "@/assets/wordpress-dark.jpg";
+import webdesignWorkspace from "@/assets/webdesign-workspace.jpg";
 
 const ModernHero = () => {
   return (
@@ -192,7 +193,7 @@ const ModernHero = () => {
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-20">
                   <img 
-                    src={automationWorkspace} 
+                    src={webdesignWorkspace} 
                     alt="Professionelle Webseiten-Erstellung" 
                     className="w-full h-full object-cover"
                   />
