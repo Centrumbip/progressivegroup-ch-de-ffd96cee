@@ -11,7 +11,7 @@ interface PortfolioItemProps {
   type: string;
   language: string;
   flag: string;
-  mockup: React.ComponentType;
+  image: string;
   technologies: string[];
   features: string[];
   liveUrl?: string;
@@ -26,7 +26,7 @@ const PortfolioItem = ({
   type, 
   language, 
   flag, 
-  mockup: MockupComponent, 
+  image, 
   technologies, 
   features, 
   liveUrl,
@@ -35,11 +35,13 @@ const PortfolioItem = ({
 }: PortfolioItemProps) => {
   return (
     <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-2 border-border hover:border-primary/20">
-      <div className="relative overflow-hidden h-64 bg-gray-100">
-        <div className="w-full h-full scale-75 origin-top-left transform">
-          <MockupComponent />
-        </div>
-        <div className="absolute top-4 right-4 flex gap-2 z-10">
+      <div className="relative overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute top-4 right-4 flex gap-2">
           <Badge variant="secondary" className="bg-white/90 text-black">
             {flag} {language}
           </Badge>
@@ -47,7 +49,7 @@ const PortfolioItem = ({
             {type}
           </Badge>
         </div>
-        <div className="absolute top-4 left-4 z-10">
+        <div className="absolute top-4 left-4">
           <Badge variant="secondary" className="bg-white/90 text-black">
             <Star className="w-3 h-3 mr-1" />
             Portfolio
