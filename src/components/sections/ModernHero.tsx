@@ -5,21 +5,21 @@ import automationWorkspace from "@/assets/automation-workspace.jpg";
 import presentationProfessional from "@/assets/presentation-professional.jpg";
 import wordpressProfessional from "@/assets/wordpress-professional.jpg";
 import webdesignWorkspace from "@/assets/webdesign-workspace.jpg";
-
 const ModernHero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
       {/* 3D Background Elements */}
       <div className="absolute inset-0 transform-3d">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 gradient-primary rounded-full blur-3xl opacity-20 animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 gradient-accent rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 gradient-accent rounded-full blur-3xl opacity-20 animate-float" style={{
+        animationDelay: '2s'
+      }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-3xl opacity-10 animate-pulse-glow" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto text-center mb-20 animate-fade-in">
           <h1 className="text-7xl md:text-8xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent py-0 my-[30px]">
               Moderne Lösungen
             </span>
             <br />
@@ -39,11 +39,7 @@ const ModernHero = () => {
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-20">
-                  <img 
-                    src={automationWorkspace} 
-                    alt="Automatisierung von Geschäftsprozessen" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={automationWorkspace} alt="Automatisierung von Geschäftsprozessen" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
                 </div>
                 
@@ -90,11 +86,7 @@ const ModernHero = () => {
               <div className="absolute inset-0 gradient-accent rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-30">
-                  <img 
-                    src={presentationProfessional} 
-                    alt="Profesjonelle Präsentationen für Unternehmen" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={presentationProfessional} alt="Profesjonelle Präsentationen für Unternehmen" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
                 </div>
                 
@@ -141,11 +133,7 @@ const ModernHero = () => {
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-20">
-                  <img 
-                    src={wordpressProfessional} 
-                    alt="WordPress Betreuung und Wartung" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={wordpressProfessional} alt="WordPress Betreuung und Wartung" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
                 </div>
                 
@@ -192,11 +180,7 @@ const ModernHero = () => {
               <div className="absolute inset-0 gradient-accent rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative h-full rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 shadow-3d bg-card/95 backdrop-blur-md border border-border/50">
                 <div className="absolute inset-0 opacity-20">
-                  <img 
-                    src={webdesignWorkspace} 
-                    alt="Professionelle Webseiten-Erstellung" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={webdesignWorkspace} alt="Professionelle Webseiten-Erstellung" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
                 </div>
                 
@@ -245,8 +229,6 @@ const ModernHero = () => {
           <div className="w-1.5 h-3 bg-primary rounded-full mx-auto animate-pulse" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ModernHero;
