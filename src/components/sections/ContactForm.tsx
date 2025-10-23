@@ -7,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button-variants";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,8 +14,9 @@ const ContactForm = () => {
     message: ''
   });
   const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -29,9 +29,7 @@ const ContactForm = () => {
       });
       return;
     }
-
     setIsLoading(true);
-
     try {
       // Log form data (backend integration required)
       console.log('Contact form submitted:', {
@@ -43,7 +41,6 @@ const ContactForm = () => {
 
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
-
       toast({
         title: "Nachricht gesendet!",
         description: "Vielen Dank für Ihre Kontaktaufnahme. Wir antworten innerhalb von 24 Stunden."
@@ -108,14 +105,10 @@ const ContactForm = () => {
                   <Textarea id="message" name="message" value={formData.message} onChange={handleChange} className="bg-background border-border focus:border-primary min-h-32" placeholder="Erzählen Sie uns von Ihren Anforderungen..." required />
                 </div>
                 
-                <Button 
-                  type="submit" 
-                  disabled={isLoading}
-                  className={buttonVariants({
-                    variant: "hero",
-                    size: "lg"
-                  })}
-                >
+                <Button type="submit" disabled={isLoading} className={buttonVariants({
+                variant: "hero",
+                size: "lg"
+              })}>
                   {isLoading ? 'Wird gesendet...' : 'Anfrage senden'}
                   <Send className="w-5 h-5 ml-2" />
                 </Button>
@@ -138,7 +131,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">E-Mail</h4>
-                      <p className="text-muted-foreground">info@progressivegroup.ch</p>
+                      <p className="text-muted-foreground">info@progressivegrouph</p>
                     </div>
                   </div>
                   
