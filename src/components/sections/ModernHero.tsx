@@ -17,7 +17,7 @@ const ModernHero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-6xl mx-auto text-center mb-20 animate-fade-in">
+        <div className="max-w-6xl mx-auto text-center mb-20 animate-fade-in my-[30px]">
           <h1 className="text-7xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent py-0 my-[30px]">
               Moderne Lösungen
