@@ -131,7 +131,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">E-Mail</h4>
-                      <p className="text-muted-foreground">info@progressivegrouph</p>
+                      <p className="text-muted-foreground">info@progressivegroup.eu</p>
                     </div>
                   </div>
                   
